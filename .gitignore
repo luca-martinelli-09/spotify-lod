@@ -1,3 +1,4 @@
 .vscode/
 spotifyCredentials.py
 __pycache__/
+datasets/
