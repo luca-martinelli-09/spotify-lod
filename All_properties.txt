@@ -1,0 +1,77 @@
+Track:
+["id", STRING
+"uri", STRING
+"title", STRING
+"duration", INTEGER
+"popularity", INTEGER
+"explicit", BOOLEAN
+"key", INTEGER
+"tempo", FLOAT
+"mode", INTEGER
+"time_signature", INTEGER
+"acousticness", FLOAT
+"danceability", FLOAT
+"energy", FLOAT
+"loudness", FLOAT
+"liveness", FLOAT
+"valence", FLOAT
+"speechiness", FLOAT
+"instrumentalness", FLOAT
+"artists", (IS USED TO LINK)
+"album", (IS USED TO LINK )
+"available_countries" (IS USED TO LINK)
+]
+
+Country:
+["id", STRING
+"code", STRING
+"name" STTRING
+]
+
+Genre:
+["id", STRING
+"name" STRING
+]
+
+Chart
+["id", STRING
+"name", STRING
+"date" DATE
+]
+
+Appear
+["position" INTEGER 
+]
+
+Album
+["id", STRING
+"name", STRING
+"album type", STRING
+"total tracks", INTEGER
+"popularity", INTEGER
+"release date", STRING (?)
+"artists" (IS USED TO LINK)
+"available_countries" (IS USED TO LINK)
+]
+
+Artist
+["id", STRING
+"Name", STRING,
+"popularity", INTEGER
+"genres", (IS USED TO LINK)
+] 
+
+Person 
+["id", STRING
+"Name", STRING
+"Surname", STRING
+"Birthdate", STRING
+"Nationality", STRING
+]
+
+altre robe:
+num follower su artists
+sistema delle raccomandazioni per artisti/tracce simili
+Sistema dei related content
+nnum follower su album 
+ordine delle tracce in un album 
