@@ -17,39 +17,35 @@ Track:
 "valence", FLOAT
 "speechiness", FLOAT
 "instrumentalness", FLOAT
+
 "artists", (IS USED TO LINK)
 "album", (IS USED TO LINK )
 "available_countries" (IS USED TO LINK)
 ]
 
 Country:
-["id", STRING
-"code", STRING
-"name" STTRING
-]
+["code", STRING ] (EULERSHARP)
 
 Genre:
-["id", STRING
-"name" STRING
-]
+["name" STRING ]
 
 Chart
-["id", STRING
-"name", STRING
+["name", STRING
+"track_count" INTEGER
+"type" (VIRAL OR TOP)
 "date" DATE
 ]
 
 Appear
-["position" INTEGER 
-]
+["position" INTEGER ]
 
 Album
 ["id", STRING
 "name", STRING
-"album type", STRING
+"album type", ENUMERATION ("album" "single" "compilation")
 "total tracks", INTEGER
 "popularity", INTEGER
-"release date", STRING (?)
+"release date", DATE
 "artists" (IS USED TO LINK)
 "available_countries" (IS USED TO LINK)
 ]
@@ -61,17 +57,11 @@ Artist
 "genres", (IS USED TO LINK)
 ] 
 
-Person 
+Person (FOAF)
 ["id", STRING
 "Name", STRING
 "Surname", STRING
-"Birthdate", STRING
-"Nationality", STRING
+"Birthdate", DATE
+"Country", (USED TO LINK)
 ]
 
-altre robe:
-num follower su artists
-sistema delle raccomandazioni per artisti/tracce simili
-Sistema dei related content
-nnum follower su album 
-ordine delle tracce in un album 
