@@ -23,7 +23,8 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#appearsIn
-:appearsIn rdf:type owl:ObjectProperty ;
+:appearsIn rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
            rdfs:domain :Track ;
            rdfs:range :Appearance .
 
@@ -171,19 +172,20 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hasNationality
-:hasNationality rdf:type owl:ObjectProperty ;
+:hasNationality rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
                 rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
                 rdfs:range <http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country> .
 
 
-###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isAvailable
-:isAvailable rdf:type owl:ObjectProperty ;
-             rdfs:domain [ rdf:type owl:Class ;
-                           owl:unionOf ( :Album
-                                         :Track
-                                       )
-                         ] ;
-             rdfs:range <http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country> .
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isAvailableIn
+:isAvailableIn rdf:type owl:ObjectProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :Album
+                                           :Track
+                                         )
+                           ] ;
+               rdfs:range <http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country> .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isMemberOf
@@ -199,15 +201,56 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isPositionedIn
-:isPositionedIn rdf:type owl:ObjectProperty ;
+:isPositionedIn rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
                 rdfs:domain :Appearance ;
                 rdfs:range :Chart .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isReferredTo
-:isReferredTo rdf:type owl:ObjectProperty ;
+:isReferredTo rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
               rdfs:domain :Chart ;
               rdfs:range <http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country> .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isTypeOf
+:isTypeOf rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Chart ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :AlbumType
+                                     :ChartType
+                                   )
+                     ] ,
+                     [ rdf:type owl:Class ;
+                       owl:unionOf ( [ owl:intersectionOf ( :AlbumType
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :isTypeOf ;
+                                                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:oneOf ( :album
+                                                                                              :compilation
+                                                                                              :single
+                                                                                            )
+                                                                                ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ]
+                                     [ owl:intersectionOf ( :ChartType
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :isTypeOf ;
+                                                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:oneOf ( :top
+                                                                                              :viral
+                                                                                            )
+                                                                                ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ]
+                                   )
+                     ] .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#partecipateIn
@@ -224,11 +267,32 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#acousticness
+:acousticness rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Track ;
+              rdfs:range xsd:float .
+
+
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#birthDate
 :birthDate rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
            rdfs:range xsd:date .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#danceability
+:danceability rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Track ;
+              rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#date
+:date rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :Chart ;
+      rdfs:range xsd:date .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#deathDate
@@ -238,12 +302,185 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:range xsd:date .
 
 
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#duration
+:duration rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Track ;
+          rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#energy
+:energy rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :Track ;
+        rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#explicit
+:explicit rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Track ;
+          rdfs:range xsd:boolean .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#id
+:id rdf:type owl:DatatypeProperty ,
+             owl:FunctionalProperty ;
+    rdfs:domain [ rdf:type owl:Class ;
+                  owl:unionOf ( :Album
+                                :Artist
+                                :Track
+                              )
+                ] ;
+    rdfs:range xsd:string .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#instrumentalness
+:instrumentalness rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Track ;
+                  rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#key
+:key rdf:type owl:DatatypeProperty ,
+              owl:FunctionalProperty ;
+     rdfs:domain :Track ;
+     rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#liveness
+:liveness rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Track ;
+          rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#loudness
+:loudness rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Track ;
+          rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mode
+:mode rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :Track ;
+      rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#name
+:name rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( <http://xmlns.com/foaf/0.1/Person>
+                                  :Artist
+                                  :Chart
+                                )
+                  ] ;
+      rdfs:range xsd:string .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#popularity
+:popularity rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Album
+                                        :Artist
+                                        :Track
+                                      )
+                        ] ;
+            rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#position
+:position rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Appearance ;
+          rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#releaseDate
+:releaseDate rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Album ;
+             rdfs:range xsd:date .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#speechiness
+:speechiness rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Track ;
+             rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#surname
+:surname rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+         rdfs:range xsd:string .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#tempo
+:tempo rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain :Track ;
+       rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#timeSignature
+:timeSignature rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Track ;
+               rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#title
+:title rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain [ rdf:type owl:Class ;
+                     owl:unionOf ( :Album
+                                   :Track
+                                 )
+                   ] ;
+       rdfs:range xsd:string .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#trackCount
+:trackCount rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Album
+                                        :Chart
+                                      )
+                        ] ;
+            rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#valence
+:valence rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :Track ;
+         rdfs:range xsd:float .
+
+
 #################################################################
 #    Classes
 #################################################################
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album
 :Album rdf:type owl:Class .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#AlbumType
+:AlbumType rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:oneOf ( :album
+                                             :compilation
+                                             :single
+                                           )
+                               ] .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Appearance
@@ -256,6 +493,15 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Chart
 :Chart rdf:type owl:Class .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ChartType
+:ChartType rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:oneOf ( :top
+                                             :viral
+                                           )
+                               ] .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Genre
@@ -409,6 +655,11 @@ xsd:date rdf:type rdfs:Datatype .
                    :Genre .
 
 
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#album
+:album rdf:type owl:NamedIndividual ,
+                :AlbumType .
+
+
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#alt-rock
 :alt-rock rdf:type owl:NamedIndividual ,
                    :Genre .
@@ -497,6 +748,11 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#comedy
 :comedy rdf:type owl:NamedIndividual ,
                  :Genre .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#compilation
+:compilation rdf:type owl:NamedIndividual ,
+                      :AlbumType .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#country
@@ -944,6 +1200,11 @@ xsd:date rdf:type rdfs:Datatype .
                             :Genre .
 
 
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#single
+:single rdf:type owl:NamedIndividual ,
+                 :AlbumType .
+
+
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ska
 :ska rdf:type owl:NamedIndividual ,
               :Genre .
@@ -1004,6 +1265,11 @@ xsd:date rdf:type rdfs:Datatype .
                  :Genre .
 
 
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#top
+:top rdf:type owl:NamedIndividual ,
+              :ChartType .
+
+
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#trance
 :trance rdf:type owl:NamedIndividual ,
                  :Genre .
@@ -1017,6 +1283,11 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#turkish
 :turkish rdf:type owl:NamedIndividual ,
                   :Genre .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#viral
+:viral rdf:type owl:NamedIndividual ,
+                :ChartType .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#work-out

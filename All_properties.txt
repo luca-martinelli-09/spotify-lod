@@ -1,6 +1,5 @@
 Track:
 ["id", STRING
-"uri", STRING
 "title", STRING
 "duration", INTEGER
 "popularity", INTEGER
@@ -8,7 +7,7 @@ Track:
 "key", INTEGER
 "tempo", FLOAT
 "mode", INTEGER
-"time_signature", INTEGER
+"timeSignature", INTEGER
 "acousticness", FLOAT
 "danceability", FLOAT
 "energy", FLOAT
@@ -31,7 +30,7 @@ Genre:
 
 Chart
 ["name", STRING
-"track_count" INTEGER
+"trackCount" INTEGER
 "type" (VIRAL OR TOP)
 "date" DATE
 ]
@@ -47,7 +46,7 @@ Album
 "popularity", INTEGER
 "release date", DATE
 "artists" (IS USED TO LINK)
-"available_countries" (IS USED TO LINK)
+"availableCountries" (IS USED TO LINK)
 ]
 
 Artist
