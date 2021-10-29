@@ -31,144 +31,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hasGenre
 :hasGenre rdf:type owl:ObjectProperty ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :Album
-                                      :Artist
-                                    )
-                      ] ;
-          rdfs:range :Genre ,
-                     [ rdf:type owl:Restriction ;
-                       owl:onProperty :hasGenre ;
-                       owl:allValuesFrom [ rdf:type owl:Class ;
-                                           owl:oneOf ( :acoustic
-                                                       :afrobeat
-                                                       :alt-rock
-                                                       :alternative
-                                                       :ambient
-                                                       :anime
-                                                       :black-metal
-                                                       :bluegrass
-                                                       :blues
-                                                       :bossanova
-                                                       :brazil
-                                                       :breakbeat
-                                                       :british
-                                                       :cantopop
-                                                       :chicago-house
-                                                       :children
-                                                       :chill
-                                                       :classical
-                                                       :club
-                                                       :comedy
-                                                       :country
-                                                       :dance
-                                                       :dancehall
-                                                       :death-metal
-                                                       :deep-house
-                                                       :detroit-techno
-                                                       :disco
-                                                       :disney
-                                                       :drum-and-bass
-                                                       :dub
-                                                       :dubstep
-                                                       :edm
-                                                       :electro
-                                                       :electronic
-                                                       :emo
-                                                       :folk
-                                                       :forro
-                                                       :french
-                                                       :funk
-                                                       :garage
-                                                       :german
-                                                       :gospel
-                                                       :goth
-                                                       :grindcore
-                                                       :groove
-                                                       :grunge
-                                                       :guitar
-                                                       :happy
-                                                       :hard-rock
-                                                       :hardcore
-                                                       :hardstyle
-                                                       :heavy-metal
-                                                       :hip-hop
-                                                       :holidays
-                                                       :honky-tonk
-                                                       :house
-                                                       :idm
-                                                       :indian
-                                                       :indie
-                                                       :indie-pop
-                                                       :industrial
-                                                       :iranian
-                                                       :j-dance
-                                                       :j-idol
-                                                       :j-pop
-                                                       :j-rock
-                                                       :jazz
-                                                       :k-pop
-                                                       :kids
-                                                       :latin
-                                                       :latino
-                                                       :malay
-                                                       :mandopop
-                                                       :metal
-                                                       :metal-misc
-                                                       :metalcore
-                                                       :minimal-techno
-                                                       :movies
-                                                       :mpb
-                                                       :new-age
-                                                       :new-release
-                                                       :opera
-                                                       :pagode
-                                                       :party
-                                                       :philippines-opm
-                                                       :piano
-                                                       :pop
-                                                       :pop-film
-                                                       :post-dubstep
-                                                       :power-pop
-                                                       :progressive-house
-                                                       :psych-rock
-                                                       :punk
-                                                       :punk-rock
-                                                       :r-n-b
-                                                       :rainy-day
-                                                       :reggae
-                                                       :reggaeton
-                                                       :road-trip
-                                                       :rock
-                                                       :rock-n-roll
-                                                       :rockabilly
-                                                       :romance
-                                                       :sad
-                                                       :salsa
-                                                       :samba
-                                                       :sertanejo
-                                                       :show-tunes
-                                                       :singer-songwriter
-                                                       :ska
-                                                       :sleep
-                                                       :songwriter
-                                                       :soul
-                                                       :soundtracks
-                                                       :spanish
-                                                       :study
-                                                       :summer
-                                                       :swedish
-                                                       :synth-pop
-                                                       :tango
-                                                       :techno
-                                                       :trance
-                                                       :trip-hop
-                                                       :turkish
-                                                       :work-out
-                                                       :world-music
-                                                     )
-                                         ]
-                     ] .
+          rdfs:domain :Artist ;
+          rdfs:range :Genre .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hasNationality
@@ -386,8 +250,7 @@ xsd:date rdf:type rdfs:Datatype .
 :popularity rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain [ rdf:type owl:Class ;
-                          owl:unionOf ( :Album
-                                        :Artist
+                          owl:unionOf ( :Artist
                                         :Track
                                       )
                         ] ;
@@ -469,6 +332,14 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
+###  http://www.w3.org/2000/10/swap/pim/contact#Person
+<http://www.w3.org/2000/10/swap/pim/contact#Person> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album
 :Album rdf:type owl:Class .
 
@@ -505,136 +376,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Genre
-:Genre rdf:type owl:Class ;
-       owl:equivalentClass [ rdf:type owl:Class ;
-                             owl:oneOf ( :acoustic
-                                         :afrobeat
-                                         :alt-rock
-                                         :alternative
-                                         :ambient
-                                         :anime
-                                         :black-metal
-                                         :bluegrass
-                                         :blues
-                                         :bossanova
-                                         :brazil
-                                         :breakbeat
-                                         :british
-                                         :cantopop
-                                         :chicago-house
-                                         :children
-                                         :chill
-                                         :classical
-                                         :club
-                                         :comedy
-                                         :country
-                                         :dance
-                                         :dancehall
-                                         :death-metal
-                                         :deep-house
-                                         :detroit-techno
-                                         :disco
-                                         :disney
-                                         :drum-and-bass
-                                         :dub
-                                         :dubstep
-                                         :edm
-                                         :electro
-                                         :electronic
-                                         :emo
-                                         :folk
-                                         :forro
-                                         :french
-                                         :funk
-                                         :garage
-                                         :german
-                                         :gospel
-                                         :goth
-                                         :grindcore
-                                         :groove
-                                         :grunge
-                                         :guitar
-                                         :happy
-                                         :hard-rock
-                                         :hardcore
-                                         :hardstyle
-                                         :heavy-metal
-                                         :hip-hop
-                                         :holidays
-                                         :honky-tonk
-                                         :house
-                                         :idm
-                                         :indian
-                                         :indie
-                                         :indie-pop
-                                         :industrial
-                                         :iranian
-                                         :j-dance
-                                         :j-idol
-                                         :j-pop
-                                         :j-rock
-                                         :jazz
-                                         :k-pop
-                                         :kids
-                                         :latin
-                                         :latino
-                                         :malay
-                                         :mandopop
-                                         :metal
-                                         :metal-misc
-                                         :metalcore
-                                         :minimal-techno
-                                         :movies
-                                         :mpb
-                                         :new-age
-                                         :new-release
-                                         :opera
-                                         :pagode
-                                         :party
-                                         :philippines-opm
-                                         :piano
-                                         :pop
-                                         :pop-film
-                                         :post-dubstep
-                                         :power-pop
-                                         :progressive-house
-                                         :psych-rock
-                                         :punk
-                                         :punk-rock
-                                         :r-n-b
-                                         :rainy-day
-                                         :reggae
-                                         :reggaeton
-                                         :road-trip
-                                         :rock
-                                         :rock-n-roll
-                                         :rockabilly
-                                         :romance
-                                         :sad
-                                         :salsa
-                                         :samba
-                                         :sertanejo
-                                         :show-tunes
-                                         :singer-songwriter
-                                         :ska
-                                         :sleep
-                                         :songwriter
-                                         :soul
-                                         :soundtracks
-                                         :spanish
-                                         :study
-                                         :summer
-                                         :swedish
-                                         :synth-pop
-                                         :tango
-                                         :techno
-                                         :trance
-                                         :trip-hop
-                                         :turkish
-                                         :work-out
-                                         :world-music
-                                       )
-                           ] .
+:Genre rdf:type owl:Class .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track
@@ -646,13 +388,11 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#acoustic
-:acoustic rdf:type owl:NamedIndividual ,
-                   :Genre .
+:acoustic rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#afrobeat
-:afrobeat rdf:type owl:NamedIndividual ,
-                   :Genre .
+:afrobeat rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#album
@@ -661,93 +401,75 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#alt-rock
-:alt-rock rdf:type owl:NamedIndividual ,
-                   :Genre .
+:alt-rock rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#alternative
-:alternative rdf:type owl:NamedIndividual ,
-                      :Genre .
+:alternative rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ambient
-:ambient rdf:type owl:NamedIndividual ,
-                  :Genre .
+:ambient rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#anime
-:anime rdf:type owl:NamedIndividual ,
-                :Genre .
+:anime rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#black-metal
-:black-metal rdf:type owl:NamedIndividual ,
-                      :Genre .
+:black-metal rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#bluegrass
-:bluegrass rdf:type owl:NamedIndividual ,
-                    :Genre .
+:bluegrass rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#blues
-:blues rdf:type owl:NamedIndividual ,
-                :Genre .
+:blues rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#bossanova
-:bossanova rdf:type owl:NamedIndividual ,
-                    :Genre .
+:bossanova rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#brazil
-:brazil rdf:type owl:NamedIndividual ,
-                 :Genre .
+:brazil rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#breakbeat
-:breakbeat rdf:type owl:NamedIndividual ,
-                    :Genre .
+:breakbeat rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#british
-:british rdf:type owl:NamedIndividual ,
-                  :Genre .
+:british rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#cantopop
-:cantopop rdf:type owl:NamedIndividual ,
-                   :Genre .
+:cantopop rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#chicago-house
-:chicago-house rdf:type owl:NamedIndividual ,
-                        :Genre .
+:chicago-house rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#children
-:children rdf:type owl:NamedIndividual ,
-                   :Genre .
+:children rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#chill
-:chill rdf:type owl:NamedIndividual ,
-                :Genre .
+:chill rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#classical
-:classical rdf:type owl:NamedIndividual ,
-                    :Genre .
+:classical rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#club
-:club rdf:type owl:NamedIndividual ,
-               :Genre .
+:club rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#comedy
-:comedy rdf:type owl:NamedIndividual ,
-                 :Genre .
+:comedy rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#compilation
@@ -756,448 +478,359 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#country
-:country rdf:type owl:NamedIndividual ,
-                  :Genre .
+:country rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dance
-:dance rdf:type owl:NamedIndividual ,
-                :Genre .
+:dance rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dancehall
-:dancehall rdf:type owl:NamedIndividual ,
-                    :Genre .
+:dancehall rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#death-metal
-:death-metal rdf:type owl:NamedIndividual ,
-                      :Genre .
+:death-metal rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#deep-house
-:deep-house rdf:type owl:NamedIndividual ,
-                     :Genre .
+:deep-house rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#detroit-techno
-:detroit-techno rdf:type owl:NamedIndividual ,
-                         :Genre .
+:detroit-techno rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#disco
-:disco rdf:type owl:NamedIndividual ,
-                :Genre .
+:disco rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#disney
-:disney rdf:type owl:NamedIndividual ,
-                 :Genre .
+:disney rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#drum-and-bass
-:drum-and-bass rdf:type owl:NamedIndividual ,
-                        :Genre .
+:drum-and-bass rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dub
-:dub rdf:type owl:NamedIndividual ,
-              :Genre .
+:dub rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dubstep
-:dubstep rdf:type owl:NamedIndividual ,
-                  :Genre .
+:dubstep rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#edm
-:edm rdf:type owl:NamedIndividual ,
-              :Genre .
+:edm rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#electro
-:electro rdf:type owl:NamedIndividual ,
-                  :Genre .
+:electro rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#electronic
-:electronic rdf:type owl:NamedIndividual ,
-                     :Genre .
+:electronic rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#emo
-:emo rdf:type owl:NamedIndividual ,
-              :Genre .
+:emo rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#folk
-:folk rdf:type owl:NamedIndividual ,
-               :Genre .
+:folk rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#forro
-:forro rdf:type owl:NamedIndividual ,
-                :Genre .
+:forro rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#french
-:french rdf:type owl:NamedIndividual ,
-                 :Genre .
+:french rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#funk
-:funk rdf:type owl:NamedIndividual ,
-               :Genre .
+:funk rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#garage
-:garage rdf:type owl:NamedIndividual ,
-                 :Genre .
+:garage rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#german
-:german rdf:type owl:NamedIndividual ,
-                 :Genre .
+:german rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#gospel
-:gospel rdf:type owl:NamedIndividual ,
-                 :Genre .
+:gospel rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#goth
-:goth rdf:type owl:NamedIndividual ,
-               :Genre .
+:goth rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#grindcore
-:grindcore rdf:type owl:NamedIndividual ,
-                    :Genre .
+:grindcore rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#groove
-:groove rdf:type owl:NamedIndividual ,
-                 :Genre .
+:groove rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#grunge
-:grunge rdf:type owl:NamedIndividual ,
-                 :Genre .
+:grunge rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#guitar
-:guitar rdf:type owl:NamedIndividual ,
-                 :Genre .
+:guitar rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#happy
-:happy rdf:type owl:NamedIndividual ,
-                :Genre .
+:happy rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hard-rock
-:hard-rock rdf:type owl:NamedIndividual ,
-                    :Genre .
+:hard-rock rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hardcore
-:hardcore rdf:type owl:NamedIndividual ,
-                   :Genre .
+:hardcore rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hardstyle
-:hardstyle rdf:type owl:NamedIndividual ,
-                    :Genre .
+:hardstyle rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#heavy-metal
-:heavy-metal rdf:type owl:NamedIndividual ,
-                      :Genre .
+:heavy-metal rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hip-hop
-:hip-hop rdf:type owl:NamedIndividual ,
-                  :Genre .
+:hip-hop rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#holidays
-:holidays rdf:type owl:NamedIndividual ,
-                   :Genre .
+:holidays rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#honky-tonk
-:honky-tonk rdf:type owl:NamedIndividual ,
-                     :Genre .
+:honky-tonk rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#house
-:house rdf:type owl:NamedIndividual ,
-                :Genre .
+:house rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#idm
-:idm rdf:type owl:NamedIndividual ,
-              :Genre .
+:idm rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indian
-:indian rdf:type owl:NamedIndividual ,
-                 :Genre .
+:indian rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indie
-:indie rdf:type owl:NamedIndividual ,
-                :Genre .
+:indie rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indie-pop
-:indie-pop rdf:type owl:NamedIndividual ,
-                    :Genre .
+:indie-pop rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#industrial
-:industrial rdf:type owl:NamedIndividual ,
-                     :Genre .
+:industrial rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#iranian
-:iranian rdf:type owl:NamedIndividual ,
-                  :Genre .
+:iranian rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-dance
-:j-dance rdf:type owl:NamedIndividual ,
-                  :Genre .
+:j-dance rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-idol
-:j-idol rdf:type owl:NamedIndividual ,
-                 :Genre .
+:j-idol rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-pop
-:j-pop rdf:type owl:NamedIndividual ,
-                :Genre .
+:j-pop rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-rock
-:j-rock rdf:type owl:NamedIndividual ,
-                 :Genre .
+:j-rock rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#jazz
-:jazz rdf:type owl:NamedIndividual ,
-               :Genre .
+:jazz rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#k-pop
-:k-pop rdf:type owl:NamedIndividual ,
-                :Genre .
+:k-pop rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#kids
-:kids rdf:type owl:NamedIndividual ,
-               :Genre .
+:kids rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#latin
-:latin rdf:type owl:NamedIndividual ,
-                :Genre .
+:latin rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#latino
-:latino rdf:type owl:NamedIndividual ,
-                 :Genre .
+:latino rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#malay
-:malay rdf:type owl:NamedIndividual ,
-                :Genre .
+:malay rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mandopop
-:mandopop rdf:type owl:NamedIndividual ,
-                   :Genre .
+:mandopop rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metal
-:metal rdf:type owl:NamedIndividual ,
-                :Genre .
+:metal rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metal-misc
-:metal-misc rdf:type owl:NamedIndividual ,
-                     :Genre .
+:metal-misc rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metalcore
-:metalcore rdf:type owl:NamedIndividual ,
-                    :Genre .
+:metalcore rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#minimal-techno
-:minimal-techno rdf:type owl:NamedIndividual ,
-                         :Genre .
+:minimal-techno rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#movies
-:movies rdf:type owl:NamedIndividual ,
-                 :Genre .
+:movies rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mpb
-:mpb rdf:type owl:NamedIndividual ,
-              :Genre .
+:mpb rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#new-age
-:new-age rdf:type owl:NamedIndividual ,
-                  :Genre .
+:new-age rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#new-release
-:new-release rdf:type owl:NamedIndividual ,
-                      :Genre .
+:new-release rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#opera
-:opera rdf:type owl:NamedIndividual ,
-                :Genre .
+:opera rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pagode
-:pagode rdf:type owl:NamedIndividual ,
-                 :Genre .
+:pagode rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#party
-:party rdf:type owl:NamedIndividual ,
-                :Genre .
+:party rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#philippines-opm
-:philippines-opm rdf:type owl:NamedIndividual ,
-                          :Genre .
+:philippines-opm rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#piano
-:piano rdf:type owl:NamedIndividual ,
-                :Genre .
+:piano rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pop
-:pop rdf:type owl:NamedIndividual ,
-              :Genre .
+:pop rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pop-film
-:pop-film rdf:type owl:NamedIndividual ,
-                   :Genre .
+:pop-film rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#post-dubstep
-:post-dubstep rdf:type owl:NamedIndividual ,
-                       :Genre .
+:post-dubstep rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#power-pop
-:power-pop rdf:type owl:NamedIndividual ,
-                    :Genre .
+:power-pop rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#progressive-house
-:progressive-house rdf:type owl:NamedIndividual ,
-                            :Genre .
+:progressive-house rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#psych-rock
-:psych-rock rdf:type owl:NamedIndividual ,
-                     :Genre .
+:psych-rock rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#punk
-:punk rdf:type owl:NamedIndividual ,
-               :Genre .
+:punk rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#punk-rock
-:punk-rock rdf:type owl:NamedIndividual ,
-                    :Genre .
+:punk-rock rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#r-n-b
-:r-n-b rdf:type owl:NamedIndividual ,
-                :Genre .
+:r-n-b rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rainy-day
-:rainy-day rdf:type owl:NamedIndividual ,
-                    :Genre .
+:rainy-day rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#reggae
-:reggae rdf:type owl:NamedIndividual ,
-                 :Genre .
+:reggae rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#reggaeton
-:reggaeton rdf:type owl:NamedIndividual ,
-                    :Genre .
+:reggaeton rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#road-trip
-:road-trip rdf:type owl:NamedIndividual ,
-                    :Genre .
+:road-trip rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rock
-:rock rdf:type owl:NamedIndividual ,
-               :Genre .
+:rock rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rock-n-roll
-:rock-n-roll rdf:type owl:NamedIndividual ,
-                      :Genre .
+:rock-n-roll rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rockabilly
-:rockabilly rdf:type owl:NamedIndividual ,
-                     :Genre .
+:rockabilly rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#romance
-:romance rdf:type owl:NamedIndividual ,
-                  :Genre .
+:romance rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sad
-:sad rdf:type owl:NamedIndividual ,
-              :Genre .
+:sad rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#salsa
-:salsa rdf:type owl:NamedIndividual ,
-                :Genre .
+:salsa rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#samba
-:samba rdf:type owl:NamedIndividual ,
-                :Genre .
+:samba rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sertanejo
-:sertanejo rdf:type owl:NamedIndividual ,
-                    :Genre .
+:sertanejo rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#show-tunes
-:show-tunes rdf:type owl:NamedIndividual ,
-                     :Genre .
+:show-tunes rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#singer-songwriter
-:singer-songwriter rdf:type owl:NamedIndividual ,
-                            :Genre .
+:singer-songwriter rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#single
@@ -1206,63 +839,51 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ska
-:ska rdf:type owl:NamedIndividual ,
-              :Genre .
+:ska rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sleep
-:sleep rdf:type owl:NamedIndividual ,
-                :Genre .
+:sleep rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#songwriter
-:songwriter rdf:type owl:NamedIndividual ,
-                     :Genre .
+:songwriter rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#soul
-:soul rdf:type owl:NamedIndividual ,
-               :Genre .
+:soul rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#soundtracks
-:soundtracks rdf:type owl:NamedIndividual ,
-                      :Genre .
+:soundtracks rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#spanish
-:spanish rdf:type owl:NamedIndividual ,
-                  :Genre .
+:spanish rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#study
-:study rdf:type owl:NamedIndividual ,
-                :Genre .
+:study rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#summer
-:summer rdf:type owl:NamedIndividual ,
-                 :Genre .
+:summer rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#swedish
-:swedish rdf:type owl:NamedIndividual ,
-                  :Genre .
+:swedish rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#synth-pop
-:synth-pop rdf:type owl:NamedIndividual ,
-                    :Genre .
+:synth-pop rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#tango
-:tango rdf:type owl:NamedIndividual ,
-                :Genre .
+:tango rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#techno
-:techno rdf:type owl:NamedIndividual ,
-                 :Genre .
+:techno rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#top
@@ -1271,18 +892,15 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#trance
-:trance rdf:type owl:NamedIndividual ,
-                 :Genre .
+:trance rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#trip-hop
-:trip-hop rdf:type owl:NamedIndividual ,
-                   :Genre .
+:trip-hop rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#turkish
-:turkish rdf:type owl:NamedIndividual ,
-                  :Genre .
+:turkish rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#viral
@@ -1291,13 +909,11 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#work-out
-:work-out rdf:type owl:NamedIndividual ,
-                   :Genre .
+:work-out rdf:type owl:NamedIndividual .
 
 
 ###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#world-music
-:world-music rdf:type owl:NamedIndividual ,
-                      :Genre .
+:world-music rdf:type owl:NamedIndividual .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
