@@ -2,3 +2,4 @@
 spotifyCredentials.py
 __pycache__/
 datasets/
+rdf/
