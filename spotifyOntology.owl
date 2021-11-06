@@ -241,6 +241,7 @@ xsd:date rdf:type rdfs:Datatype .
                     owl:unionOf ( <http://xmlns.com/foaf/0.1/Person>
                                   :Artist
                                   :Chart
+                                  :Genre
                                 )
                   ] ;
       rdfs:range xsd:string .
@@ -331,6 +332,10 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
+
+###  http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country
+<http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country> rdf:type owl:Class .
+
 
 ###  http://www.w3.org/2000/10/swap/pim/contact#Person
 <http://www.w3.org/2000/10/swap/pim/contact#Person> rdf:type owl:Class .
