@@ -35,3 +35,23 @@ SELECT DISTINCT ?artistName ?artistPopularity WHERE{
 }
 
 *******************************************************************************
+QUERY3 : 30 genres with most danceable songs relative to songs in 2019
+
+PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
+PREFIX countries: <http://eulersharp.sourceforge.net/2003/03swap/countries#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?genre (AVG(?danceability) as ?avgDanceability) (COUNT(?track) as ?numTrack) WHERE{
+    ?artist so:partecipateIn ?track ;
+            so:name ?artistName ;
+            so:hasGenre ?genre .
+    ?track 	so:isPartOf ?album ;
+    		so:name ?trackName ;
+    		so:danceability ?danceability .
+	?album 	so:releaseDate ?date ;
+        	so:name ?albumName .
+    FILTER ((?date >= "2019-01-01"^^xsd:date && ?date < "2020-01-01"^^xsd:date))
+}
+GROUP BY ?genre
+HAVING (?numTrack > 100)
+ORDER BY DESC(?avgDanceability)
+LIMIT 30
