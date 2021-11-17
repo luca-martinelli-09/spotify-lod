@@ -55,3 +55,39 @@ GROUP BY ?genre
 HAVING (?numTrack > 100)
 ORDER BY DESC(?avgDanceability)
 LIMIT 30
+
+********************************************************************
+QUERY4 : In 2019 there was more distinct singles in top 100 Argentina or top 100 Italy
+
+PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
+PREFIX countries: <http://eulersharp.sourceforge.net/2003/03swap/countries#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+ASK WHERE{
+    {
+        SELECT (COUNT (DISTINCT ?track) as ?numSinglesAG) WHERE{
+            ?track so:isPartOf ?album ;
+             	   so:name ?trackName ;
+    			   so:appearsIn ?appearance .
+        	?album so:isTypeOf so:single;
+                	so:name ?albumName .	
+        	?appearance so:isPositionedIn ?chart .
+        	?chart so:isReferredTo countries:ar ;
+                   so:date ?date .
+    		FILTER ((?date >= "2018-01-01"^^xsd:date && ?date < "2019-01-01"^^xsd:date))
+		}
+    }
+    {
+        SELECT (COUNT (DISTINCT ?track) as ?numSinglesIT) WHERE{
+            ?track so:isPartOf ?album ;
+             	   so:name ?trackName ;
+    			   so:appearsIn ?appearance .
+        	?album so:isTypeOf so:single;
+                	so:name ?albumName .	
+        	?appearance so:isPositionedIn ?chart .
+        	?chart so:isReferredTo countries:it ;
+                   so:date ?date .
+    		FILTER ((?date >= "2018-01-01"^^xsd:date && ?date < "2019-01-01"^^xsd:date))
+		}
+    }
+    FILTER (?numSinglesAG > ?numSinglesIT)
+}
