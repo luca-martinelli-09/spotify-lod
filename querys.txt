@@ -1,0 +1,57 @@
+PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+select distinct ?track ?trackName ?danceability (group_concat(distinct(?genreName); separator=", ") as ?genresNames) (group_concat(distinct(?artistName); separator=", ") as ?artistNames) (group_concat(distinct(?artistRealCompleteName); separator=", ") as ?artistRealNames) where { 
+	?track a so:Track ;
+    	so:danceability ?danceability ;
+    	so:name ?trackName .
+    ?artist a so:Artist ;
+            so:partecipateIn ?track ;
+            so:name ?artistName ;
+            so:hasGenre ?genre .
+   	?genre a so:Genre ;
+           so:name ?genreName .
+    OPTIONAL {
+        ?artistPerson so:isMemberOf ?artist ;
+            so:name ?artistRealName ;
+            so:surname ?artistRealSurname .
+    } .
+    BIND(CONCAT(?artistRealName, " ", ?artistRealSurname) AS ?artistRealCompleteName) .
+    FILTER (?danceability >= "0.9"^^xsd:float) .
+} group by ?track ?trackName ?danceability order by desc(?danceability)
+
+PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
+
+select ?genre ?genreName where { 
+	?genre a so:Genre ;
+        so:name ?genreName .
+    
+    FILTER(REGEX(?genreName, "sad\\s+")) .
+}
+
+PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
+PREFIX countries: <http://eulersharp.sourceforge.net/2003/03swap/countries#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+select distinct ?trackName ?artistName ?completeName ?birthDate (count(?chartDate) as ?numAppearances) where { 
+	?track a so:Track ;
+        so:name ?trackName ;
+        so:appearsIn ?appearance .
+    ?artist a so:Artist ;
+            so:partecipateIn ?track ;
+            so:name ?artistName .
+    ?artistPerson so:isMemberOf ?artist ;
+                  so:name ?realName ;
+                  so:surname ?realSurname ;
+                  so:birthdate ?birthDate ;
+                  so:deathdate ?deathDate .
+   	?appearance a so:Appearance ;
+                so:isPositionedIn ?chart.
+    ?chart a so:Chart;
+           so:isReferredTo countries:it ;
+           so:date ?chartDate ;
+           so:name ?chartName .
+    BIND(CONCAT(?realName, " ", ?realSurname) AS ?completeName) .
+    FILTER(?birthDate >= "2000-01-01"^^xsd:date) .
+    FILTER(?chartDate > "2020-01-01"^^xsd:date) .
+} group by ?trackName ?artistName ?completeName ?birthDate
