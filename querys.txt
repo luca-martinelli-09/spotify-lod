@@ -105,3 +105,41 @@ select ?trackNameWithArtists (group_concat(distinct ?albumName; separator=", ") 
 } group by ?trackNameWithArtists
 having (count(distinct ?album) > 1)
 order by desc(?albumCount)
+
+
+##########################################
+PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
+PREFIX countries: <http://eulersharp.sourceforge.net/2003/03swap/countries#>
+
+select ?date ?moreFrequentKey where {
+    
+    {
+        select ?date ?key (count(?key) as ?numAppearsKey) where {
+            ?track a so:Track ;
+                   so:appearsIn ?appearance ;
+                   so:key ?key .
+            ?appearance so:isPositionedIn ?chart .
+            ?chart so:date ?date ;
+                   so:isReferredTo countries:it .
+        } group by ?date ?key
+    } .
+    {
+        select ?date_ (max(?numAppearsKey) as ?maxFrequencyKey) where {
+            {
+                select ?date ?key (count(?key) as ?numAppearsKey) where {
+                    ?track a so:Track ;
+                           so:appearsIn ?appearance ;
+                           so:key ?key .
+                    ?appearance so:isPositionedIn ?chart .
+                    ?chart so:date ?date ;
+                           so:isReferredTo countries:it .
+                } group by ?date ?key
+            } .
+            bind(?date as ?date_) .
+        } group by ?date_
+    } .
+
+    filter(?date_ = ?date && ?numAppearsKey = ?maxFrequencyKey) .
+    bind(?key as ?moreFrequentKey)
+
+} order by asc(?date)
