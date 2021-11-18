@@ -1,5 +1,7 @@
 .vscode/
 spotifyCredentials.py
 __pycache__/
-datasets/
-rdf/
+datasets/spotifyCharts.csv
+datasets/reducedSpotifyCharts.csv
+rdf/*
+!rdf/spotifyOntology.ttl

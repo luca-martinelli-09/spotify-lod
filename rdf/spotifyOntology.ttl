@@ -1,0 +1,924 @@
+@prefix : <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology> .
+
+<https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology> rdf:type owl:Ontology ;
+                                                                owl:imports <http://eulersharp.sourceforge.net/2003/03swap/countries> ,
+                                                                            <http://xmlns.com/foaf/0.1/> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#appearsIn
+:appearsIn rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Track ;
+           rdfs:range :Appearance .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hasGenre
+:hasGenre rdf:type owl:ObjectProperty ;
+          rdfs:domain :Artist ;
+          rdfs:range :Genre .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hasNationality
+:hasNationality rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+                rdfs:range <http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country> .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isAvailableIn
+:isAvailableIn rdf:type owl:ObjectProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :Album
+                                           :Track
+                                         )
+                           ] ;
+               rdfs:range <http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country> .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isMemberOf
+:isMemberOf rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+            rdfs:range :Artist .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :Track ;
+          rdfs:range :Album .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isPositionedIn
+:isPositionedIn rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Appearance ;
+                rdfs:range :Chart .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isReferredTo
+:isReferredTo rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Chart ;
+              rdfs:range <http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country> .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isTypeOf
+:isTypeOf rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Chart ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :AlbumType
+                                     :ChartType
+                                   )
+                     ] ,
+                     [ rdf:type owl:Class ;
+                       owl:unionOf ( [ owl:intersectionOf ( :AlbumType
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :isTypeOf ;
+                                                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:oneOf ( :album
+                                                                                              :compilation
+                                                                                              :single
+                                                                                            )
+                                                                                ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ]
+                                     [ owl:intersectionOf ( :ChartType
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :isTypeOf ;
+                                                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:oneOf ( :top
+                                                                                              :viral
+                                                                                            )
+                                                                                ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ]
+                                   )
+                     ] .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#partecipateIn
+:partecipateIn rdf:type owl:ObjectProperty ;
+               rdfs:domain :Artist ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( :Album
+                                          :Track
+                                        )
+                          ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#acousticness
+:acousticness rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Track ;
+              rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#birthDate
+:birthDate rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+           rdfs:range xsd:date .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#danceability
+:danceability rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Track ;
+              rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#date
+:date rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :Chart ;
+      rdfs:range xsd:date .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#deathDate
+:deathDate rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+           rdfs:range xsd:date .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#duration
+:duration rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Track ;
+          rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#energy
+:energy rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :Track ;
+        rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#explicit
+:explicit rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Track ;
+          rdfs:range xsd:boolean .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#id
+:id rdf:type owl:DatatypeProperty ,
+             owl:FunctionalProperty ;
+    rdfs:domain [ rdf:type owl:Class ;
+                  owl:unionOf ( :Album
+                                :Artist
+                                :Track
+                              )
+                ] ;
+    rdfs:range xsd:string .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#instrumentalness
+:instrumentalness rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Track ;
+                  rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#key
+:key rdf:type owl:DatatypeProperty ,
+              owl:FunctionalProperty ;
+     rdfs:domain :Track ;
+     rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#liveness
+:liveness rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Track ;
+          rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#loudness
+:loudness rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Track ;
+          rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mode
+:mode rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :Track ;
+      rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#name
+:name rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( <http://xmlns.com/foaf/0.1/Person>
+                                  :Artist
+                                  :Chart
+                                  :Genre
+                                )
+                  ] ;
+      rdfs:range xsd:string .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#popularity
+:popularity rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Artist
+                                        :Track
+                                      )
+                        ] ;
+            rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#position
+:position rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Appearance ;
+          rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#releaseDate
+:releaseDate rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Album ;
+             rdfs:range xsd:date .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#speechiness
+:speechiness rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Track ;
+             rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#surname
+:surname rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain <http://www.w3.org/2000/10/swap/pim/contact#Person> ;
+         rdfs:range xsd:string .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#tempo
+:tempo rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain :Track ;
+       rdfs:range xsd:float .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#timeSignature
+:timeSignature rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Track ;
+               rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#title
+:title rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain [ rdf:type owl:Class ;
+                     owl:unionOf ( :Album
+                                   :Track
+                                 )
+                   ] ;
+       rdfs:range xsd:string .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#trackCount
+:trackCount rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Album
+                                        :Chart
+                                      )
+                        ] ;
+            rdfs:range xsd:integer .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#valence
+:valence rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :Track ;
+         rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country
+<http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2000/10/swap/pim/contact#Person
+<http://www.w3.org/2000/10/swap/pim/contact#Person> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album
+:Album rdf:type owl:Class .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#AlbumType
+:AlbumType rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:oneOf ( :album
+                                             :compilation
+                                             :single
+                                           )
+                               ] .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Appearance
+:Appearance rdf:type owl:Class .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Artist
+:Artist rdf:type owl:Class .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Chart
+:Chart rdf:type owl:Class .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ChartType
+:ChartType rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:oneOf ( :top
+                                             :viral
+                                           )
+                               ] .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Genre
+:Genre rdf:type owl:Class .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track
+:Track rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#acoustic
+:acoustic rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#afrobeat
+:afrobeat rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#album
+:album rdf:type owl:NamedIndividual ,
+                :AlbumType .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#alt-rock
+:alt-rock rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#alternative
+:alternative rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ambient
+:ambient rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#anime
+:anime rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#black-metal
+:black-metal rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#bluegrass
+:bluegrass rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#blues
+:blues rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#bossanova
+:bossanova rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#brazil
+:brazil rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#breakbeat
+:breakbeat rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#british
+:british rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#cantopop
+:cantopop rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#chicago-house
+:chicago-house rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#children
+:children rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#chill
+:chill rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#classical
+:classical rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#club
+:club rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#comedy
+:comedy rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#compilation
+:compilation rdf:type owl:NamedIndividual ,
+                      :AlbumType .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#country
+:country rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dance
+:dance rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dancehall
+:dancehall rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#death-metal
+:death-metal rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#deep-house
+:deep-house rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#detroit-techno
+:detroit-techno rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#disco
+:disco rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#disney
+:disney rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#drum-and-bass
+:drum-and-bass rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dub
+:dub rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dubstep
+:dubstep rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#edm
+:edm rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#electro
+:electro rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#electronic
+:electronic rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#emo
+:emo rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#folk
+:folk rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#forro
+:forro rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#french
+:french rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#funk
+:funk rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#garage
+:garage rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#german
+:german rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#gospel
+:gospel rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#goth
+:goth rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#grindcore
+:grindcore rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#groove
+:groove rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#grunge
+:grunge rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#guitar
+:guitar rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#happy
+:happy rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hard-rock
+:hard-rock rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hardcore
+:hardcore rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hardstyle
+:hardstyle rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#heavy-metal
+:heavy-metal rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hip-hop
+:hip-hop rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#holidays
+:holidays rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#honky-tonk
+:honky-tonk rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#house
+:house rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#idm
+:idm rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indian
+:indian rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indie
+:indie rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indie-pop
+:indie-pop rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#industrial
+:industrial rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#iranian
+:iranian rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-dance
+:j-dance rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-idol
+:j-idol rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-pop
+:j-pop rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-rock
+:j-rock rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#jazz
+:jazz rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#k-pop
+:k-pop rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#kids
+:kids rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#latin
+:latin rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#latino
+:latino rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#malay
+:malay rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mandopop
+:mandopop rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metal
+:metal rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metal-misc
+:metal-misc rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metalcore
+:metalcore rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#minimal-techno
+:minimal-techno rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#movies
+:movies rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mpb
+:mpb rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#new-age
+:new-age rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#new-release
+:new-release rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#opera
+:opera rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pagode
+:pagode rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#party
+:party rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#philippines-opm
+:philippines-opm rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#piano
+:piano rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pop
+:pop rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pop-film
+:pop-film rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#post-dubstep
+:post-dubstep rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#power-pop
+:power-pop rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#progressive-house
+:progressive-house rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#psych-rock
+:psych-rock rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#punk
+:punk rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#punk-rock
+:punk-rock rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#r-n-b
+:r-n-b rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rainy-day
+:rainy-day rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#reggae
+:reggae rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#reggaeton
+:reggaeton rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#road-trip
+:road-trip rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rock
+:rock rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rock-n-roll
+:rock-n-roll rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rockabilly
+:rockabilly rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#romance
+:romance rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sad
+:sad rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#salsa
+:salsa rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#samba
+:samba rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sertanejo
+:sertanejo rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#show-tunes
+:show-tunes rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#singer-songwriter
+:singer-songwriter rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#single
+:single rdf:type owl:NamedIndividual ,
+                 :AlbumType .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ska
+:ska rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sleep
+:sleep rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#songwriter
+:songwriter rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#soul
+:soul rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#soundtracks
+:soundtracks rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#spanish
+:spanish rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#study
+:study rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#summer
+:summer rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#swedish
+:swedish rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#synth-pop
+:synth-pop rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#tango
+:tango rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#techno
+:techno rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#top
+:top rdf:type owl:NamedIndividual ,
+              :ChartType .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#trance
+:trance rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#trip-hop
+:trip-hop rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#turkish
+:turkish rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#viral
+:viral rdf:type owl:NamedIndividual ,
+                :ChartType .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#work-out
+:work-out rdf:type owl:NamedIndividual .
+
+
+###  https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#world-music
+:world-music rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
