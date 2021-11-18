@@ -83,3 +83,27 @@ select ?trackName ?releaseDate ?artistName ?completeName ?deathDate ?birthDate w
    	
     filter(?deathDate < ?releaseDate || ?birthDate > ?releaseDate) .
 }
+
+############################################àà
+
+select ?trackNameWithArtists ?albums ?albumCount where {
+    {
+        select ?trackNameWithArtists (group_concat(distinct ?albumName; separator=", ") as ?albums) (count(distinct ?album) as ?albumCount) where {
+            {
+                select ?track ?trackName ?albumType ?album ?albumName (group_concat(?artistName; separator=", ") as ?artists) where {
+                    ?track a so:Track ;
+                        so:name ?trackName ;
+                        so:isPartOf ?album .
+                    ?album so:isTypeOf ?albumType ;
+                            so:name ?albumName .
+                    ?artist so:partecipateIn ?track ;
+                        so:name ?artistName .
+                } group by ?track ?trackName ?albumType ?album ?albumName
+            } .
+
+            bind(concat(?trackName, " (", ?artists, ")") as ?trackNameWithArtists) .
+        } group by ?trackNameWithArtists order by desc(?albumCount)
+    } .
+    
+    filter(?albumCount >= 2) .
+}
