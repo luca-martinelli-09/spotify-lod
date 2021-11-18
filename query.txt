@@ -1,9 +1,14 @@
-QUERY 1 : How many italian artist in Top 100 Italy weekly
+QUERY 1 : How many italian artist in Top 100 Italy weekly (DA MODIFICARE PER PAESE)
 Query 2 : Show 5 most popular young (less than 30 years) italian artist who published in 2018
 QUERY 3 : 30 genres with most danceable songs relative to songs released in 2019
 QUERY 4 : In 2019 there was more distinct singles in top 100 Argentina or top 100 Italy ?
-QUERY 5 : How many times artist born after 200 were present in top 100 Italy in 2020 ?
-Query 6 : 
+QUERY 5 : How many times artist born after 2000 were present in top 100 Italy in 2020 ?
+
+Query 6 : CHiavi e robe teknike
+Query 7 : Cercare in che album compaiano le canzoni con lo stesso nome
+Query 8 : Correlazione explicit e available markets4
+QUery 9 : Quante canzoni asiatiche riescono ad arrivare in top 10  in paesi occidentali
+Query 10 : 
 
 
 **************************************************
