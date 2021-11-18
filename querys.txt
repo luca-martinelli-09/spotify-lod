@@ -20,6 +20,8 @@ select distinct ?track ?trackName ?danceability (group_concat(distinct(?genreNam
     FILTER (?danceability >= "0.9"^^xsd:float) .
 } group by ?track ?trackName ?danceability order by desc(?danceability)
 
+#############################
+
 PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
 
 select ?genre ?genreName where { 
@@ -28,6 +30,8 @@ select ?genre ?genreName where {
     
     FILTER(REGEX(?genreName, "sad\\s+")) .
 }
+
+#############################
 
 PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
 PREFIX countries: <http://eulersharp.sourceforge.net/2003/03swap/countries#>
@@ -55,3 +59,27 @@ select distinct ?trackName ?artistName ?completeName ?birthDate (count(?chartDat
     FILTER(?birthDate >= "2000-01-01"^^xsd:date) .
     FILTER(?chartDate > "2020-01-01"^^xsd:date) .
 } group by ?trackName ?artistName ?completeName ?birthDate
+
+#############################
+
+PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+select ?trackName ?releaseDate ?artistName ?completeName ?deathDate ?birthDate where { 
+	?track a so:Track ;
+        so:name ?trackName ;
+        so:isPartOf ?album .
+    ?album a so:Album ;
+        so:releaseDate ?releaseDate .
+    ?artist a so:Artist ;
+            so:partecipateIn ?track ;
+            so:name ?artistName .
+    ?person so:isMemberOf ?artist ;
+            so:name ?personName ;
+            so:surname ?personSurname ;
+            so:birthdate ?birthDate ;
+            so:deathdate ?deathDate .
+    
+    bind(concat(?personName, " ", ?personSurname) as ?completeName) .
+   	
+    filter(?deathDate < ?releaseDate || ?birthDate > ?releaseDate) .
+}
