@@ -7,7 +7,7 @@ QUERY 5 : How many times artist born after 2000 were present in top 100 Italy in
 Query 6 : CHiavi e robe teknike
 Query 7 : Cercare in che album compaiano le canzoni con lo stesso nome
 Query 8 : Correlazione explicit e available markets4
-QUery 9 : Quante canzoni asiatiche riescono ad arrivare in top 10  in paesi occidentali
+QUery 9 : How many songs from Japan or South Korea reaches Top 20 in US, Canada or Mexico.
 Query 10 : 
 
 
@@ -135,3 +135,27 @@ select distinct ?trackName ?artistName ?completeName ?birthDate (count(?chartDat
     FILTER(?birthDate >= "2000-01-01"^^xsd:date) .
     FILTER(?chartDate > "2020-01-01"^^xsd:date) .
 } group by ?trackName ?artistName ?completeName ?birthDate
+
+
+*******************************************
+QUery 9 : How many songs from Japan or South Korea reaches Top 20 in US, Canada or Mexico.
+
+PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
+PREFIX countries: <http://eulersharp.sourceforge.net/2003/03swap/countries#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?chartCountry ( COUNT (DISTINCT ?track) AS ?numTracks ) WHERE{
+    ?person so:isMemberOf ?artist ;
+            so:hasNationality ?originCountry .
+    ?artist so:partecipateIn ?track ;
+            so:name ?artistName .
+    ?track so:name ?trackName ;
+           so:appearsIn ?appeareance .
+    ?appeareance so:isPositionedIn ?chart ;
+                 so:position ?pos.
+    ?chart so:isReferredTo ?chartCountry .
+    FILTER (?originCountry = countries:jp || ?originCountry = countries:kr)
+    FILTER (?chartCountry = countries:us || ?chartCountry = countries:mx || ?chartCountry = countries:ca)
+    FILTER (?pos <= 20)
+}
+GROUP BY ?chartCountry
+ORDER BY DESC(?numTracks)
