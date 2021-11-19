@@ -6,8 +6,10 @@ QUERY 5 : How many times artist born after 2000 were present in top 100 Italy in
 
 Query 6 : CHiavi e robe teknike
 Query 7 : Cercare in che album compaiano le canzoni con lo stesso nome
-Query 8 : Correlazione explicit e available markets4
+
+Query 8 : QUERY 8 : Show if there is a correlation between number of explicit songs and available markets
 QUery 9 : How many songs from Japan or South Korea reaches Top 20 in US, Canada or Mexico.
+
 Query 10 : 
 
 
@@ -136,6 +138,28 @@ select distinct ?trackName ?artistName ?completeName ?birthDate (count(?chartDat
     FILTER(?chartDate > "2020-01-01"^^xsd:date) .
 } group by ?trackName ?artistName ?completeName ?birthDate
 
+*****************************************
+QUERY 8 : Show if there is a correlation between number of explicit songs and available markets
+
+PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
+PREFIX countries: <http://eulersharp.sourceforge.net/2003/03swap/countries#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?numMarkets (COUNT(?track) AS ?numExplicit) WHERE{
+    ?track so:explicit ?explicit
+    {  SELECT ?track (COUNT(DISTINCT ?country) AS ?numMarkets) WHERE{
+            ?artist so:partecipateIn ?track ;
+                    so:name ?artistName .
+            ?track 	so:isPartOf ?album ;
+                    so:name ?trackName ;
+                    so:isAvailableIn ?country ;
+                    so:explicit "true"^^xsd:boolean .
+        }
+        GROUP BY ?track
+    }
+}
+GROUP BY ?numMarkets
+ORDER BY ASC(?numMarkets)
 
 *******************************************
 QUery 9 : How many songs from Japan or South Korea reaches Top 20 in US, Canada or Mexico.
