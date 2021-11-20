@@ -1,0 +1,1382 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#"
+     xml:base="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology">
+        <owl:imports rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/countries"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#appearsIn -->
+
+    <owl:ObjectProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#appearsIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Appearance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hasGenre">
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Artist"/>
+        <rdfs:range rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hasNationality -->
+
+    <owl:ObjectProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hasNationality">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isAvailableIn -->
+
+    <owl:ObjectProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isAvailableIn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isMemberOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isPartOf">
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isPositionedIn -->
+
+    <owl:ObjectProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isPositionedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Appearance"/>
+        <rdfs:range rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Chart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isReferredTo -->
+
+    <owl:ObjectProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isReferredTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Chart"/>
+        <rdfs:range rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isTypeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Chart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#AlbumType"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ChartType"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#AlbumType"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isTypeOf"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#album"/>
+                                            <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#compilation"/>
+                                            <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#single"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ChartType"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#isTypeOf"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#top"/>
+                                            <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#viral"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#partecipateIn -->
+
+    <owl:ObjectProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#partecipateIn">
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Artist"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#acousticness -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#acousticness">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#birthDate -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#birthDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#danceability -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#danceability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#date -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#date">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Chart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#deathDate -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#deathDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#duration -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#duration">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#energy -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#energy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#explicit -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#explicit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#instrumentalness -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#instrumentalness">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#key -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#key">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#liveness -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#liveness">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#loudness -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#loudness">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mode -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#name -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Artist"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Chart"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Genre"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#popularity -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#popularity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Artist"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#position -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#position">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Appearance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#releaseDate -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#releaseDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#speechiness -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#speechiness">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#surname -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#surname">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#tempo -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#tempo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#timeSignature -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#timeSignature">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#totalTracks -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#totalTracks">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Chart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#valence -->
+
+    <owl:DatatypeProperty rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#valence">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country -->
+
+    <owl:Class rdf:about="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+    
+
+
+    <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album -->
+
+    <owl:Class rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Album"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#AlbumType -->
+
+    <owl:Class rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#AlbumType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#album"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#compilation"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#single"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Appearance -->
+
+    <owl:Class rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Appearance"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Artist -->
+
+    <owl:Class rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Artist"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Chart -->
+
+    <owl:Class rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Chart"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ChartType -->
+
+    <owl:Class rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ChartType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#top"/>
+                    <rdf:Description rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#viral"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Genre -->
+
+    <owl:Class rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Genre"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track -->
+
+    <owl:Class rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#Track"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#acoustic -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#acoustic"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#afrobeat -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#afrobeat"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#album -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#album">
+        <rdf:type rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#AlbumType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#alt-rock -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#alt-rock"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#alternative -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#alternative"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ambient -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ambient"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#anime -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#anime"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#black-metal -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#black-metal"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#bluegrass -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#bluegrass"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#blues -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#blues"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#bossanova -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#bossanova"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#brazil -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#brazil"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#breakbeat -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#breakbeat"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#british -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#british"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#cantopop -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#cantopop"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#chicago-house -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#chicago-house"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#children -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#children"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#chill -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#chill"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#classical -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#classical"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#club -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#club"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#comedy -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#comedy"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#compilation -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#compilation">
+        <rdf:type rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#AlbumType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#country -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#country"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dance -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dance"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dancehall -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dancehall"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#death-metal -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#death-metal"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#deep-house -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#deep-house"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#detroit-techno -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#detroit-techno"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#disco -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#disco"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#disney -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#disney"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#drum-and-bass -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#drum-and-bass"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dub -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dub"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dubstep -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#dubstep"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#edm -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#edm"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#electro -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#electro"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#electronic -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#electronic"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#emo -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#emo"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#folk -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#folk"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#forro -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#forro"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#french -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#french"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#funk -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#funk"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#garage -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#garage"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#german -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#german"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#gospel -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#gospel"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#goth -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#goth"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#grindcore -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#grindcore"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#groove -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#groove"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#grunge -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#grunge"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#guitar -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#guitar"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#happy -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#happy"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hard-rock -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hard-rock"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hardcore -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hardcore"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hardstyle -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hardstyle"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#heavy-metal -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#heavy-metal"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hip-hop -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#hip-hop"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#holidays -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#holidays"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#honky-tonk -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#honky-tonk"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#house -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#house"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#idm -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#idm"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indian -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indian"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indie -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indie"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indie-pop -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#indie-pop"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#industrial -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#industrial"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#iranian -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#iranian"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-dance -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-dance"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-idol -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-idol"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-pop -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-pop"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-rock -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#j-rock"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#jazz -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#jazz"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#k-pop -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#k-pop"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#kids -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#kids"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#latin -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#latin"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#latino -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#latino"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#malay -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#malay"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mandopop -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mandopop"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metal -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metal"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metal-misc -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metal-misc"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metalcore -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#metalcore"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#minimal-techno -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#minimal-techno"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#movies -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#movies"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mpb -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#mpb"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#new-age -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#new-age"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#new-release -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#new-release"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#opera -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#opera"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pagode -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pagode"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#party -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#party"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#philippines-opm -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#philippines-opm"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#piano -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#piano"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pop -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pop"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pop-film -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#pop-film"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#post-dubstep -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#post-dubstep"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#power-pop -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#power-pop"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#progressive-house -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#progressive-house"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#psych-rock -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#psych-rock"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#punk -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#punk"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#punk-rock -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#punk-rock"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#r-n-b -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#r-n-b"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rainy-day -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rainy-day"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#reggae -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#reggae"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#reggaeton -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#reggaeton"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#road-trip -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#road-trip"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rock -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rock"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rock-n-roll -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rock-n-roll"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rockabilly -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#rockabilly"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#romance -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#romance"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sad -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sad"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#salsa -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#salsa"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#samba -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#samba"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sertanejo -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sertanejo"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#show-tunes -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#show-tunes"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#singer-songwriter -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#singer-songwriter"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#single -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#single">
+        <rdf:type rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#AlbumType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ska -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ska"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sleep -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#sleep"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#songwriter -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#songwriter"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#soul -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#soul"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#soundtracks -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#soundtracks"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#spanish -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#spanish"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#study -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#study"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#summer -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#summer"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#swedish -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#swedish"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#synth-pop -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#synth-pop"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#tango -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#tango"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#techno -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#techno"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#top -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#top">
+        <rdf:type rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ChartType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#trance -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#trance"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#trip-hop -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#trip-hop"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#turkish -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#turkish"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#viral -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#viral">
+        <rdf:type rdf:resource="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#ChartType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#work-out -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#work-out"/>
+    
+
+
+    <!-- https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#world-music -->
+
+    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#world-music"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
