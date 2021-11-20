@@ -143,3 +143,32 @@ select ?date ?moreFrequentKey where {
     bind(?key as ?moreFrequentKey)
 
 } order by asc(?date)
+
+
+#####################################
+PREFIX so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#>
+PREFIX countries: <http://eulersharp.sourceforge.net/2003/03swap/countries#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+select ?month (avg(?energy) as ?res) where {
+    ?track a so:Track ;
+           so:appearsIn ?appearance ;
+           so:explicit ?explicit ;
+           so:danceability ?danceability ;
+           so:energy ?energy ;
+           so:valence ?valence ;
+           so:loudness ?loudness ;
+           so:mode ?mode ;
+           so:key ?key .
+    ?appearance so:isPositionedIn ?chart ;
+                so:position ?position .
+    ?chart so:date ?date ;
+           so:isReferredTo countries:it .
+    
+    # filter(?position <= "10"^^xsd:int) .
+    
+    bind(month(?date) as ?month)
+    
+    # filter(month(?date) <= "3"^^xsd:integer || month(?date) >= "10"^^xsd:integer) .
+    # filter(month(?date) < "10"^^xsd:integer || month(?date) > "3"^^xsd:integer) .
+} group by ?month order by asc(?month)
