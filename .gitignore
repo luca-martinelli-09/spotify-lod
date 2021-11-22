@@ -7,3 +7,4 @@ rdf/*
 !rdf/spotifyOntology.ttl
 !rdf/spotifyOntology.owl
 plots/
+queries.txt
