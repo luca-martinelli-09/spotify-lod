@@ -7,6 +7,9 @@ rdf/*
 !rdf/albums.ttl
 !rdf/appearance.ttl
 !rdf/artists.ttl
+!rdf/charts.ttl
+!rdf/genres.ttl
+
 !rdf/spotifyOntology.ttl
 !rdf/spotifyOntology.owl
 plots/
