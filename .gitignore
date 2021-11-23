@@ -3,15 +3,5 @@ spotifyCredentials.py
 __pycache__/
 datasets/spotifyCharts.csv
 datasets/reducedSpotifyCharts.csv
-rdf/*
-!rdf/albums.ttl
-!rdf/appearance.ttl
-!rdf/artists.ttl
-!rdf/charts.ttl
-!rdf/genres.ttl
-!rdf/people.ttl
-!rdf/tracks.ttl
-!rdf/spotifyOntology.ttl
-!rdf/spotifyOntology.owl
 plots/
 queries.txt
