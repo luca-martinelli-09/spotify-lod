@@ -6,6 +6,7 @@
 ```
 - datasets/
 - rdf/
+- slides/
 - spotifyDataReduction.ipynb
 - spotifyAPIDataRetrieval.ipynb
 - spotifyPeopleDataRetrieval.ipynb
