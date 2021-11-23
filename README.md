@@ -37,3 +37,6 @@ SPOTIFY_REFRESH_TOKEN = "***"
 ```
 
 To get IDs and tokens follow the [Spotify Documentation](https://developer.spotify.com/documentation/general/guides/authorization/).
+
+### Presentation
+The presentation is available at this [link](slides/Spotify_Presentation_Alecci_Martinelli_Ziroldo.pdf).
