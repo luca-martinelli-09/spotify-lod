@@ -5,6 +5,7 @@ datasets/spotifyCharts.csv
 datasets/reducedSpotifyCharts.csv
 rdf/*
 !rdf/albums.ttl
+!rdf/appearance.ttl
 !rdf/spotifyOntology.ttl
 !rdf/spotifyOntology.owl
 plots/
