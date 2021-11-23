@@ -4,6 +4,7 @@ __pycache__/
 datasets/spotifyCharts.csv
 datasets/reducedSpotifyCharts.csv
 rdf/*
+!rdf/albums.ttl
 !rdf/spotifyOntology.ttl
 !rdf/spotifyOntology.owl
 plots/
