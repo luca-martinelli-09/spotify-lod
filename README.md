@@ -16,6 +16,8 @@
 ```
 
 ### Creation of the dataset
+Since both spotify charts file and reduced spotify charts are too big for GitHub, it is necessary to manual download and create them.
+
 First download the csv dataset of Spotify Charts from [Kaggle](https://www.kaggle.com/pepepython/spotify-huge-database-daily-charts-over-3-years?select=Database+to+calculate+popularity.csv), then place the bigger file in the folder and rename it to  *spotifyCharts*.
 
 Then, in order, execute:
