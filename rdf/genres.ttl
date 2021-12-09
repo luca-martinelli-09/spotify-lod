@@ -1,0 +1,4854 @@
+@prefix so: <https://www.dei.unipd.it/~martinelli/spotify/spotifyOntology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+so:a-cappella a so:Genre ;
+    so:name "a cappella"^^xsd:string .
+
+so:acid-house a so:Genre ;
+    so:name "acid house"^^xsd:string .
+
+so:acoustic-chill a so:Genre ;
+    so:name "acoustic chill"^^xsd:string .
+
+so:acoustic-cover a so:Genre ;
+    so:name "acoustic cover"^^xsd:string .
+
+so:acoustic-opm a so:Genre ;
+    so:name "acoustic opm"^^xsd:string .
+
+so:acoustic-pop a so:Genre ;
+    so:name "acoustic pop"^^xsd:string .
+
+so:adoracao a so:Genre ;
+    so:name "adoracao"^^xsd:string .
+
+so:adult-standards a so:Genre ;
+    so:name "adult standards"^^xsd:string .
+
+so:aesthetic-rap a so:Genre ;
+    so:name "aesthetic rap"^^xsd:string .
+
+so:afghan-rap a so:Genre ;
+    so:name "afghan rap"^^xsd:string .
+
+so:african-gospel a so:Genre ;
+    so:name "african gospel"^^xsd:string .
+
+so:afro-dancehall a so:Genre ;
+    so:name "afro dancehall"^^xsd:string .
+
+so:afro-house a so:Genre ;
+    so:name "afro house"^^xsd:string .
+
+so:afro-soul a so:Genre ;
+    so:name "afro soul"^^xsd:string .
+
+so:afrofuturism a so:Genre ;
+    so:name "afrofuturism"^^xsd:string .
+
+so:afrofuturismo-brasileiro a so:Genre ;
+    so:name "afrofuturismo brasileiro"^^xsd:string .
+
+so:afropop a so:Genre ;
+    so:name "afropop"^^xsd:string .
+
+so:afroswing a so:Genre ;
+    so:name "afroswing"^^xsd:string .
+
+so:alabama-rap a so:Genre ;
+    so:name "alabama rap"^^xsd:string .
+
+so:albanian-hip-hop a so:Genre ;
+    so:name "albanian hip hop"^^xsd:string .
+
+so:albanian-pop a so:Genre ;
+    so:name "albanian pop"^^xsd:string .
+
+so:alberta-hip-hop a so:Genre ;
+    so:name "alberta hip hop"^^xsd:string .
+
+so:album-rock a so:Genre ;
+    so:name "album rock"^^xsd:string .
+
+so:alt-z a so:Genre ;
+    so:name "alt z"^^xsd:string .
+
+so:alte a so:Genre ;
+    so:name "alte"^^xsd:string .
+
+so:alternative-country a so:Genre ;
+    so:name "alternative country"^^xsd:string .
+
+so:alternative-dance a so:Genre ;
+    so:name "alternative dance"^^xsd:string .
+
+so:alternative-hip-hop a so:Genre ;
+    so:name "alternative hip hop"^^xsd:string .
+
+so:alternative-metal a so:Genre ;
+    so:name "alternative metal"^^xsd:string .
+
+so:alternative-pop-rock a so:Genre ;
+    so:name "alternative pop rock"^^xsd:string .
+
+so:alternative-r-b a so:Genre ;
+    so:name "alternative r&b"^^xsd:string .
+
+so:alternative-rock a so:Genre ;
+    so:name "alternative rock"^^xsd:string .
+
+so:amapiano a so:Genre ;
+    so:name "amapiano"^^xsd:string .
+
+so:ambient-folk a so:Genre ;
+    so:name "ambient folk"^^xsd:string .
+
+so:american-folk-revival a so:Genre ;
+    so:name "american folk revival"^^xsd:string .
+
+so:anadolu-rock a so:Genre ;
+    so:name "anadolu rock"^^xsd:string .
+
+so:anime a so:Genre ;
+    so:name "anime"^^xsd:string .
+
+so:anthem-worship a so:Genre ;
+    so:name "anthem worship"^^xsd:string .
+
+so:anti-folk a so:Genre ;
+    so:name "anti-folk"^^xsd:string .
+
+so:antideutsche a so:Genre ;
+    so:name "antideutsche"^^xsd:string .
+
+so:antilliaanse-rap a so:Genre ;
+    so:name "antilliaanse rap"^^xsd:string .
+
+so:arab-trap a so:Genre ;
+    so:name "arab trap"^^xsd:string .
+
+so:arabesk a so:Genre ;
+    so:name "arabesk"^^xsd:string .
+
+so:arabic-hip-hop a so:Genre ;
+    so:name "arabic hip hop"^^xsd:string .
+
+so:argentine-alternative-rock a so:Genre ;
+    so:name "argentine alternative rock"^^xsd:string .
+
+so:argentine-hip-hop a so:Genre ;
+    so:name "argentine hip hop"^^xsd:string .
+
+so:argentine-indie a so:Genre ;
+    so:name "argentine indie"^^xsd:string .
+
+so:argentine-reggae a so:Genre ;
+    so:name "argentine reggae"^^xsd:string .
+
+so:argentine-rock a so:Genre ;
+    so:name "argentine rock"^^xsd:string .
+
+so:argentine-telepop a so:Genre ;
+    so:name "argentine telepop"^^xsd:string .
+
+so:arkansas-country a so:Genre ;
+    so:name "arkansas country"^^xsd:string .
+
+so:arkansas-hip-hop a so:Genre ;
+    so:name "arkansas hip hop"^^xsd:string .
+
+so:armenian-hip-hop a so:Genre ;
+    so:name "armenian hip hop"^^xsd:string .
+
+so:armenian-pop a so:Genre ;
+    so:name "armenian pop"^^xsd:string .
+
+so:art-pop a so:Genre ;
+    so:name "art pop"^^xsd:string .
+
+so:art-rock a so:Genre ;
+    so:name "art rock"^^xsd:string .
+
+so:asian-american-hip-hop a so:Genre ;
+    so:name "asian american hip hop"^^xsd:string .
+
+so:athens-indie a so:Genre ;
+    so:name "athens indie"^^xsd:string .
+
+so:atl-hip-hop a so:Genre ;
+    so:name "atl hip hop"^^xsd:string .
+
+so:atl-trap a so:Genre ;
+    so:name "atl trap"^^xsd:string .
+
+so:aussie-drill a so:Genre ;
+    so:name "aussie drill"^^xsd:string .
+
+so:aussietronica a so:Genre ;
+    so:name "aussietronica"^^xsd:string .
+
+so:australian-alternative-pop a so:Genre ;
+    so:name "australian alternative pop"^^xsd:string .
+
+so:australian-alternative-rock a so:Genre ;
+    so:name "australian alternative rock"^^xsd:string .
+
+so:australian-country a so:Genre ;
+    so:name "australian country"^^xsd:string .
+
+so:australian-dance a so:Genre ;
+    so:name "australian dance"^^xsd:string .
+
+so:australian-electropop a so:Genre ;
+    so:name "australian electropop"^^xsd:string .
+
+so:australian-garage-punk a so:Genre ;
+    so:name "australian garage punk"^^xsd:string .
+
+so:australian-hip-hop a so:Genre ;
+    so:name "australian hip hop"^^xsd:string .
+
+so:australian-house a so:Genre ;
+    so:name "australian house"^^xsd:string .
+
+so:australian-indie a so:Genre ;
+    so:name "australian indie"^^xsd:string .
+
+so:australian-indie-folk a so:Genre ;
+    so:name "australian indie folk"^^xsd:string .
+
+so:australian-indie-rock a so:Genre ;
+    so:name "australian indie rock"^^xsd:string .
+
+so:australian-indigenous a so:Genre ;
+    so:name "australian indigenous"^^xsd:string .
+
+so:australian-pop a so:Genre ;
+    so:name "australian pop"^^xsd:string .
+
+so:australian-psych a so:Genre ;
+    so:name "australian psych"^^xsd:string .
+
+so:australian-reggae-fusion a so:Genre ;
+    so:name "australian reggae fusion"^^xsd:string .
+
+so:australian-rock a so:Genre ;
+    so:name "australian rock"^^xsd:string .
+
+so:australian-singer-songwriter a so:Genre ;
+    so:name "australian singer-songwriter"^^xsd:string .
+
+so:australian-talent-show a so:Genre ;
+    so:name "australian talent show"^^xsd:string .
+
+so:australian-trap a so:Genre ;
+    so:name "australian trap"^^xsd:string .
+
+so:australian-underground-hip-hop a so:Genre ;
+    so:name "australian underground hip hop"^^xsd:string .
+
+so:austrian-hip-hop a so:Genre ;
+    so:name "austrian hip hop"^^xsd:string .
+
+so:austrian-indie a so:Genre ;
+    so:name "austrian indie"^^xsd:string .
+
+so:austrian-pop a so:Genre ;
+    so:name "austrian pop"^^xsd:string .
+
+so:austropop a so:Genre ;
+    so:name "austropop"^^xsd:string .
+
+so:avant-garde-jazz a so:Genre ;
+    so:name "avant-garde jazz"^^xsd:string .
+
+so:axe a so:Genre ;
+    so:name "axe"^^xsd:string .
+
+so:azeri-rap a so:Genre ;
+    so:name "azeri rap"^^xsd:string .
+
+so:azeri-traditional a so:Genre ;
+    so:name "azeri traditional"^^xsd:string .
+
+so:azonto a so:Genre ;
+    so:name "azonto"^^xsd:string .
+
+so:azontobeats a so:Genre ;
+    so:name "azontobeats"^^xsd:string .
+
+so:bachata a so:Genre ;
+    so:name "bachata"^^xsd:string .
+
+so:bachata-dominicana a so:Genre ;
+    so:name "bachata dominicana"^^xsd:string .
+
+so:baglama a so:Genre ;
+    so:name "baglama"^^xsd:string .
+
+so:balearic a so:Genre ;
+    so:name "balearic"^^xsd:string .
+
+so:balkan-beats a so:Genre ;
+    so:name "balkan beats"^^xsd:string .
+
+so:balkan-hip-hop a so:Genre ;
+    so:name "balkan hip hop"^^xsd:string .
+
+so:banda a so:Genre ;
+    so:name "banda"^^xsd:string .
+
+so:bandung-indie a so:Genre ;
+    so:name "bandung indie"^^xsd:string .
+
+so:bangladeshi-hip-hop a so:Genre ;
+    so:name "bangladeshi hip hop"^^xsd:string .
+
+so:banjo a so:Genre ;
+    so:name "banjo"^^xsd:string .
+
+so:barbadian-pop a so:Genre ;
+    so:name "barbadian pop"^^xsd:string .
+
+so:barnemusikk a so:Genre ;
+    so:name "barnemusikk"^^xsd:string .
+
+so:barnmusik a so:Genre ;
+    so:name "barnmusik"^^xsd:string .
+
+so:baroque-pop a so:Genre ;
+    so:name "baroque pop"^^xsd:string .
+
+so:bases-de-freestyle a so:Genre ;
+    so:name "bases de freestyle"^^xsd:string .
+
+so:bass-house a so:Genre ;
+    so:name "bass house"^^xsd:string .
+
+so:bass-trap a so:Genre ;
+    so:name "bass trap"^^xsd:string .
+
+so:basshall a so:Genre ;
+    so:name "basshall"^^xsd:string .
+
+so:bassline a so:Genre ;
+    so:name "bassline"^^xsd:string .
+
+so:batida a so:Genre ;
+    so:name "batida"^^xsd:string .
+
+so:batidao-romantico a so:Genre ;
+    so:name "batidao romantico"^^xsd:string .
+
+so:baton-rouge-rap a so:Genre ;
+    so:name "baton rouge rap"^^xsd:string .
+
+so:battle-rap a so:Genre ;
+    so:name "battle rap"^^xsd:string .
+
+so:bayerischer-rap a so:Genre ;
+    so:name "bayerischer rap"^^xsd:string .
+
+so:bboy a so:Genre ;
+    so:name "bboy"^^xsd:string .
+
+so:beach-music a so:Genre ;
+    so:name "beach music"^^xsd:string .
+
+so:beat-italiano a so:Genre ;
+    so:name "beat italiano"^^xsd:string .
+
+so:beatboxing a so:Genre ;
+    so:name "beatboxing"^^xsd:string .
+
+so:beatlesque a so:Genre ;
+    so:name "beatlesque"^^xsd:string .
+
+so:beats a so:Genre ;
+    so:name "beats"^^xsd:string .
+
+so:bebop a so:Genre ;
+    so:name "bebop"^^xsd:string .
+
+so:bedroom-pop a so:Genre ;
+    so:name "bedroom pop"^^xsd:string .
+
+so:bedroom-soul a so:Genre ;
+    so:name "bedroom soul"^^xsd:string .
+
+so:belarusian-indie a so:Genre ;
+    so:name "belarusian indie"^^xsd:string .
+
+so:belgian-dance a so:Genre ;
+    so:name "belgian dance"^^xsd:string .
+
+so:belgian-edm a so:Genre ;
+    so:name "belgian edm"^^xsd:string .
+
+so:belgian-hip-hop a so:Genre ;
+    so:name "belgian hip hop"^^xsd:string .
+
+so:belgian-indie a so:Genre ;
+    so:name "belgian indie"^^xsd:string .
+
+so:belgian-new-wave a so:Genre ;
+    so:name "belgian new wave"^^xsd:string .
+
+so:belgian-pop a so:Genre ;
+    so:name "belgian pop"^^xsd:string .
+
+so:belgian-rock a so:Genre ;
+    so:name "belgian rock"^^xsd:string .
+
+so:belgian-singer-songwriter a so:Genre ;
+    so:name "belgian singer-songwriter"^^xsd:string .
+
+so:belgian-techno a so:Genre ;
+    so:name "belgian techno"^^xsd:string .
+
+so:belo-horizonte-indie a so:Genre ;
+    so:name "belo horizonte indie"^^xsd:string .
+
+so:bergamo-indie a so:Genre ;
+    so:name "bergamo indie"^^xsd:string .
+
+so:bergen-indie a so:Genre ;
+    so:name "bergen indie"^^xsd:string .
+
+so:bhangra a so:Genre ;
+    so:name "bhangra"^^xsd:string .
+
+so:big-band a so:Genre ;
+    so:name "big band"^^xsd:string .
+
+so:big-beat a so:Genre ;
+    so:name "big beat"^^xsd:string .
+
+so:big-room a so:Genre ;
+    so:name "big room"^^xsd:string .
+
+so:birmingham-grime a so:Genre ;
+    so:name "birmingham grime"^^xsd:string .
+
+so:birmingham-hip-hop a so:Genre ;
+    so:name "birmingham hip hop"^^xsd:string .
+
+so:birmingham-indie a so:Genre ;
+    so:name "birmingham indie"^^xsd:string .
+
+so:birmingham-metal a so:Genre ;
+    so:name "birmingham metal"^^xsd:string .
+
+so:bisaya-rap a so:Genre ;
+    so:name "bisaya rap"^^xsd:string .
+
+so:black-americana a so:Genre ;
+    so:name "black americana"^^xsd:string .
+
+so:black-punk a so:Genre ;
+    so:name "black punk"^^xsd:string .
+
+so:blues-rock a so:Genre ;
+    so:name "blues rock"^^xsd:string .
+
+so:bolero a so:Genre ;
+    so:name "bolero"^^xsd:string .
+
+so:bomba a so:Genre ;
+    so:name "bomba"^^xsd:string .
+
+so:boom-bap a so:Genre ;
+    so:name "boom bap"^^xsd:string .
+
+so:boom-bap-brasileiro a so:Genre ;
+    so:name "boom bap brasileiro"^^xsd:string .
+
+so:boom-bap-espanol a so:Genre ;
+    so:name "boom bap espanol"^^xsd:string .
+
+so:bossa-nova a so:Genre ;
+    so:name "bossa nova"^^xsd:string .
+
+so:boston-hip-hop a so:Genre ;
+    so:name "boston hip hop"^^xsd:string .
+
+so:boston-punk a so:Genre ;
+    so:name "boston punk"^^xsd:string .
+
+so:boston-rock a so:Genre ;
+    so:name "boston rock"^^xsd:string .
+
+so:bow-pop a so:Genre ;
+    so:name "bow pop"^^xsd:string .
+
+so:boy-band a so:Genre ;
+    so:name "boy band"^^xsd:string .
+
+so:brazilian-bass a so:Genre ;
+    so:name "brazilian bass"^^xsd:string .
+
+so:brazilian-edm a so:Genre ;
+    so:name "brazilian edm"^^xsd:string .
+
+so:brazilian-hip-hop a so:Genre ;
+    so:name "brazilian hip hop"^^xsd:string .
+
+so:brazilian-house a so:Genre ;
+    so:name "brazilian house"^^xsd:string .
+
+so:brazilian-jazz a so:Genre ;
+    so:name "brazilian jazz"^^xsd:string .
+
+so:brazilian-percussion a so:Genre ;
+    so:name "brazilian percussion"^^xsd:string .
+
+so:brazilian-reggae a so:Genre ;
+    so:name "brazilian reggae"^^xsd:string .
+
+so:brazilian-rock a so:Genre ;
+    so:name "brazilian rock"^^xsd:string .
+
+so:brega-funk a so:Genre ;
+    so:name "brega funk"^^xsd:string .
+
+so:brega-romantico a so:Genre ;
+    so:name "brega romantico"^^xsd:string .
+
+so:brighton-indie a so:Genre ;
+    so:name "brighton indie"^^xsd:string .
+
+so:brill-building-pop a so:Genre ;
+    so:name "brill building pop"^^xsd:string .
+
+so:brisbane-indie a so:Genre ;
+    so:name "brisbane indie"^^xsd:string .
+
+so:british-alternative-rock a so:Genre ;
+    so:name "british alternative rock"^^xsd:string .
+
+so:british-indie-rock a so:Genre ;
+    so:name "british indie rock"^^xsd:string .
+
+so:british-invasion a so:Genre ;
+    so:name "british invasion"^^xsd:string .
+
+so:british-singer-songwriter a so:Genre ;
+    so:name "british singer-songwriter"^^xsd:string .
+
+so:british-soul a so:Genre ;
+    so:name "british soul"^^xsd:string .
+
+so:britpop a so:Genre ;
+    so:name "britpop"^^xsd:string .
+
+so:broadway a so:Genre ;
+    so:name "broadway"^^xsd:string .
+
+so:bronx-hip-hop a so:Genre ;
+    so:name "bronx hip hop"^^xsd:string .
+
+so:brooklyn-drill a so:Genre ;
+    so:name "brooklyn drill"^^xsd:string .
+
+so:brooklyn-indie a so:Genre ;
+    so:name "brooklyn indie"^^xsd:string .
+
+so:brostep a so:Genre ;
+    so:name "brostep"^^xsd:string .
+
+so:bruneian-pop a so:Genre ;
+    so:name "bruneian pop"^^xsd:string .
+
+so:bubble-trance a so:Genre ;
+    so:name "bubble trance"^^xsd:string .
+
+so:bubblegrunge a so:Genre ;
+    so:name "bubblegrunge"^^xsd:string .
+
+so:bubblegum-dance a so:Genre ;
+    so:name "bubblegum dance"^^xsd:string .
+
+so:bubblegum-pop a so:Genre ;
+    so:name "bubblegum pop"^^xsd:string .
+
+so:bulgarian-hip-hop a so:Genre ;
+    so:name "bulgarian hip hop"^^xsd:string .
+
+so:c-pop a so:Genre ;
+    so:name "c-pop"^^xsd:string .
+
+so:c86 a so:Genre ;
+    so:name "c86"^^xsd:string .
+
+so:cali-rap a so:Genre ;
+    so:name "cali rap"^^xsd:string .
+
+so:campursari a so:Genre ;
+    so:name "campursari"^^xsd:string .
+
+so:canadian-contemporary-r-b a so:Genre ;
+    so:name "canadian contemporary r&b"^^xsd:string .
+
+so:canadian-country a so:Genre ;
+    so:name "canadian country"^^xsd:string .
+
+so:canadian-electronic a so:Genre ;
+    so:name "canadian electronic"^^xsd:string .
+
+so:canadian-electropop a so:Genre ;
+    so:name "canadian electropop"^^xsd:string .
+
+so:canadian-hip-hop a so:Genre ;
+    so:name "canadian hip hop"^^xsd:string .
+
+so:canadian-indie a so:Genre ;
+    so:name "canadian indie"^^xsd:string .
+
+so:canadian-indie-folk a so:Genre ;
+    so:name "canadian indie folk"^^xsd:string .
+
+so:canadian-latin a so:Genre ;
+    so:name "canadian latin"^^xsd:string .
+
+so:canadian-old-school-hip-hop a so:Genre ;
+    so:name "canadian old school hip hop"^^xsd:string .
+
+so:canadian-pop a so:Genre ;
+    so:name "canadian pop"^^xsd:string .
+
+so:canadian-rock a so:Genre ;
+    so:name "canadian rock"^^xsd:string .
+
+so:canadian-singer-songwriter a so:Genre ;
+    so:name "canadian singer-songwriter"^^xsd:string .
+
+so:canadian-trap a so:Genre ;
+    so:name "canadian trap"^^xsd:string .
+
+so:cancion-infantil-latinoamericana a so:Genre ;
+    so:name "cancion infantil latinoamericana"^^xsd:string .
+
+so:cancion-melodica a so:Genre ;
+    so:name "cancion melodica"^^xsd:string .
+
+so:candy-pop a so:Genre ;
+    so:name "candy pop"^^xsd:string .
+
+so:cantautor a so:Genre ;
+    so:name "cantautor"^^xsd:string .
+
+so:cante-flamenco a so:Genre ;
+    so:name "cante flamenco"^^xsd:string .
+
+so:canto-popular-uruguayo a so:Genre ;
+    so:name "canto popular uruguayo"^^xsd:string .
+
+so:cantopop a so:Genre ;
+    so:name "cantopop"^^xsd:string .
+
+so:canzone-d-autore a so:Genre ;
+    so:name "canzone d'autore"^^xsd:string .
+
+so:canzone-napoletana a so:Genre ;
+    so:name "canzone napoletana"^^xsd:string .
+
+so:carnaval a so:Genre ;
+    so:name "carnaval"^^xsd:string .
+
+so:carnaval-cadiz a so:Genre ;
+    so:name "carnaval cadiz"^^xsd:string .
+
+so:carnaval-limburg a so:Genre ;
+    so:name "carnaval limburg"^^xsd:string .
+
+so:cartoon a so:Genre ;
+    so:name "cartoon"^^xsd:string .
+
+so:ccm a so:Genre ;
+    so:name "ccm"^^xsd:string .
+
+so:cello a so:Genre ;
+    so:name "cello"^^xsd:string .
+
+so:celtic a so:Genre ;
+    so:name "celtic"^^xsd:string .
+
+so:celtic-punk a so:Genre ;
+    so:name "celtic punk"^^xsd:string .
+
+so:celtic-rock a so:Genre ;
+    so:name "celtic rock"^^xsd:string .
+
+so:central-asian-hip-hop a so:Genre ;
+    so:name "central asian hip hop"^^xsd:string .
+
+so:chamber-orchestra a so:Genre ;
+    so:name "chamber orchestra"^^xsd:string .
+
+so:champeta a so:Genre ;
+    so:name "champeta"^^xsd:string .
+
+so:channel-islands-indie a so:Genre ;
+    so:name "channel islands indie"^^xsd:string .
+
+so:channel-pop a so:Genre ;
+    so:name "channel pop"^^xsd:string .
+
+so:chanson a so:Genre ;
+    so:name "chanson"^^xsd:string .
+
+so:chanson-virale a so:Genre ;
+    so:name "chanson virale"^^xsd:string .
+
+so:chicago-bop a so:Genre ;
+    so:name "chicago bop"^^xsd:string .
+
+so:chicago-drill a so:Genre ;
+    so:name "chicago drill"^^xsd:string .
+
+so:chicago-house a so:Genre ;
+    so:name "chicago house"^^xsd:string .
+
+so:chicago-indie a so:Genre ;
+    so:name "chicago indie"^^xsd:string .
+
+so:chicago-rap a so:Genre ;
+    so:name "chicago rap"^^xsd:string .
+
+so:chicago-soul a so:Genre ;
+    so:name "chicago soul"^^xsd:string .
+
+so:chicano-rap a so:Genre ;
+    so:name "chicano rap"^^xsd:string .
+
+so:chicha a so:Genre ;
+    so:name "chicha"^^xsd:string .
+
+so:chihuahua-indie a so:Genre ;
+    so:name "chihuahua indie"^^xsd:string .
+
+so:children-s-choir a so:Genre ;
+    so:name "children's choir"^^xsd:string .
+
+so:children-s-music a so:Genre ;
+    so:name "children's music"^^xsd:string .
+
+so:chilean-hardcore a so:Genre ;
+    so:name "chilean hardcore"^^xsd:string .
+
+so:chilean-indie a so:Genre ;
+    so:name "chilean indie"^^xsd:string .
+
+so:chilean-rock a so:Genre ;
+    so:name "chilean rock"^^xsd:string .
+
+so:chill-baile a so:Genre ;
+    so:name "chill baile"^^xsd:string .
+
+so:chill-pop a so:Genre ;
+    so:name "chill pop"^^xsd:string .
+
+so:chill-r-b a so:Genre ;
+    so:name "chill r&b"^^xsd:string .
+
+so:chillwave a so:Genre ;
+    so:name "chillwave"^^xsd:string .
+
+so:chinderlieder a so:Genre ;
+    so:name "chinderlieder"^^xsd:string .
+
+so:chinese-audiophile a so:Genre ;
+    so:name "chinese audiophile"^^xsd:string .
+
+so:chinese-drama-ost a so:Genre ;
+    so:name "chinese drama ost"^^xsd:string .
+
+so:chinese-electropop a so:Genre ;
+    so:name "chinese electropop"^^xsd:string .
+
+so:chinese-hip-hop a so:Genre ;
+    so:name "chinese hip hop"^^xsd:string .
+
+so:chinese-idol-pop a so:Genre ;
+    so:name "chinese idol pop"^^xsd:string .
+
+so:chinese-indie a so:Genre ;
+    so:name "chinese indie"^^xsd:string .
+
+so:chinese-jazz a so:Genre ;
+    so:name "chinese jazz"^^xsd:string .
+
+so:chinese-minyao a so:Genre ;
+    so:name "chinese minyao"^^xsd:string .
+
+so:chinese-r-b a so:Genre ;
+    so:name "chinese r&b"^^xsd:string .
+
+so:chinese-singer-songwriter a so:Genre ;
+    so:name "chinese singer-songwriter"^^xsd:string .
+
+so:chinese-soundtrack a so:Genre ;
+    so:name "chinese soundtrack"^^xsd:string .
+
+so:chinese-viral-pop a so:Genre ;
+    so:name "chinese viral pop"^^xsd:string .
+
+so:choral a so:Genre ;
+    so:name "choral"^^xsd:string .
+
+so:christelijk a so:Genre ;
+    so:name "christelijk"^^xsd:string .
+
+so:christian-alternative-rock a so:Genre ;
+    so:name "christian alternative rock"^^xsd:string .
+
+so:christian-music a so:Genre ;
+    so:name "christian music"^^xsd:string .
+
+so:christian-pop a so:Genre ;
+    so:name "christian pop"^^xsd:string .
+
+so:christlicher-rap a so:Genre ;
+    so:name "christlicher rap"^^xsd:string .
+
+so:christmas-instrumental a so:Genre ;
+    so:name "christmas instrumental"^^xsd:string .
+
+so:christmas-product a so:Genre ;
+    so:name "christmas product"^^xsd:string .
+
+so:cincinnati-rap a so:Genre ;
+    so:name "cincinnati rap"^^xsd:string .
+
+so:circuit a so:Genre ;
+    so:name "circuit"^^xsd:string .
+
+so:classic-arab-pop a so:Genre ;
+    so:name "classic arab pop"^^xsd:string .
+
+so:classic-belgian-pop a so:Genre ;
+    so:name "classic belgian pop"^^xsd:string .
+
+so:classic-bhangra a so:Genre ;
+    so:name "classic bhangra"^^xsd:string .
+
+so:classic-canadian-rock a so:Genre ;
+    so:name "classic canadian rock"^^xsd:string .
+
+so:classic-cantopop a so:Genre ;
+    so:name "classic cantopop"^^xsd:string .
+
+so:classic-colombian-pop a so:Genre ;
+    so:name "classic colombian pop"^^xsd:string .
+
+so:classic-country-pop a so:Genre ;
+    so:name "classic country pop"^^xsd:string .
+
+so:classic-danish-pop a so:Genre ;
+    so:name "classic danish pop"^^xsd:string .
+
+so:classic-danish-rock a so:Genre ;
+    so:name "classic danish rock"^^xsd:string .
+
+so:classic-dubstep a so:Genre ;
+    so:name "classic dubstep"^^xsd:string .
+
+so:classic-finnish-pop a so:Genre ;
+    so:name "classic finnish pop"^^xsd:string .
+
+so:classic-finnish-rock a so:Genre ;
+    so:name "classic finnish rock"^^xsd:string .
+
+so:classic-girl-group a so:Genre ;
+    so:name "classic girl group"^^xsd:string .
+
+so:classic-greek-pop a so:Genre ;
+    so:name "classic greek pop"^^xsd:string .
+
+so:classic-hardstyle a so:Genre ;
+    so:name "classic hardstyle"^^xsd:string .
+
+so:classic-house a so:Genre ;
+    so:name "classic house"^^xsd:string .
+
+so:classic-indo-pop a so:Genre ;
+    so:name "classic indo pop"^^xsd:string .
+
+so:classic-indonesian-rock a so:Genre ;
+    so:name "classic indonesian rock"^^xsd:string .
+
+so:classic-iskelma a so:Genre ;
+    so:name "classic iskelma"^^xsd:string .
+
+so:classic-italian-pop a so:Genre ;
+    so:name "classic italian pop"^^xsd:string .
+
+so:classic-malaysian-pop a so:Genre ;
+    so:name "classic malaysian pop"^^xsd:string .
+
+so:classic-mandopop a so:Genre ;
+    so:name "classic mandopop"^^xsd:string .
+
+so:classic-norwegian-pop a so:Genre ;
+    so:name "classic norwegian pop"^^xsd:string .
+
+so:classic-nz-pop a so:Genre ;
+    so:name "classic nz pop"^^xsd:string .
+
+so:classic-opm a so:Genre ;
+    so:name "classic opm"^^xsd:string .
+
+so:classic-peruvian-pop a so:Genre ;
+    so:name "classic peruvian pop"^^xsd:string .
+
+so:classic-polish-pop a so:Genre ;
+    so:name "classic polish pop"^^xsd:string .
+
+so:classic-rock a so:Genre ;
+    so:name "classic rock"^^xsd:string .
+
+so:classic-soul a so:Genre ;
+    so:name "classic soul"^^xsd:string .
+
+so:classic-soundtrack a so:Genre ;
+    so:name "classic soundtrack"^^xsd:string .
+
+so:classic-swedish-pop a so:Genre ;
+    so:name "classic swedish pop"^^xsd:string .
+
+so:classic-turkish-pop a so:Genre ;
+    so:name "classic turkish pop"^^xsd:string .
+
+so:classic-uk-pop a so:Genre ;
+    so:name "classic uk pop"^^xsd:string .
+
+so:classic-venezuelan-pop a so:Genre ;
+    so:name "classic venezuelan pop"^^xsd:string .
+
+so:classical-era a so:Genre ;
+    so:name "classical era"^^xsd:string .
+
+so:classical-piano a so:Genre ;
+    so:name "classical piano"^^xsd:string .
+
+so:classical-tenor a so:Genre ;
+    so:name "classical tenor"^^xsd:string .
+
+so:cologne-hip-hop a so:Genre ;
+    so:name "cologne hip hop"^^xsd:string .
+
+so:cologne-indie a so:Genre ;
+    so:name "cologne indie"^^xsd:string .
+
+so:colombian-hip-hop a so:Genre ;
+    so:name "colombian hip hop"^^xsd:string .
+
+so:colombian-pop a so:Genre ;
+    so:name "colombian pop"^^xsd:string .
+
+so:colombian-rock a so:Genre ;
+    so:name "colombian rock"^^xsd:string .
+
+so:comedy-rap a so:Genre ;
+    so:name "comedy rap"^^xsd:string .
+
+so:comic a so:Genre ;
+    so:name "comic"^^xsd:string .
+
+so:comic-metal a so:Genre ;
+    so:name "comic metal"^^xsd:string .
+
+so:complextro a so:Genre ;
+    so:name "complextro"^^xsd:string .
+
+so:compositional-ambient a so:Genre ;
+    so:name "compositional ambient"^^xsd:string .
+
+so:conscious-hip-hop a so:Genre ;
+    so:name "conscious hip hop"^^xsd:string .
+
+so:contemporary-country a so:Genre ;
+    so:name "contemporary country"^^xsd:string .
+
+so:contemporary-jazz a so:Genre ;
+    so:name "contemporary jazz"^^xsd:string .
+
+so:contemporary-post-bop a so:Genre ;
+    so:name "contemporary post-bop"^^xsd:string .
+
+so:contemporary-vocal-jazz a so:Genre ;
+    so:name "contemporary vocal jazz"^^xsd:string .
+
+so:cool-jazz a so:Genre ;
+    so:name "cool jazz"^^xsd:string .
+
+so:copla a so:Genre ;
+    so:name "copla"^^xsd:string .
+
+so:corrido a so:Genre ;
+    so:name "corrido"^^xsd:string .
+
+so:corridos-tumbados a so:Genre ;
+    so:name "corridos tumbados"^^xsd:string .
+
+so:country a so:Genre ;
+    so:name "country"^^xsd:string .
+
+so:country-dawn a so:Genre ;
+    so:name "country dawn"^^xsd:string .
+
+so:country-pop a so:Genre ;
+    so:name "country pop"^^xsd:string .
+
+so:country-quebecois a so:Genre ;
+    so:name "country quebecois"^^xsd:string .
+
+so:country-rap a so:Genre ;
+    so:name "country rap"^^xsd:string .
+
+so:country-road a so:Genre ;
+    so:name "country road"^^xsd:string .
+
+so:country-rock a so:Genre ;
+    so:name "country rock"^^xsd:string .
+
+so:cowboy-western a so:Genre ;
+    so:name "cowboy western"^^xsd:string .
+
+so:croatian-pop a so:Genre ;
+    so:name "croatian pop"^^xsd:string .
+
+so:crunk a so:Genre ;
+    so:name "crunk"^^xsd:string .
+
+so:cuarteto a so:Genre ;
+    so:name "cuarteto"^^xsd:string .
+
+so:cuban-alternative a so:Genre ;
+    so:name "cuban alternative"^^xsd:string .
+
+so:cubaton a so:Genre ;
+    so:name "cubaton"^^xsd:string .
+
+so:cueca-chilena a so:Genre ;
+    so:name "cueca chilena"^^xsd:string .
+
+so:cumbia a so:Genre ;
+    so:name "cumbia"^^xsd:string .
+
+so:cumbia-420 a so:Genre ;
+    so:name "cumbia 420"^^xsd:string .
+
+so:cumbia-boliviana a so:Genre ;
+    so:name "cumbia boliviana"^^xsd:string .
+
+so:cumbia-chilena a so:Genre ;
+    so:name "cumbia chilena"^^xsd:string .
+
+so:cumbia-paraguaya a so:Genre ;
+    so:name "cumbia paraguaya"^^xsd:string .
+
+so:cumbia-peruana a so:Genre ;
+    so:name "cumbia peruana"^^xsd:string .
+
+so:cumbia-pop a so:Genre ;
+    so:name "cumbia pop"^^xsd:string .
+
+so:cumbia-ranchera a so:Genre ;
+    so:name "cumbia ranchera"^^xsd:string .
+
+so:cumbia-santafesina a so:Genre ;
+    so:name "cumbia santafesina"^^xsd:string .
+
+so:cumbia-uruguaya a so:Genre ;
+    so:name "cumbia uruguaya"^^xsd:string .
+
+so:cumbia-villera a so:Genre ;
+    so:name "cumbia villera"^^xsd:string .
+
+so:cyber-metal a so:Genre ;
+    so:name "cyber metal"^^xsd:string .
+
+so:cypriot-pop a so:Genre ;
+    so:name "cypriot pop"^^xsd:string .
+
+so:czech-hip-hop a so:Genre ;
+    so:name "czech hip hop"^^xsd:string .
+
+so:czech-pop a so:Genre ;
+    so:name "czech pop"^^xsd:string .
+
+so:czsk-hip-hop a so:Genre ;
+    so:name "czsk hip hop"^^xsd:string .
+
+so:czsk-reggae a so:Genre ;
+    so:name "czsk reggae"^^xsd:string .
+
+so:dakke-dak a so:Genre ;
+    so:name "dakke dak"^^xsd:string .
+
+so:dalarna-indie a so:Genre ;
+    so:name "dalarna indie"^^xsd:string .
+
+so:dance-pop a so:Genre ;
+    so:name "dance pop"^^xsd:string .
+
+so:dance-rock a so:Genre ;
+    so:name "dance rock"^^xsd:string .
+
+so:dancefloor-dnb a so:Genre ;
+    so:name "dancefloor dnb"^^xsd:string .
+
+so:dancehall a so:Genre ;
+    so:name "dancehall"^^xsd:string .
+
+so:dancehall-guyanaise a so:Genre ;
+    so:name "dancehall guyanaise"^^xsd:string .
+
+so:dangdut a so:Genre ;
+    so:name "dangdut"^^xsd:string .
+
+so:dangdut-koplo a so:Genre ;
+    so:name "dangdut koplo"^^xsd:string .
+
+so:dangdut-remix a so:Genre ;
+    so:name "dangdut remix"^^xsd:string .
+
+so:danish-alternative-rock a so:Genre ;
+    so:name "danish alternative rock"^^xsd:string .
+
+so:danish-classical a so:Genre ;
+    so:name "danish classical"^^xsd:string .
+
+so:danish-electronic a so:Genre ;
+    so:name "danish electronic"^^xsd:string .
+
+so:danish-electropop a so:Genre ;
+    so:name "danish electropop"^^xsd:string .
+
+so:danish-hip-hop a so:Genre ;
+    so:name "danish hip hop"^^xsd:string .
+
+so:danish-metal a so:Genre ;
+    so:name "danish metal"^^xsd:string .
+
+so:danish-pop a so:Genre ;
+    so:name "danish pop"^^xsd:string .
+
+so:danish-pop-rock a so:Genre ;
+    so:name "danish pop rock"^^xsd:string .
+
+so:danish-post-punk a so:Genre ;
+    so:name "danish post-punk"^^xsd:string .
+
+so:danish-punk a so:Genre ;
+    so:name "danish punk"^^xsd:string .
+
+so:danish-rock a so:Genre ;
+    so:name "danish rock"^^xsd:string .
+
+so:danish-singer-songwriter a so:Genre ;
+    so:name "danish singer-songwriter"^^xsd:string .
+
+so:dansband a so:Genre ;
+    so:name "dansband"^^xsd:string .
+
+so:danseband a so:Genre ;
+    so:name "danseband"^^xsd:string .
+
+so:dansk-comedy a so:Genre ;
+    so:name "dansk comedy"^^xsd:string .
+
+so:dansktop a so:Genre ;
+    so:name "dansktop"^^xsd:string .
+
+so:danspunk a so:Genre ;
+    so:name "danspunk"^^xsd:string .
+
+so:dark-clubbing a so:Genre ;
+    so:name "dark clubbing"^^xsd:string .
+
+so:dark-trap a so:Genre ;
+    so:name "dark trap"^^xsd:string .
+
+so:deconstructed-club a so:Genre ;
+    so:name "deconstructed club"^^xsd:string .
+
+so:deep-adult-standards a so:Genre ;
+    so:name "deep adult standards"^^xsd:string .
+
+so:deep-big-room a so:Genre ;
+    so:name "deep big room"^^xsd:string .
+
+so:deep-breakcore a so:Genre ;
+    so:name "deep breakcore"^^xsd:string .
+
+so:deep-euro-house a so:Genre ;
+    so:name "deep euro house"^^xsd:string .
+
+so:deep-funk-ostentacao a so:Genre ;
+    so:name "deep funk ostentacao"^^xsd:string .
+
+so:deep-german-hip-hop a so:Genre ;
+    so:name "deep german hip hop"^^xsd:string .
+
+so:deep-groove-house a so:Genre ;
+    so:name "deep groove house"^^xsd:string .
+
+so:deep-house a so:Genre ;
+    so:name "deep house"^^xsd:string .
+
+so:deep-latin-alternative a so:Genre ;
+    so:name "deep latin alternative"^^xsd:string .
+
+so:deep-neofolk a so:Genre ;
+    so:name "deep neofolk"^^xsd:string .
+
+so:deep-new-americana a so:Genre ;
+    so:name "deep new americana"^^xsd:string .
+
+so:deep-pop-edm a so:Genre ;
+    so:name "deep pop edm"^^xsd:string .
+
+so:deep-rai a so:Genre ;
+    so:name "deep rai"^^xsd:string .
+
+so:deep-regional-mexican a so:Genre ;
+    so:name "deep regional mexican"^^xsd:string .
+
+so:deep-soft-rock a so:Genre ;
+    so:name "deep soft rock"^^xsd:string .
+
+so:deep-talent-show a so:Genre ;
+    so:name "deep talent show"^^xsd:string .
+
+so:deep-tech-house a so:Genre ;
+    so:name "deep tech house"^^xsd:string .
+
+so:deep-tropical-house a so:Genre ;
+    so:name "deep tropical house"^^xsd:string .
+
+so:deep-turkish-pop a so:Genre ;
+    so:name "deep turkish pop"^^xsd:string .
+
+so:deep-underground-hip-hop a so:Genre ;
+    so:name "deep underground hip hop"^^xsd:string .
+
+so:dembow a so:Genre ;
+    so:name "dembow"^^xsd:string .
+
+so:desert-blues a so:Genre ;
+    so:name "desert blues"^^xsd:string .
+
+so:desi-hip-hop a so:Genre ;
+    so:name "desi hip hop"^^xsd:string .
+
+so:desi-pop a so:Genre ;
+    so:name "desi pop"^^xsd:string .
+
+so:destroy-techno a so:Genre ;
+    so:name "destroy techno"^^xsd:string .
+
+so:detroit-hip-hop a so:Genre ;
+    so:name "detroit hip hop"^^xsd:string .
+
+so:detroit-rock a so:Genre ;
+    so:name "detroit rock"^^xsd:string .
+
+so:detroit-trap a so:Genre ;
+    so:name "detroit trap"^^xsd:string .
+
+so:detske-pisnicky a so:Genre ;
+    so:name "detske pisnicky"^^xsd:string .
+
+so:devon-indie a so:Genre ;
+    so:name "devon indie"^^xsd:string .
+
+so:dfw-rap a so:Genre ;
+    so:name "dfw rap"^^xsd:string .
+
+so:dirty-south-rap a so:Genre ;
+    so:name "dirty south rap"^^xsd:string .
+
+so:disco a so:Genre ;
+    so:name "disco"^^xsd:string .
+
+so:disco-house a so:Genre ;
+    so:name "disco house"^^xsd:string .
+
+so:disco-polo a so:Genre ;
+    so:name "disco polo"^^xsd:string .
+
+so:discofox a so:Genre ;
+    so:name "discofox"^^xsd:string .
+
+so:disney a so:Genre ;
+    so:name "disney"^^xsd:string .
+
+so:disney-espanol a so:Genre ;
+    so:name "disney espanol"^^xsd:string .
+
+so:diva-house a so:Genre ;
+    so:name "diva house"^^xsd:string .
+
+so:dixieland a so:Genre ;
+    so:name "dixieland"^^xsd:string .
+
+so:dmv-rap a so:Genre ;
+    so:name "dmv rap"^^xsd:string .
+
+so:dominican-pop a so:Genre ;
+    so:name "dominican pop"^^xsd:string .
+
+so:dong-yo a so:Genre ;
+    so:name "dong-yo"^^xsd:string .
+
+so:doo-wop a so:Genre ;
+    so:name "doo-wop"^^xsd:string .
+
+so:double-drumming a so:Genre ;
+    so:name "double drumming"^^xsd:string .
+
+so:downtempo a so:Genre ;
+    so:name "downtempo"^^xsd:string .
+
+so:dream-pop a so:Genre ;
+    so:name "dream pop"^^xsd:string .
+
+so:dream-smp a so:Genre ;
+    so:name "dream smp"^^xsd:string .
+
+so:dream-trance a so:Genre ;
+    so:name "dream trance"^^xsd:string .
+
+so:drill a so:Genre ;
+    so:name "drill"^^xsd:string .
+
+so:drill-brasileiro a so:Genre ;
+    so:name "drill brasileiro"^^xsd:string .
+
+so:drill-dominicano a so:Genre ;
+    so:name "drill dominicano"^^xsd:string .
+
+so:drill-espanol a so:Genre ;
+    so:name "drill espanol"^^xsd:string .
+
+so:drill-francais a so:Genre ;
+    so:name "drill francais"^^xsd:string .
+
+so:drill-italiana a so:Genre ;
+    so:name "drill italiana"^^xsd:string .
+
+so:drill-tuga a so:Genre ;
+    so:name "drill tuga"^^xsd:string .
+
+so:drum-and-bass a so:Genre ;
+    so:name "drum and bass"^^xsd:string .
+
+so:dub a so:Genre ;
+    so:name "dub"^^xsd:string .
+
+so:dubstep a so:Genre ;
+    so:name "dubstep"^^xsd:string .
+
+so:dutch-americana a so:Genre ;
+    so:name "dutch americana"^^xsd:string .
+
+so:dutch-cabaret a so:Genre ;
+    so:name "dutch cabaret"^^xsd:string .
+
+so:dutch-drill a so:Genre ;
+    so:name "dutch drill"^^xsd:string .
+
+so:dutch-edm a so:Genre ;
+    so:name "dutch edm"^^xsd:string .
+
+so:dutch-hip-hop a so:Genre ;
+    so:name "dutch hip hop"^^xsd:string .
+
+so:dutch-house a so:Genre ;
+    so:name "dutch house"^^xsd:string .
+
+so:dutch-idol-pop a so:Genre ;
+    so:name "dutch idol pop"^^xsd:string .
+
+so:dutch-indie a so:Genre ;
+    so:name "dutch indie"^^xsd:string .
+
+so:dutch-indie-rock a so:Genre ;
+    so:name "dutch indie rock"^^xsd:string .
+
+so:dutch-pop a so:Genre ;
+    so:name "dutch pop"^^xsd:string .
+
+so:dutch-r-b a so:Genre ;
+    so:name "dutch r&b"^^xsd:string .
+
+so:dutch-rap-pop a so:Genre ;
+    so:name "dutch rap pop"^^xsd:string .
+
+so:dutch-rock a so:Genre ;
+    so:name "dutch rock"^^xsd:string .
+
+so:dutch-singer-songwriter a so:Genre ;
+    so:name "dutch singer-songwriter"^^xsd:string .
+
+so:dutch-trance a so:Genre ;
+    so:name "dutch trance"^^xsd:string .
+
+so:dutch-trap a so:Genre ;
+    so:name "dutch trap"^^xsd:string .
+
+so:early-modern-classical a so:Genre ;
+    so:name "early modern classical"^^xsd:string .
+
+so:early-romantic-era a so:Genre ;
+    so:name "early romantic era"^^xsd:string .
+
+so:east-coast-hip-hop a so:Genre ;
+    so:name "east coast hip hop"^^xsd:string .
+
+so:easy-listening a so:Genre ;
+    so:name "easy listening"^^xsd:string .
+
+so:eau-claire-indie a so:Genre ;
+    so:name "eau claire indie"^^xsd:string .
+
+so:ectofolk a so:Genre ;
+    so:name "ectofolk"^^xsd:string .
+
+so:ecuadorian-pop a so:Genre ;
+    so:name "ecuadorian pop"^^xsd:string .
+
+so:edm a so:Genre ;
+    so:name "edm"^^xsd:string .
+
+so:electra a so:Genre ;
+    so:name "electra"^^xsd:string .
+
+so:electric-bass a so:Genre ;
+    so:name "electric bass"^^xsd:string .
+
+so:electro a so:Genre ;
+    so:name "electro"^^xsd:string .
+
+so:electro-bailando a so:Genre ;
+    so:name "electro bailando"^^xsd:string .
+
+so:electro-house a so:Genre ;
+    so:name "electro house"^^xsd:string .
+
+so:electro-latino a so:Genre ;
+    so:name "electro latino"^^xsd:string .
+
+so:electro-pop-francais a so:Genre ;
+    so:name "electro-pop francais"^^xsd:string .
+
+so:electro-swing a so:Genre ;
+    so:name "electro swing"^^xsd:string .
+
+so:electroclash a so:Genre ;
+    so:name "electroclash"^^xsd:string .
+
+so:electrofox a so:Genre ;
+    so:name "electrofox"^^xsd:string .
+
+so:electronic-trap a so:Genre ;
+    so:name "electronic trap"^^xsd:string .
+
+so:electronica a so:Genre ;
+    so:name "electronica"^^xsd:string .
+
+so:electronica-argentina a so:Genre ;
+    so:name "electronica argentina"^^xsd:string .
+
+so:electropop a so:Genre ;
+    so:name "electropop"^^xsd:string .
+
+so:electropowerpop a so:Genre ;
+    so:name "electropowerpop"^^xsd:string .
+
+so:emo a so:Genre ;
+    so:name "emo"^^xsd:string .
+
+so:emo-rap a so:Genre ;
+    so:name "emo rap"^^xsd:string .
+
+so:emo-rap-italiano a so:Genre ;
+    so:name "emo rap italiano"^^xsd:string .
+
+so:emo-trap-en-espanol a so:Genre ;
+    so:name "emo trap en espanol"^^xsd:string .
+
+so:emo-trap-italiana a so:Genre ;
+    so:name "emo trap italiana"^^xsd:string .
+
+so:english-indie-rock a so:Genre ;
+    so:name "english indie rock"^^xsd:string .
+
+so:escape-room a so:Genre ;
+    so:name "escape room"^^xsd:string .
+
+so:estonian-hip-hop a so:Genre ;
+    so:name "estonian hip hop"^^xsd:string .
+
+so:ethereal-gothic a so:Genre ;
+    so:name "ethereal gothic"^^xsd:string .
+
+so:etherpop a so:Genre ;
+    so:name "etherpop"^^xsd:string .
+
+so:euphoric-hardstyle a so:Genre ;
+    so:name "euphoric hardstyle"^^xsd:string .
+
+so:eurodance a so:Genre ;
+    so:name "eurodance"^^xsd:string .
+
+so:europop a so:Genre ;
+    so:name "europop"^^xsd:string .
+
+so:eurovision a so:Genre ;
+    so:name "eurovision"^^xsd:string .
+
+so:eventyr a so:Genre ;
+    so:name "eventyr"^^xsd:string .
+
+so:experimental a so:Genre ;
+    so:name "experimental"^^xsd:string .
+
+so:experimental-classical a so:Genre ;
+    so:name "experimental classical"^^xsd:string .
+
+so:experimental-pop a so:Genre ;
+    so:name "experimental pop"^^xsd:string .
+
+so:experimental-r-b a so:Genre ;
+    so:name "experimental r&b"^^xsd:string .
+
+so:experimental-rock a so:Genre ;
+    so:name "experimental rock"^^xsd:string .
+
+so:fidget-house a so:Genre ;
+    so:name "fidget house"^^xsd:string .
+
+so:filter-house a so:Genre ;
+    so:name "filter house"^^xsd:string .
+
+so:finnish-alternative-rock a so:Genre ;
+    so:name "finnish alternative rock"^^xsd:string .
+
+so:finnish-choir a so:Genre ;
+    so:name "finnish choir"^^xsd:string .
+
+so:finnish-dance-pop a so:Genre ;
+    so:name "finnish dance pop"^^xsd:string .
+
+so:finnish-edm a so:Genre ;
+    so:name "finnish edm"^^xsd:string .
+
+so:finnish-electro a so:Genre ;
+    so:name "finnish electro"^^xsd:string .
+
+so:finnish-folk a so:Genre ;
+    so:name "finnish folk"^^xsd:string .
+
+so:finnish-heavy-metal a so:Genre ;
+    so:name "finnish heavy metal"^^xsd:string .
+
+so:finnish-hip-hop a so:Genre ;
+    so:name "finnish hip hop"^^xsd:string .
+
+so:finnish-idol-pop a so:Genre ;
+    so:name "finnish idol pop"^^xsd:string .
+
+so:finnish-indie a so:Genre ;
+    so:name "finnish indie"^^xsd:string .
+
+so:finnish-jazz a so:Genre ;
+    so:name "finnish jazz"^^xsd:string .
+
+so:finnish-metal a so:Genre ;
+    so:name "finnish metal"^^xsd:string .
+
+so:finnish-pop a so:Genre ;
+    so:name "finnish pop"^^xsd:string .
+
+so:finnish-pop-punk a so:Genre ;
+    so:name "finnish pop punk"^^xsd:string .
+
+so:finnish-post-punk a so:Genre ;
+    so:name "finnish post-punk"^^xsd:string .
+
+so:finnish-power-metal a so:Genre ;
+    so:name "finnish power metal"^^xsd:string .
+
+so:finnish-progressive-metal a so:Genre ;
+    so:name "finnish progressive metal"^^xsd:string .
+
+so:finnish-punk a so:Genre ;
+    so:name "finnish punk"^^xsd:string .
+
+so:finnish-reggae a so:Genre ;
+    so:name "finnish reggae"^^xsd:string .
+
+so:finnish-soul a so:Genre ;
+    so:name "finnish soul"^^xsd:string .
+
+so:finnish-trap a so:Genre ;
+    so:name "finnish trap"^^xsd:string .
+
+so:firenze-indie a so:Genre ;
+    so:name "firenze indie"^^xsd:string .
+
+so:flamenco a so:Genre ;
+    so:name "flamenco"^^xsd:string .
+
+so:flamenco-guitar a so:Genre ;
+    so:name "flamenco guitar"^^xsd:string .
+
+so:flamenco-urbano a so:Genre ;
+    so:name "flamenco urbano"^^xsd:string .
+
+so:florida-rap a so:Genre ;
+    so:name "florida rap"^^xsd:string .
+
+so:folclor-afrocolombiano a so:Genre ;
+    so:name "folclor afrocolombiano"^^xsd:string .
+
+so:folclor-colombiano a so:Genre ;
+    so:name "folclor colombiano"^^xsd:string .
+
+so:folk a so:Genre ;
+    so:name "folk"^^xsd:string .
+
+so:folk-brasileiro a so:Genre ;
+    so:name "folk brasileiro"^^xsd:string .
+
+so:folk-pop a so:Genre ;
+    so:name "folk-pop"^^xsd:string .
+
+so:folk-punk a so:Genre ;
+    so:name "folk punk"^^xsd:string .
+
+so:folk-rock a so:Genre ;
+    so:name "folk rock"^^xsd:string .
+
+so:folk-rock-italiano a so:Genre ;
+    so:name "folk rock italiano"^^xsd:string .
+
+so:folklore-argentino a so:Genre ;
+    so:name "folklore argentino"^^xsd:string .
+
+so:folklore-chileno a so:Genre ;
+    so:name "folklore chileno"^^xsd:string .
+
+so:forro a so:Genre ;
+    so:name "forro"^^xsd:string .
+
+so:forro-de-favela a so:Genre ;
+    so:name "forro de favela"^^xsd:string .
+
+so:fotbollslatar a so:Genre ;
+    so:name "fotbollslatar"^^xsd:string .
+
+so:francoton a so:Genre ;
+    so:name "francoton"^^xsd:string .
+
+so:frauenrap a so:Genre ;
+    so:name "frauenrap"^^xsd:string .
+
+so:freak-folk a so:Genre ;
+    so:name "freak folk"^^xsd:string .
+
+so:french-hip-hop a so:Genre ;
+    so:name "french hip hop"^^xsd:string .
+
+so:french-indie-folk a so:Genre ;
+    so:name "french indie folk"^^xsd:string .
+
+so:french-indie-pop a so:Genre ;
+    so:name "french indie pop"^^xsd:string .
+
+so:french-indietronica a so:Genre ;
+    so:name "french indietronica"^^xsd:string .
+
+so:french-jazz a so:Genre ;
+    so:name "french jazz"^^xsd:string .
+
+so:french-pop a so:Genre ;
+    so:name "french pop"^^xsd:string .
+
+so:french-reggae a so:Genre ;
+    so:name "french reggae"^^xsd:string .
+
+so:french-rock a so:Genre ;
+    so:name "french rock"^^xsd:string .
+
+so:french-soundtrack a so:Genre ;
+    so:name "french soundtrack"^^xsd:string .
+
+so:french-synthpop a so:Genre ;
+    so:name "french synthpop"^^xsd:string .
+
+so:funana a so:Genre ;
+    so:name "funana"^^xsd:string .
+
+so:funk a so:Genre ;
+    so:name "funk"^^xsd:string .
+
+so:funk-150-bpm a so:Genre ;
+    so:name "funk 150 bpm"^^xsd:string .
+
+so:funk-bh a so:Genre ;
+    so:name "funk bh"^^xsd:string .
+
+so:funk-carioca a so:Genre ;
+    so:name "funk carioca"^^xsd:string .
+
+so:funk-consciente a so:Genre ;
+    so:name "funk consciente"^^xsd:string .
+
+so:funk-das-antigas a so:Genre ;
+    so:name "funk das antigas"^^xsd:string .
+
+so:funk-melody a so:Genre ;
+    so:name "funk melody"^^xsd:string .
+
+so:funk-metal a so:Genre ;
+    so:name "funk metal"^^xsd:string .
+
+so:funk-ostentacao a so:Genre ;
+    so:name "funk ostentacao"^^xsd:string .
+
+so:funk-paulista a so:Genre ;
+    so:name "funk paulista"^^xsd:string .
+
+so:funk-pop a so:Genre ;
+    so:name "funk pop"^^xsd:string .
+
+so:funk-rock a so:Genre ;
+    so:name "funk rock"^^xsd:string .
+
+so:funk-viral a so:Genre ;
+    so:name "funk viral"^^xsd:string .
+
+so:funky-house a so:Genre ;
+    so:name "funky house"^^xsd:string .
+
+so:funky-tech-house a so:Genre ;
+    so:name "funky tech house"^^xsd:string .
+
+so:future-bass a so:Genre ;
+    so:name "future bass"^^xsd:string .
+
+so:future-garage a so:Genre ;
+    so:name "future garage"^^xsd:string .
+
+so:future-house a so:Genre ;
+    so:name "future house"^^xsd:string .
+
+so:g-funk a so:Genre ;
+    so:name "g funk"^^xsd:string .
+
+so:g-house a so:Genre ;
+    so:name "g-house"^^xsd:string .
+
+so:gabba a so:Genre ;
+    so:name "gabba"^^xsd:string .
+
+so:gaming-dubstep a so:Genre ;
+    so:name "gaming dubstep"^^xsd:string .
+
+so:gaming-edm a so:Genre ;
+    so:name "gaming edm"^^xsd:string .
+
+so:gangster-rap a so:Genre ;
+    so:name "gangster rap"^^xsd:string .
+
+so:garage-house a so:Genre ;
+    so:name "garage house"^^xsd:string .
+
+so:garage-rock a so:Genre ;
+    so:name "garage rock"^^xsd:string .
+
+so:gauze-pop a so:Genre ;
+    so:name "gauze pop"^^xsd:string .
+
+so:gen-z-singer-songwriter a so:Genre ;
+    so:name "gen z singer-songwriter"^^xsd:string .
+
+so:german-alternative-rap a so:Genre ;
+    so:name "german alternative rap"^^xsd:string .
+
+so:german-alternative-rock a so:Genre ;
+    so:name "german alternative rock"^^xsd:string .
+
+so:german-boom-bap a so:Genre ;
+    so:name "german boom bap"^^xsd:string .
+
+so:german-cloud-rap a so:Genre ;
+    so:name "german cloud rap"^^xsd:string .
+
+so:german-country a so:Genre ;
+    so:name "german country"^^xsd:string .
+
+so:german-dance a so:Genre ;
+    so:name "german dance"^^xsd:string .
+
+so:german-drill a so:Genre ;
+    so:name "german drill"^^xsd:string .
+
+so:german-hip-hop a so:Genre ;
+    so:name "german hip hop"^^xsd:string .
+
+so:german-house a so:Genre ;
+    so:name "german house"^^xsd:string .
+
+so:german-indie a so:Genre ;
+    so:name "german indie"^^xsd:string .
+
+so:german-jazz-rap a so:Genre ;
+    so:name "german jazz rap"^^xsd:string .
+
+so:german-metal a so:Genre ;
+    so:name "german metal"^^xsd:string .
+
+so:german-pop a so:Genre ;
+    so:name "german pop"^^xsd:string .
+
+so:german-pop-rock a so:Genre ;
+    so:name "german pop rock"^^xsd:string .
+
+so:german-punk a so:Genre ;
+    so:name "german punk"^^xsd:string .
+
+so:german-r-b a so:Genre ;
+    so:name "german r&b"^^xsd:string .
+
+so:german-reggae a so:Genre ;
+    so:name "german reggae"^^xsd:string .
+
+so:german-rock a so:Genre ;
+    so:name "german rock"^^xsd:string .
+
+so:german-singer-songwriter a so:Genre ;
+    so:name "german singer-songwriter"^^xsd:string .
+
+so:german-soundtrack a so:Genre ;
+    so:name "german soundtrack"^^xsd:string .
+
+so:german-techno a so:Genre ;
+    so:name "german techno"^^xsd:string .
+
+so:german-trap a so:Genre ;
+    so:name "german trap"^^xsd:string .
+
+so:german-underground-rap a so:Genre ;
+    so:name "german underground rap"^^xsd:string .
+
+so:german-viral-rap a so:Genre ;
+    so:name "german viral rap"^^xsd:string .
+
+so:ghanaian-alternative a so:Genre ;
+    so:name "ghanaian alternative"^^xsd:string .
+
+so:ghanaian-hip-hop a so:Genre ;
+    so:name "ghanaian hip hop"^^xsd:string .
+
+so:ghanaian-pop a so:Genre ;
+    so:name "ghanaian pop"^^xsd:string .
+
+so:ghent-indie a so:Genre ;
+    so:name "ghent indie"^^xsd:string .
+
+so:girl-group a so:Genre ;
+    so:name "girl group"^^xsd:string .
+
+so:glam-metal a so:Genre ;
+    so:name "glam metal"^^xsd:string .
+
+so:glam-rock a so:Genre ;
+    so:name "glam rock"^^xsd:string .
+
+so:glasgow-indie a so:Genre ;
+    so:name "glasgow indie"^^xsd:string .
+
+so:glee-club a so:Genre ;
+    so:name "glee club"^^xsd:string .
+
+so:golden-age-hip-hop a so:Genre ;
+    so:name "golden age hip hop"^^xsd:string .
+
+so:goralski a so:Genre ;
+    so:name "goralski"^^xsd:string .
+
+so:gospel a so:Genre ;
+    so:name "gospel"^^xsd:string .
+
+so:gospel-r-b a so:Genre ;
+    so:name "gospel r&b"^^xsd:string .
+
+so:gospel-singers a so:Genre ;
+    so:name "gospel singers"^^xsd:string .
+
+so:gothenburg-hip-hop a so:Genre ;
+    so:name "gothenburg hip hop"^^xsd:string .
+
+so:gothenburg-indie a so:Genre ;
+    so:name "gothenburg indie"^^xsd:string .
+
+so:gothic-metal a so:Genre ;
+    so:name "gothic metal"^^xsd:string .
+
+so:gothic-symphonic-metal a so:Genre ;
+    so:name "gothic symphonic metal"^^xsd:string .
+
+so:gqom a so:Genre ;
+    so:name "gqom"^^xsd:string .
+
+so:graz-indie a so:Genre ;
+    so:name "graz indie"^^xsd:string .
+
+so:greek-hip-hop a so:Genre ;
+    so:name "greek hip hop"^^xsd:string .
+
+so:greek-indie a so:Genre ;
+    so:name "greek indie"^^xsd:string .
+
+so:greek-pop a so:Genre ;
+    so:name "greek pop"^^xsd:string .
+
+so:greek-trap a so:Genre ;
+    so:name "greek trap"^^xsd:string .
+
+so:greenlandic-pop a so:Genre ;
+    so:name "greenlandic pop"^^xsd:string .
+
+so:grime a so:Genre ;
+    so:name "grime"^^xsd:string .
+
+so:groove-metal a so:Genre ;
+    so:name "groove metal"^^xsd:string .
+
+so:groove-room a so:Genre ;
+    so:name "groove room"^^xsd:string .
+
+so:grupera a so:Genre ;
+    so:name "grupera"^^xsd:string .
+
+so:gruperas-inmortales a so:Genre ;
+    so:name "gruperas inmortales"^^xsd:string .
+
+so:guaracha a so:Genre ;
+    so:name "guaracha"^^xsd:string .
+
+so:guatemalan-pop a so:Genre ;
+    so:name "guatemalan pop"^^xsd:string .
+
+so:guinean-pop a so:Genre ;
+    so:name "guinean pop"^^xsd:string .
+
+so:gypsy-jazz a so:Genre ;
+    so:name "gypsy jazz"^^xsd:string .
+
+so:halifax-indie a so:Genre ;
+    so:name "halifax indie"^^xsd:string .
+
+so:halloween a so:Genre ;
+    so:name "halloween"^^xsd:string .
+
+so:hamburg-electronic a so:Genre ;
+    so:name "hamburg electronic"^^xsd:string .
+
+so:hamburg-hip-hop a so:Genre ;
+    so:name "hamburg hip hop"^^xsd:string .
+
+so:hamburg-indie a so:Genre ;
+    so:name "hamburg indie"^^xsd:string .
+
+so:hands-up a so:Genre ;
+    so:name "hands up"^^xsd:string .
+
+so:happy-hardcore a so:Genre ;
+    so:name "happy hardcore"^^xsd:string .
+
+so:hard-bass a so:Genre ;
+    so:name "hard bass"^^xsd:string .
+
+so:hard-bop a so:Genre ;
+    so:name "hard bop"^^xsd:string .
+
+so:hard-rock a so:Genre ;
+    so:name "hard rock"^^xsd:string .
+
+so:hardcore-hip-hop a so:Genre ;
+    so:name "hardcore hip hop"^^xsd:string .
+
+so:hardcore-techno a so:Genre ;
+    so:name "hardcore techno"^^xsd:string .
+
+so:hardstyle a so:Genre ;
+    so:name "hardstyle"^^xsd:string .
+
+so:harlem-hip-hop a so:Genre ;
+    so:name "harlem hip hop"^^xsd:string .
+
+so:harlem-renaissance a so:Genre ;
+    so:name "harlem renaissance"^^xsd:string .
+
+so:hawaiian-hip-hop a so:Genre ;
+    so:name "hawaiian hip hop"^^xsd:string .
+
+so:heartland-rock a so:Genre ;
+    so:name "heartland rock"^^xsd:string .
+
+so:hi-nrg a so:Genre ;
+    so:name "hi-nrg"^^xsd:string .
+
+so:hip-hop a so:Genre ;
+    so:name "hip hop"^^xsd:string .
+
+so:hip-hop-quebecois a so:Genre ;
+    so:name "hip hop quebecois"^^xsd:string .
+
+so:hip-hop-tuga a so:Genre ;
+    so:name "hip hop tuga"^^xsd:string .
+
+so:hip-house a so:Genre ;
+    so:name "hip house"^^xsd:string .
+
+so:hip-pop a so:Genre ;
+    so:name "hip pop"^^xsd:string .
+
+so:hiplife a so:Genre ;
+    so:name "hiplife"^^xsd:string .
+
+so:hokkien-pop a so:Genre ;
+    so:name "hokkien pop"^^xsd:string .
+
+so:hollywood a so:Genre ;
+    so:name "hollywood"^^xsd:string .
+
+so:hong-kong-hip-hop a so:Genre ;
+    so:name "hong kong hip hop"^^xsd:string .
+
+so:hong-kong-indie a so:Genre ;
+    so:name "hong kong indie"^^xsd:string .
+
+so:hopebeat a so:Genre ;
+    so:name "hopebeat"^^xsd:string .
+
+so:house a so:Genre ;
+    so:name "house"^^xsd:string .
+
+so:houston-rap a so:Genre ;
+    so:name "houston rap"^^xsd:string .
+
+so:hungarian-pop a so:Genre ;
+    so:name "hungarian pop"^^xsd:string .
+
+so:huzunlu-sarkilar a so:Genre ;
+    so:name "huzunlu sarkilar"^^xsd:string .
+
+so:hyperpop a so:Genre ;
+    so:name "hyperpop"^^xsd:string .
+
+so:hyperpop-francais a so:Genre ;
+    so:name "hyperpop francais"^^xsd:string .
+
+so:hyphy a so:Genre ;
+    so:name "hyphy"^^xsd:string .
+
+so:icelandic-choir a so:Genre ;
+    so:name "icelandic choir"^^xsd:string .
+
+so:icelandic-classical a so:Genre ;
+    so:name "icelandic classical"^^xsd:string .
+
+so:icelandic-electronic a so:Genre ;
+    so:name "icelandic electronic"^^xsd:string .
+
+so:icelandic-experimental a so:Genre ;
+    so:name "icelandic experimental"^^xsd:string .
+
+so:icelandic-indie a so:Genre ;
+    so:name "icelandic indie"^^xsd:string .
+
+so:icelandic-pop a so:Genre ;
+    so:name "icelandic pop"^^xsd:string .
+
+so:icelandic-post-punk a so:Genre ;
+    so:name "icelandic post-punk"^^xsd:string .
+
+so:icelandic-punk a so:Genre ;
+    so:name "icelandic punk"^^xsd:string .
+
+so:icelandic-rock a so:Genre ;
+    so:name "icelandic rock"^^xsd:string .
+
+so:idol a so:Genre ;
+    so:name "idol"^^xsd:string .
+
+so:idol-rock a so:Genre ;
+    so:name "idol rock"^^xsd:string .
+
+so:indian-edm a so:Genre ;
+    so:name "indian edm"^^xsd:string .
+
+so:indie-anthem-folk a so:Genre ;
+    so:name "indie anthem-folk"^^xsd:string .
+
+so:indie-curitibano a so:Genre ;
+    so:name "indie curitibano"^^xsd:string .
+
+so:indie-electropop a so:Genre ;
+    so:name "indie electropop"^^xsd:string .
+
+so:indie-folk a so:Genre ;
+    so:name "indie folk"^^xsd:string .
+
+so:indie-folk-italiano a so:Genre ;
+    so:name "indie folk italiano"^^xsd:string .
+
+so:indie-garage-rock a so:Genre ;
+    so:name "indie garage rock"^^xsd:string .
+
+so:indie-hip-hop a so:Genre ;
+    so:name "indie hip hop"^^xsd:string .
+
+so:indie-liguria a so:Genre ;
+    so:name "indie liguria"^^xsd:string .
+
+so:indie-pop a so:Genre ;
+    so:name "indie pop"^^xsd:string .
+
+so:indie-pop-rap a so:Genre ;
+    so:name "indie pop rap"^^xsd:string .
+
+so:indie-poptimism a so:Genre ;
+    so:name "indie poptimism"^^xsd:string .
+
+so:indie-quebecois a so:Genre ;
+    so:name "indie quebecois"^^xsd:string .
+
+so:indie-r-b a so:Genre ;
+    so:name "indie r&b"^^xsd:string .
+
+so:indie-rock a so:Genre ;
+    so:name "indie rock"^^xsd:string .
+
+so:indie-rock-italiano a so:Genre ;
+    so:name "indie rock italiano"^^xsd:string .
+
+so:indie-rockism a so:Genre ;
+    so:name "indie rockism"^^xsd:string .
+
+so:indie-soul a so:Genre ;
+    so:name "indie soul"^^xsd:string .
+
+so:indie-triste a so:Genre ;
+    so:name "indie triste"^^xsd:string .
+
+so:indiecoustica a so:Genre ;
+    so:name "indiecoustica"^^xsd:string .
+
+so:indietronica a so:Genre ;
+    so:name "indietronica"^^xsd:string .
+
+so:indonesian-alternative-rock a so:Genre ;
+    so:name "indonesian alternative rock"^^xsd:string .
+
+so:indonesian-city-pop a so:Genre ;
+    so:name "indonesian city pop"^^xsd:string .
+
+so:indonesian-edm a so:Genre ;
+    so:name "indonesian edm"^^xsd:string .
+
+so:indonesian-emo a so:Genre ;
+    so:name "indonesian emo"^^xsd:string .
+
+so:indonesian-emo-rap a so:Genre ;
+    so:name "indonesian emo rap"^^xsd:string .
+
+so:indonesian-folk a so:Genre ;
+    so:name "indonesian folk"^^xsd:string .
+
+so:indonesian-folk-pop a so:Genre ;
+    so:name "indonesian folk pop"^^xsd:string .
+
+so:indonesian-hip-hop a so:Genre ;
+    so:name "indonesian hip hop"^^xsd:string .
+
+so:indonesian-indie a so:Genre ;
+    so:name "indonesian indie"^^xsd:string .
+
+so:indonesian-indie-pop a so:Genre ;
+    so:name "indonesian indie pop"^^xsd:string .
+
+so:indonesian-jazz a so:Genre ;
+    so:name "indonesian jazz"^^xsd:string .
+
+so:indonesian-lo-fi-pop a so:Genre ;
+    so:name "indonesian lo-fi pop"^^xsd:string .
+
+so:indonesian-pop a so:Genre ;
+    so:name "indonesian pop"^^xsd:string .
+
+so:indonesian-pop-punk a so:Genre ;
+    so:name "indonesian pop punk"^^xsd:string .
+
+so:indonesian-pop-rock a so:Genre ;
+    so:name "indonesian pop rock"^^xsd:string .
+
+so:indonesian-r-b a so:Genre ;
+    so:name "indonesian r&b"^^xsd:string .
+
+so:indonesian-reggae a so:Genre ;
+    so:name "indonesian reggae"^^xsd:string .
+
+so:indonesian-rock a so:Genre ;
+    so:name "indonesian rock"^^xsd:string .
+
+so:indonesian-singer-songwriter a so:Genre ;
+    so:name "indonesian singer-songwriter"^^xsd:string .
+
+so:indonesian-viral-pop a so:Genre ;
+    so:name "indonesian viral pop"^^xsd:string .
+
+so:industrial a so:Genre ;
+    so:name "industrial"^^xsd:string .
+
+so:industrial-metal a so:Genre ;
+    so:name "industrial metal"^^xsd:string .
+
+so:industrial-rock a so:Genre ;
+    so:name "industrial rock"^^xsd:string .
+
+so:instrumental-funk a so:Genre ;
+    so:name "instrumental funk"^^xsd:string .
+
+so:instrumental-grime a so:Genre ;
+    so:name "instrumental grime"^^xsd:string .
+
+so:irish-banjo a so:Genre ;
+    so:name "irish banjo"^^xsd:string .
+
+so:irish-country a so:Genre ;
+    so:name "irish country"^^xsd:string .
+
+so:irish-folk a so:Genre ;
+    so:name "irish folk"^^xsd:string .
+
+so:irish-hip-hop a so:Genre ;
+    so:name "irish hip hop"^^xsd:string .
+
+so:irish-pop a so:Genre ;
+    so:name "irish pop"^^xsd:string .
+
+so:irish-rebel-song a so:Genre ;
+    so:name "irish rebel song"^^xsd:string .
+
+so:irish-rock a so:Genre ;
+    so:name "irish rock"^^xsd:string .
+
+so:irish-singer-songwriter a so:Genre ;
+    so:name "irish singer-songwriter"^^xsd:string .
+
+so:iskelma a so:Genre ;
+    so:name "iskelma"^^xsd:string .
+
+so:israeli-pop a so:Genre ;
+    so:name "israeli pop"^^xsd:string .
+
+so:italian-adult-pop a so:Genre ;
+    so:name "italian adult pop"^^xsd:string .
+
+so:italian-alternative a so:Genre ;
+    so:name "italian alternative"^^xsd:string .
+
+so:italian-electronica a so:Genre ;
+    so:name "italian electronica"^^xsd:string .
+
+so:italian-hip-hop a so:Genre ;
+    so:name "italian hip hop"^^xsd:string .
+
+so:italian-indie-pop a so:Genre ;
+    so:name "italian indie pop"^^xsd:string .
+
+so:italian-jazz a so:Genre ;
+    so:name "italian jazz"^^xsd:string .
+
+so:italian-lounge a so:Genre ;
+    so:name "italian lounge"^^xsd:string .
+
+so:italian-pop a so:Genre ;
+    so:name "italian pop"^^xsd:string .
+
+so:italian-pop-rock a so:Genre ;
+    so:name "italian pop rock"^^xsd:string .
+
+so:italian-post-hardcore a so:Genre ;
+    so:name "italian post-hardcore"^^xsd:string .
+
+so:italian-progressive-rock a so:Genre ;
+    so:name "italian progressive rock"^^xsd:string .
+
+so:italian-reggae a so:Genre ;
+    so:name "italian reggae"^^xsd:string .
+
+so:italian-ska a so:Genre ;
+    so:name "italian ska"^^xsd:string .
+
+so:italian-tenor a so:Genre ;
+    so:name "italian tenor"^^xsd:string .
+
+so:italian-underground-hip-hop a so:Genre ;
+    so:name "italian underground hip hop"^^xsd:string .
+
+so:italo-dance a so:Genre ;
+    so:name "italo dance"^^xsd:string .
+
+so:j-metal a so:Genre ;
+    so:name "j-metal"^^xsd:string .
+
+so:j-pop a so:Genre ;
+    so:name "j-pop"^^xsd:string .
+
+so:j-rock a so:Genre ;
+    so:name "j-rock"^^xsd:string .
+
+so:japanese-emo a so:Genre ;
+    so:name "japanese emo"^^xsd:string .
+
+so:japanese-r-b a so:Genre ;
+    so:name "japanese r&b"^^xsd:string .
+
+so:javanese-dangdut a so:Genre ;
+    so:name "javanese dangdut"^^xsd:string .
+
+so:jawaiian a so:Genre ;
+    so:name "jawaiian"^^xsd:string .
+
+so:jazz a so:Genre ;
+    so:name "jazz"^^xsd:string .
+
+so:jazz-blues a so:Genre ;
+    so:name "jazz blues"^^xsd:string .
+
+so:jazz-funk a so:Genre ;
+    so:name "jazz funk"^^xsd:string .
+
+so:jazz-fusion a so:Genre ;
+    so:name "jazz fusion"^^xsd:string .
+
+so:jazz-guitar a so:Genre ;
+    so:name "jazz guitar"^^xsd:string .
+
+so:jazz-pop a so:Genre ;
+    so:name "jazz pop"^^xsd:string .
+
+so:jazz-saxophone a so:Genre ;
+    so:name "jazz saxophone"^^xsd:string .
+
+so:jazz-trio a so:Genre ;
+    so:name "jazz trio"^^xsd:string .
+
+so:jazz-trumpet a so:Genre ;
+    so:name "jazz trumpet"^^xsd:string .
+
+so:jazz-venezolano a so:Genre ;
+    so:name "jazz venezolano"^^xsd:string .
+
+so:jersey-club a so:Genre ;
+    so:name "jersey club"^^xsd:string .
+
+so:jewish-pop a so:Genre ;
+    so:name "jewish pop"^^xsd:string .
+
+so:jump-blues a so:Genre ;
+    so:name "jump blues"^^xsd:string .
+
+so:jumpstyle a so:Genre ;
+    so:name "jumpstyle"^^xsd:string .
+
+so:junior-eurovision a so:Genre ;
+    so:name "junior eurovision"^^xsd:string .
+
+so:k-indie a so:Genre ;
+    so:name "k-indie"^^xsd:string .
+
+so:k-pop a so:Genre ;
+    so:name "k-pop"^^xsd:string .
+
+so:k-pop-boy-group a so:Genre ;
+    so:name "k-pop boy group"^^xsd:string .
+
+so:k-pop-girl-group a so:Genre ;
+    so:name "k-pop girl group"^^xsd:string .
+
+so:k-pop-reality-show a so:Genre ;
+    so:name "k-pop reality show"^^xsd:string .
+
+so:k-rap a so:Genre ;
+    so:name "k-rap"^^xsd:string .
+
+so:karadeniz-pop a so:Genre ;
+    so:name "karadeniz pop"^^xsd:string .
+
+so:karadeniz-turkuleri a so:Genre ;
+    so:name "karadeniz turkuleri"^^xsd:string .
+
+so:karneval a so:Genre ;
+    so:name "karneval"^^xsd:string .
+
+so:kawaii-metal a so:Genre ;
+    so:name "kawaii metal"^^xsd:string .
+
+so:kazakh-hip-hop a so:Genre ;
+    so:name "kazakh hip hop"^^xsd:string .
+
+so:kazakh-pop a so:Genre ;
+    so:name "kazakh pop"^^xsd:string .
+
+so:kent-indie a so:Genre ;
+    so:name "kent indie"^^xsd:string .
+
+so:kentucky-hip-hop a so:Genre ;
+    so:name "kentucky hip hop"^^xsd:string .
+
+so:kenyan-pop a so:Genre ;
+    so:name "kenyan pop"^^xsd:string .
+
+so:keroncong a so:Genre ;
+    so:name "keroncong"^^xsd:string .
+
+so:kids-hip-hop a so:Genre ;
+    so:name "kids hip hop"^^xsd:string .
+
+so:kindermusik a so:Genre ;
+    so:name "kindermusik"^^xsd:string .
+
+so:kingston-on-indie a so:Genre ;
+    so:name "kingston on indie"^^xsd:string .
+
+so:kiwi-rock a so:Genre ;
+    so:name "kiwi rock"^^xsd:string .
+
+so:kizomba a so:Genre ;
+    so:name "kizomba"^^xsd:string .
+
+so:kizomba-antigas a so:Genre ;
+    so:name "kizomba antigas"^^xsd:string .
+
+so:kleinkunst a so:Genre ;
+    so:name "kleinkunst"^^xsd:string .
+
+so:kolsche-karneval a so:Genre ;
+    so:name "kolsche karneval"^^xsd:string .
+
+so:kompa-gouyad a so:Genre ;
+    so:name "kompa gouyad"^^xsd:string .
+
+so:kora a so:Genre ;
+    so:name "kora"^^xsd:string .
+
+so:korean-city-pop a so:Genre ;
+    so:name "korean city pop"^^xsd:string .
+
+so:korean-mask-singer a so:Genre ;
+    so:name "korean mask singer"^^xsd:string .
+
+so:korean-ost a so:Genre ;
+    so:name "korean ost"^^xsd:string .
+
+so:korean-pop a so:Genre ;
+    so:name "korean pop"^^xsd:string .
+
+so:korean-r-b a so:Genre ;
+    so:name "korean r&b"^^xsd:string .
+
+so:korean-singer-songwriter a so:Genre ;
+    so:name "korean singer-songwriter"^^xsd:string .
+
+so:kosovan-pop a so:Genre ;
+    so:name "kosovan pop"^^xsd:string .
+
+so:kurdish-hip-hop a so:Genre ;
+    so:name "kurdish hip hop"^^xsd:string .
+
+so:la-indie a so:Genre ;
+    so:name "la indie"^^xsd:string .
+
+so:la-pop a so:Genre ;
+    so:name "la pop"^^xsd:string .
+
+so:lagu-jawa a so:Genre ;
+    so:name "lagu jawa"^^xsd:string .
+
+so:lagu-sabahan a so:Genre ;
+    so:name "lagu sabahan"^^xsd:string .
+
+so:lagu-timur a so:Genre ;
+    so:name "lagu timur"^^xsd:string .
+
+so:laiko a so:Genre ;
+    so:name "laiko"^^xsd:string .
+
+so:latin a so:Genre ;
+    so:name "latin"^^xsd:string .
+
+so:latin-afrobeat a so:Genre ;
+    so:name "latin afrobeat"^^xsd:string .
+
+so:latin-alternative a so:Genre ;
+    so:name "latin alternative"^^xsd:string .
+
+so:latin-arena-pop a so:Genre ;
+    so:name "latin arena pop"^^xsd:string .
+
+so:latin-funk a so:Genre ;
+    so:name "latin funk"^^xsd:string .
+
+so:latin-hip-hop a so:Genre ;
+    so:name "latin hip hop"^^xsd:string .
+
+so:latin-jazz a so:Genre ;
+    so:name "latin jazz"^^xsd:string .
+
+so:latin-metal a so:Genre ;
+    so:name "latin metal"^^xsd:string .
+
+so:latin-pop a so:Genre ;
+    so:name "latin pop"^^xsd:string .
+
+so:latin-rock a so:Genre ;
+    so:name "latin rock"^^xsd:string .
+
+so:latin-talent-show a so:Genre ;
+    so:name "latin talent show"^^xsd:string .
+
+so:latin-viral-pop a so:Genre ;
+    so:name "latin viral pop"^^xsd:string .
+
+so:latin-viral-rap a so:Genre ;
+    so:name "latin viral rap"^^xsd:string .
+
+so:latintronica a so:Genre ;
+    so:name "latintronica"^^xsd:string .
+
+so:lds-youth a so:Genre ;
+    so:name "lds youth"^^xsd:string .
+
+so:leicester-indie a so:Genre ;
+    so:name "leicester indie"^^xsd:string .
+
+so:levenslied a so:Genre ;
+    so:name "levenslied"^^xsd:string .
+
+so:lgbtq--hip-hop a so:Genre ;
+    so:name "lgbtq+ hip hop"^^xsd:string .
+
+so:library-music a so:Genre ;
+    so:name "library music"^^xsd:string .
+
+so:liedermacher a so:Genre ;
+    so:name "liedermacher"^^xsd:string .
+
+so:light-music a so:Genre ;
+    so:name "light music"^^xsd:string .
+
+so:lilith a so:Genre ;
+    so:name "lilith"^^xsd:string .
+
+so:lithuanian-edm a so:Genre ;
+    so:name "lithuanian edm"^^xsd:string .
+
+so:lithuanian-electronic a so:Genre ;
+    so:name "lithuanian electronic"^^xsd:string .
+
+so:lithuanian-pop a so:Genre ;
+    so:name "lithuanian pop"^^xsd:string .
+
+so:lo-fi a so:Genre ;
+    so:name "lo-fi"^^xsd:string .
+
+so:lo-fi-beats a so:Genre ;
+    so:name "lo-fi beats"^^xsd:string .
+
+so:lo-fi-chill a so:Genre ;
+    so:name "lo-fi chill"^^xsd:string .
+
+so:lo-fi-cover a so:Genre ;
+    so:name "lo-fi cover"^^xsd:string .
+
+so:lo-fi-product a so:Genre ;
+    so:name "lo-fi product"^^xsd:string .
+
+so:lo-star a so:Genre ;
+    so:name "lo star"^^xsd:string .
+
+so:london-rap a so:Genre ;
+    so:name "london rap"^^xsd:string .
+
+so:lounge a so:Genre ;
+    so:name "lounge"^^xsd:string .
+
+so:lovers-rock a so:Genre ;
+    so:name "lovers rock"^^xsd:string .
+
+so:lund-indie a so:Genre ;
+    so:name "lund indie"^^xsd:string .
+
+so:madchester a so:Genre ;
+    so:name "madchester"^^xsd:string .
+
+so:magyar-mulatos a so:Genre ;
+    so:name "magyar mulatos"^^xsd:string .
+
+so:mainland-chinese-pop a so:Genre ;
+    so:name "mainland chinese pop"^^xsd:string .
+
+so:malang-indie a so:Genre ;
+    so:name "malang indie"^^xsd:string .
+
+so:malay-rap a so:Genre ;
+    so:name "malay rap"^^xsd:string .
+
+so:malaysian-hip-hop a so:Genre ;
+    so:name "malaysian hip hop"^^xsd:string .
+
+so:malaysian-indie a so:Genre ;
+    so:name "malaysian indie"^^xsd:string .
+
+so:malaysian-mandopop a so:Genre ;
+    so:name "malaysian mandopop"^^xsd:string .
+
+so:malaysian-pop a so:Genre ;
+    so:name "malaysian pop"^^xsd:string .
+
+so:malaysian-tamil-pop a so:Genre ;
+    so:name "malaysian tamil pop"^^xsd:string .
+
+so:malian-blues a so:Genre ;
+    so:name "malian blues"^^xsd:string .
+
+so:maltese-pop a so:Genre ;
+    so:name "maltese pop"^^xsd:string .
+
+so:maluku-pop a so:Genre ;
+    so:name "maluku pop"^^xsd:string .
+
+so:mambo-chileno a so:Genre ;
+    so:name "mambo chileno"^^xsd:string .
+
+so:manchester-hip-hop a so:Genre ;
+    so:name "manchester hip hop"^^xsd:string .
+
+so:mande-pop a so:Genre ;
+    so:name "mande pop"^^xsd:string .
+
+so:mandopop a so:Genre ;
+    so:name "mandopop"^^xsd:string .
+
+so:manguebeat a so:Genre ;
+    so:name "manguebeat"^^xsd:string .
+
+so:mariachi a so:Genre ;
+    so:name "mariachi"^^xsd:string .
+
+so:melancholia a so:Genre ;
+    so:name "melancholia"^^xsd:string .
+
+so:melbourne-bounce a so:Genre ;
+    so:name "melbourne bounce"^^xsd:string .
+
+so:melbourne-bounce-international a so:Genre ;
+    so:name "melbourne bounce international"^^xsd:string .
+
+so:mellow-gold a so:Genre ;
+    so:name "mellow gold"^^xsd:string .
+
+so:melodic-dubstep a so:Genre ;
+    so:name "melodic dubstep"^^xsd:string .
+
+so:melodic-metalcore a so:Genre ;
+    so:name "melodic metalcore"^^xsd:string .
+
+so:melodic-rap a so:Genre ;
+    so:name "melodic rap"^^xsd:string .
+
+so:melodipop a so:Genre ;
+    so:name "melodipop"^^xsd:string .
+
+so:meme-rap a so:Genre ;
+    so:name "meme rap"^^xsd:string .
+
+so:memphis-hip-hop a so:Genre ;
+    so:name "memphis hip hop"^^xsd:string .
+
+so:memphis-soul a so:Genre ;
+    so:name "memphis soul"^^xsd:string .
+
+so:merida-indie a so:Genre ;
+    so:name "merida indie"^^xsd:string .
+
+so:merseybeat a so:Genre ;
+    so:name "merseybeat"^^xsd:string .
+
+so:metal a so:Genre ;
+    so:name "metal"^^xsd:string .
+
+so:metal-colombiano a so:Genre ;
+    so:name "metal colombiano"^^xsd:string .
+
+so:metalcore a so:Genre ;
+    so:name "metalcore"^^xsd:string .
+
+so:metropopolis a so:Genre ;
+    so:name "metropopolis"^^xsd:string .
+
+so:mexican-classic-rock a so:Genre ;
+    so:name "mexican classic rock"^^xsd:string .
+
+so:mexican-edm a so:Genre ;
+    so:name "mexican edm"^^xsd:string .
+
+so:mexican-hip-hop a so:Genre ;
+    so:name "mexican hip hop"^^xsd:string .
+
+so:mexican-indie a so:Genre ;
+    so:name "mexican indie"^^xsd:string .
+
+so:mexican-pop a so:Genre ;
+    so:name "mexican pop"^^xsd:string .
+
+so:mexican-rock a so:Genre ;
+    so:name "mexican rock"^^xsd:string .
+
+so:mgp a so:Genre ;
+    so:name "mgp"^^xsd:string .
+
+so:mgpjr a so:Genre ;
+    so:name "mgpjr"^^xsd:string .
+
+so:miami-hip-hop a so:Genre ;
+    so:name "miami hip hop"^^xsd:string .
+
+so:milan-indie a so:Genre ;
+    so:name "milan indie"^^xsd:string .
+
+so:minimal-tech-house a so:Genre ;
+    so:name "minimal tech house"^^xsd:string .
+
+so:minneapolis-sound a so:Genre ;
+    so:name "minneapolis sound"^^xsd:string .
+
+so:minnesota-hip-hop a so:Genre ;
+    so:name "minnesota hip hop"^^xsd:string .
+
+so:mississippi-hip-hop a so:Genre ;
+    so:name "mississippi hip hop"^^xsd:string .
+
+so:modern-alternative-pop a so:Genre ;
+    so:name "modern alternative pop"^^xsd:string .
+
+so:modern-alternative-rock a so:Genre ;
+    so:name "modern alternative rock"^^xsd:string .
+
+so:modern-blues-rock a so:Genre ;
+    so:name "modern blues rock"^^xsd:string .
+
+so:modern-country-rock a so:Genre ;
+    so:name "modern country rock"^^xsd:string .
+
+so:modern-folk-rock a so:Genre ;
+    so:name "modern folk rock"^^xsd:string .
+
+so:modern-funk a so:Genre ;
+    so:name "modern funk"^^xsd:string .
+
+so:modern-hard-rock a so:Genre ;
+    so:name "modern hard rock"^^xsd:string .
+
+so:modern-indie-pop a so:Genre ;
+    so:name "modern indie pop"^^xsd:string .
+
+so:modern-reggae a so:Genre ;
+    so:name "modern reggae"^^xsd:string .
+
+so:modern-rock a so:Genre ;
+    so:name "modern rock"^^xsd:string .
+
+so:modern-salsa a so:Genre ;
+    so:name "modern salsa"^^xsd:string .
+
+so:moldovan-pop a so:Genre ;
+    so:name "moldovan pop"^^xsd:string .
+
+so:moombahton a so:Genre ;
+    so:name "moombahton"^^xsd:string .
+
+so:morelos-indie a so:Genre ;
+    so:name "morelos indie"^^xsd:string .
+
+so:morna a so:Genre ;
+    so:name "morna"^^xsd:string .
+
+so:moroccan-pop a so:Genre ;
+    so:name "moroccan pop"^^xsd:string .
+
+so:motown a so:Genre ;
+    so:name "motown"^^xsd:string .
+
+so:movie-tunes a so:Genre ;
+    so:name "movie tunes"^^xsd:string .
+
+so:mpb a so:Genre ;
+    so:name "mpb"^^xsd:string .
+
+so:mundart a so:Genre ;
+    so:name "mundart"^^xsd:string .
+
+so:musica-afroperuana a so:Genre ;
+    so:name "musica afroperuana"^^xsd:string .
+
+so:musica-andina a so:Genre ;
+    so:name "musica andina"^^xsd:string .
+
+so:musica-andina-chilena a so:Genre ;
+    so:name "musica andina chilena"^^xsd:string .
+
+so:musica-andina-colombiana a so:Genre ;
+    so:name "musica andina colombiana"^^xsd:string .
+
+so:musica-angolana a so:Genre ;
+    so:name "musica angolana"^^xsd:string .
+
+so:musica-baiana a so:Genre ;
+    so:name "musica baiana"^^xsd:string .
+
+so:musica-cabo-verdiana a so:Genre ;
+    so:name "musica cabo-verdiana"^^xsd:string .
+
+so:musica-canaria a so:Genre ;
+    so:name "musica canaria"^^xsd:string .
+
+so:musica-capixaba a so:Genre ;
+    so:name "musica capixaba"^^xsd:string .
+
+so:musica-catalana a so:Genre ;
+    so:name "musica catalana"^^xsd:string .
+
+so:musica-costarricense a so:Genre ;
+    so:name "musica costarricense"^^xsd:string .
+
+so:musica-criolla a so:Genre ;
+    so:name "musica criolla"^^xsd:string .
+
+so:musica-etnica a so:Genre ;
+    so:name "musica etnica"^^xsd:string .
+
+so:musica-gaucha a so:Genre ;
+    so:name "musica gaucha"^^xsd:string .
+
+so:musica-infantil a so:Genre ;
+    so:name "musica infantil"^^xsd:string .
+
+so:musica-madeirense a so:Genre ;
+    so:name "musica madeirense"^^xsd:string .
+
+so:musica-nortena-chilena a so:Genre ;
+    so:name "musica nortena chilena"^^xsd:string .
+
+so:musica-nublensina a so:Genre ;
+    so:name "musica nublensina"^^xsd:string .
+
+so:musica-para-criancas a so:Genre ;
+    so:name "musica para criancas"^^xsd:string .
+
+so:musica-para-ninos a so:Genre ;
+    so:name "musica para ninos"^^xsd:string .
+
+so:musica-paranaense a so:Genre ;
+    so:name "musica paranaense"^^xsd:string .
+
+so:musica-popular-colombiana a so:Genre ;
+    so:name "musica popular colombiana"^^xsd:string .
+
+so:musica-popular-uruguaya a so:Genre ;
+    so:name "musica popular uruguaya"^^xsd:string .
+
+so:musica-santomense a so:Genre ;
+    so:name "musica santomense"^^xsd:string .
+
+so:musica-sarda a so:Genre ;
+    so:name "musica sarda"^^xsd:string .
+
+so:musica-triste-brasileira a so:Genre ;
+    so:name "musica triste brasileira"^^xsd:string .
+
+so:musical-advocacy a so:Genre ;
+    so:name "musical advocacy"^^xsd:string .
+
+so:musiikkia-lapsille a so:Genre ;
+    so:name "musiikkia lapsille"^^xsd:string .
+
+so:musik-anak-anak a so:Genre ;
+    so:name "musik anak-anak"^^xsd:string .
+
+so:musique-comorienne a so:Genre ;
+    so:name "musique comorienne"^^xsd:string .
+
+so:muzica-crestina a so:Genre ;
+    so:name "muzica crestina"^^xsd:string .
+
+so:muziek-voor-kinderen a so:Genre ;
+    so:name "muziek voor kinderen"^^xsd:string .
+
+so:nantes-indie a so:Genre ;
+    so:name "nantes indie"^^xsd:string .
+
+so:nasheed a so:Genre ;
+    so:name "nasheed"^^xsd:string .
+
+so:nashville-sound a so:Genre ;
+    so:name "nashville sound"^^xsd:string .
+
+so:nasyid a so:Genre ;
+    so:name "nasyid"^^xsd:string .
+
+so:native-american a so:Genre ;
+    so:name "native american"^^xsd:string .
+
+so:native-american-contemporary a so:Genre ;
+    so:name "native american contemporary"^^xsd:string .
+
+so:nederlandse-hardstyle a so:Genre ;
+    so:name "nederlandse hardstyle"^^xsd:string .
+
+so:nederpop a so:Genre ;
+    so:name "nederpop"^^xsd:string .
+
+so:neo-mellow a so:Genre ;
+    so:name "neo mellow"^^xsd:string .
+
+so:neo-psychedelic a so:Genre ;
+    so:name "neo-psychedelic"^^xsd:string .
+
+so:neo-singer-songwriter a so:Genre ;
+    so:name "neo-singer-songwriter"^^xsd:string .
+
+so:neo-soul a so:Genre ;
+    so:name "neo soul"^^xsd:string .
+
+so:neo-synthpop a so:Genre ;
+    so:name "neo-synthpop"^^xsd:string .
+
+so:neomelodici a so:Genre ;
+    so:name "neomelodici"^^xsd:string .
+
+so:neon-pop-punk a so:Genre ;
+    so:name "neon pop punk"^^xsd:string .
+
+so:neue-deutsche-harte a so:Genre ;
+    so:name "neue deutsche harte"^^xsd:string .
+
+so:neue-deutsche-welle a so:Genre ;
+    so:name "neue deutsche welle"^^xsd:string .
+
+so:new-age a so:Genre ;
+    so:name "new age"^^xsd:string .
+
+so:new-americana a so:Genre ;
+    so:name "new americana"^^xsd:string .
+
+so:new-french-touch a so:Genre ;
+    so:name "new french touch"^^xsd:string .
+
+so:new-jack-swing a so:Genre ;
+    so:name "new jack swing"^^xsd:string .
+
+so:new-jersey-indie a so:Genre ;
+    so:name "new jersey indie"^^xsd:string .
+
+so:new-jersey-rap a so:Genre ;
+    so:name "new jersey rap"^^xsd:string .
+
+so:new-orleans-jazz a so:Genre ;
+    so:name "new orleans jazz"^^xsd:string .
+
+so:new-orleans-rap a so:Genre ;
+    so:name "new orleans rap"^^xsd:string .
+
+so:new-rave a so:Genre ;
+    so:name "new rave"^^xsd:string .
+
+so:new-romantic a so:Genre ;
+    so:name "new romantic"^^xsd:string .
+
+so:new-wave a so:Genre ;
+    so:name "new wave"^^xsd:string .
+
+so:new-wave-pop a so:Genre ;
+    so:name "new wave pop"^^xsd:string .
+
+so:new-york-drill a so:Genre ;
+    so:name "new york drill"^^xsd:string .
+
+so:nice-indie a so:Genre ;
+    so:name "nice indie"^^xsd:string .
+
+so:nigerian-hip-hop a so:Genre ;
+    so:name "nigerian hip hop"^^xsd:string .
+
+so:nigerian-pop a so:Genre ;
+    so:name "nigerian pop"^^xsd:string .
+
+so:ninja a so:Genre ;
+    so:name "ninja"^^xsd:string .
+
+so:noise-pop a so:Genre ;
+    so:name "noise pop"^^xsd:string .
+
+so:nordic-folk-metal a so:Genre ;
+    so:name "nordic folk metal"^^xsd:string .
+
+so:nordic-house a so:Genre ;
+    so:name "nordic house"^^xsd:string .
+
+so:nordic-orchestra a so:Genre ;
+    so:name "nordic orchestra"^^xsd:string .
+
+so:nordic-soundtrack a so:Genre ;
+    so:name "nordic soundtrack"^^xsd:string .
+
+so:nordnorsk-musikk a so:Genre ;
+    so:name "nordnorsk musikk"^^xsd:string .
+
+so:nordnorsk-rap a so:Genre ;
+    so:name "nordnorsk rap"^^xsd:string .
+
+so:norrlandsk-hip-hop a so:Genre ;
+    so:name "norrlandsk hip hop"^^xsd:string .
+
+so:norsk-lovsang a so:Genre ;
+    so:name "norsk lovsang"^^xsd:string .
+
+so:norske-viser a so:Genre ;
+    so:name "norske viser"^^xsd:string .
+
+so:norteno a so:Genre ;
+    so:name "norteno"^^xsd:string .
+
+so:north-carolina-hip-hop a so:Genre ;
+    so:name "north carolina hip hop"^^xsd:string .
+
+so:north-east-england-indie a so:Genre ;
+    so:name "north east england indie"^^xsd:string .
+
+so:northern-irish-indie a so:Genre ;
+    so:name "northern irish indie"^^xsd:string .
+
+so:northern-soul a so:Genre ;
+    so:name "northern soul"^^xsd:string .
+
+so:norwegian-choir a so:Genre ;
+    so:name "norwegian choir"^^xsd:string .
+
+so:norwegian-classical a so:Genre ;
+    so:name "norwegian classical"^^xsd:string .
+
+so:norwegian-country a so:Genre ;
+    so:name "norwegian country"^^xsd:string .
+
+so:norwegian-folk-rock a so:Genre ;
+    so:name "norwegian folk rock"^^xsd:string .
+
+so:norwegian-gospel a so:Genre ;
+    so:name "norwegian gospel"^^xsd:string .
+
+so:norwegian-hip-hop a so:Genre ;
+    so:name "norwegian hip hop"^^xsd:string .
+
+so:norwegian-house a so:Genre ;
+    so:name "norwegian house"^^xsd:string .
+
+so:norwegian-indie a so:Genre ;
+    so:name "norwegian indie"^^xsd:string .
+
+so:norwegian-jazz a so:Genre ;
+    so:name "norwegian jazz"^^xsd:string .
+
+so:norwegian-pop a so:Genre ;
+    so:name "norwegian pop"^^xsd:string .
+
+so:norwegian-pop-rap a so:Genre ;
+    so:name "norwegian pop rap"^^xsd:string .
+
+so:norwegian-rock a so:Genre ;
+    so:name "norwegian rock"^^xsd:string .
+
+so:norwegian-singer-songwriter a so:Genre ;
+    so:name "norwegian singer-songwriter"^^xsd:string .
+
+so:norwegian-trap a so:Genre ;
+    so:name "norwegian trap"^^xsd:string .
+
+so:nottingham-hip-hop a so:Genre ;
+    so:name "nottingham hip hop"^^xsd:string .
+
+so:nottingham-indie a so:Genre ;
+    so:name "nottingham indie"^^xsd:string .
+
+so:nouvelle-chanson-francaise a so:Genre ;
+    so:name "nouvelle chanson francaise"^^xsd:string .
+
+so:nova-mpb a so:Genre ;
+    so:name "nova mpb"^^xsd:string .
+
+so:nova-musica-paulista a so:Genre ;
+    so:name "nova musica paulista"^^xsd:string .
+
+so:novelty a so:Genre ;
+    so:name "novelty"^^xsd:string .
+
+so:nu-cumbia a so:Genre ;
+    so:name "nu-cumbia"^^xsd:string .
+
+so:nu-disco a so:Genre ;
+    so:name "nu disco"^^xsd:string .
+
+so:nu-jazz a so:Genre ;
+    so:name "nu jazz"^^xsd:string .
+
+so:nu-metal a so:Genre ;
+    so:name "nu metal"^^xsd:string .
+
+so:nueva-cancion a so:Genre ;
+    so:name "nueva cancion"^^xsd:string .
+
+so:nueva-trova-chilena a so:Genre ;
+    so:name "nueva trova chilena"^^xsd:string .
+
+so:nuevo-flamenco a so:Genre ;
+    so:name "nuevo flamenco"^^xsd:string .
+
+so:nuevo-regional-mexicano a so:Genre ;
+    so:name "nuevo regional mexicano"^^xsd:string .
+
+so:nyc-pop a so:Genre ;
+    so:name "nyc pop"^^xsd:string .
+
+so:nyc-rap a so:Genre ;
+    so:name "nyc rap"^^xsd:string .
+
+so:nz-christian a so:Genre ;
+    so:name "nz christian"^^xsd:string .
+
+so:nz-hip-hop a so:Genre ;
+    so:name "nz hip hop"^^xsd:string .
+
+so:nz-pop a so:Genre ;
+    so:name "nz pop"^^xsd:string .
+
+so:nz-reggae a so:Genre ;
+    so:name "nz reggae"^^xsd:string .
+
+so:nz-singer-songwriter a so:Genre ;
+    so:name "nz singer-songwriter"^^xsd:string .
+
+so:oakland-hip-hop a so:Genre ;
+    so:name "oakland hip hop"^^xsd:string .
+
+so:oc-rap a so:Genre ;
+    so:name "oc rap"^^xsd:string .
+
+so:ohio-hip-hop a so:Genre ;
+    so:name "ohio hip hop"^^xsd:string .
+
+so:oklahoma-country a so:Genre ;
+    so:name "oklahoma country"^^xsd:string .
+
+so:old-school-hip-hop a so:Genre ;
+    so:name "old school hip hop"^^xsd:string .
+
+so:old-school-rap-francais a so:Genre ;
+    so:name "old school rap francais"^^xsd:string .
+
+so:oldschool-deutschrap a so:Genre ;
+    so:name "oldschool deutschrap"^^xsd:string .
+
+so:ontario-indie a so:Genre ;
+    so:name "ontario indie"^^xsd:string .
+
+so:opera-metal a so:Genre ;
+    so:name "opera metal"^^xsd:string .
+
+so:operatic-pop a so:Genre ;
+    so:name "operatic pop"^^xsd:string .
+
+so:opm a so:Genre ;
+    so:name "opm"^^xsd:string .
+
+so:orchestra a so:Genre ;
+    so:name "orchestra"^^xsd:string .
+
+so:orebro-indie a so:Genre ;
+    so:name "orebro indie"^^xsd:string .
+
+so:orlando-indie a so:Genre ;
+    so:name "orlando indie"^^xsd:string .
+
+so:oslo-indie a so:Genre ;
+    so:name "oslo indie"^^xsd:string .
+
+so:ottawa-rap a so:Genre ;
+    so:name "ottawa rap"^^xsd:string .
+
+so:outlaw-country a so:Genre ;
+    so:name "outlaw country"^^xsd:string .
+
+so:oyun-havasi a so:Genre ;
+    so:name "oyun havasi"^^xsd:string .
+
+so:pacific-islands-pop a so:Genre ;
+    so:name "pacific islands pop"^^xsd:string .
+
+so:pagode a so:Genre ;
+    so:name "pagode"^^xsd:string .
+
+so:pagode-baiano a so:Genre ;
+    so:name "pagode baiano"^^xsd:string .
+
+so:pagode-novo a so:Genre ;
+    so:name "pagode novo"^^xsd:string .
+
+so:pakistani-hip-hop a so:Genre ;
+    so:name "pakistani hip hop"^^xsd:string .
+
+so:panamanian-pop a so:Genre ;
+    so:name "panamanian pop"^^xsd:string .
+
+so:papuri a so:Genre ;
+    so:name "papuri"^^xsd:string .
+
+so:partyschlager a so:Genre ;
+    so:name "partyschlager"^^xsd:string .
+
+so:permanent-wave a so:Genre ;
+    so:name "permanent wave"^^xsd:string .
+
+so:perreo a so:Genre ;
+    so:name "perreo"^^xsd:string .
+
+so:persian-pop a so:Genre ;
+    so:name "persian pop"^^xsd:string .
+
+so:perth-indie a so:Genre ;
+    so:name "perth indie"^^xsd:string .
+
+so:peruvian-hip-hop a so:Genre ;
+    so:name "peruvian hip hop"^^xsd:string .
+
+so:peruvian-indie a so:Genre ;
+    so:name "peruvian indie"^^xsd:string .
+
+so:peruvian-rock a so:Genre ;
+    so:name "peruvian rock"^^xsd:string .
+
+so:philly-rap a so:Genre ;
+    so:name "philly rap"^^xsd:string .
+
+so:phonk a so:Genre ;
+    so:name "phonk"^^xsd:string .
+
+so:piano-blues a so:Genre ;
+    so:name "piano blues"^^xsd:string .
+
+so:piano-rock a so:Genre ;
+    so:name "piano rock"^^xsd:string .
+
+so:pinoy-alternative-rap a so:Genre ;
+    so:name "pinoy alternative rap"^^xsd:string .
+
+so:pinoy-hip-hop a so:Genre ;
+    so:name "pinoy hip hop"^^xsd:string .
+
+so:pinoy-idol-pop a so:Genre ;
+    so:name "pinoy idol pop"^^xsd:string .
+
+so:pinoy-indie a so:Genre ;
+    so:name "pinoy indie"^^xsd:string .
+
+so:pinoy-pop-punk a so:Genre ;
+    so:name "pinoy pop punk"^^xsd:string .
+
+so:pinoy-praise a so:Genre ;
+    so:name "pinoy praise"^^xsd:string .
+
+so:pinoy-r-b a so:Genre ;
+    so:name "pinoy r&b"^^xsd:string .
+
+so:pinoy-reggae a so:Genre ;
+    so:name "pinoy reggae"^^xsd:string .
+
+so:pinoy-rock a so:Genre ;
+    so:name "pinoy rock"^^xsd:string .
+
+so:pinoy-singer-songwriter a so:Genre ;
+    so:name "pinoy singer-songwriter"^^xsd:string .
+
+so:pinoy-trap a so:Genre ;
+    so:name "pinoy trap"^^xsd:string .
+
+so:piseiro a so:Genre ;
+    so:name "piseiro"^^xsd:string .
+
+so:pittsburgh-indie a so:Genre ;
+    so:name "pittsburgh indie"^^xsd:string .
+
+so:pittsburgh-rap a so:Genre ;
+    so:name "pittsburgh rap"^^xsd:string .
+
+so:pixie a so:Genre ;
+    so:name "pixie"^^xsd:string .
+
+so:plugg a so:Genre ;
+    so:name "plugg"^^xsd:string .
+
+so:poezja-spiewana a so:Genre ;
+    so:name "poezja spiewana"^^xsd:string .
+
+so:polish-alternative a so:Genre ;
+    so:name "polish alternative"^^xsd:string .
+
+so:polish-alternative-rap a so:Genre ;
+    so:name "polish alternative rap"^^xsd:string .
+
+so:polish-alternative-rock a so:Genre ;
+    so:name "polish alternative rock"^^xsd:string .
+
+so:polish-ambient a so:Genre ;
+    so:name "polish ambient"^^xsd:string .
+
+so:polish-blues a so:Genre ;
+    so:name "polish blues"^^xsd:string .
+
+so:polish-contemporary-classical a so:Genre ;
+    so:name "polish contemporary classical"^^xsd:string .
+
+so:polish-electronica a so:Genre ;
+    so:name "polish electronica"^^xsd:string .
+
+so:polish-folk a so:Genre ;
+    so:name "polish folk"^^xsd:string .
+
+so:polish-hip-hop a so:Genre ;
+    so:name "polish hip hop"^^xsd:string .
+
+so:polish-indie a so:Genre ;
+    so:name "polish indie"^^xsd:string .
+
+so:polish-indie-rock a so:Genre ;
+    so:name "polish indie rock"^^xsd:string .
+
+so:polish-pop a so:Genre ;
+    so:name "polish pop"^^xsd:string .
+
+so:polish-post-punk a so:Genre ;
+    so:name "polish post-punk"^^xsd:string .
+
+so:polish-post-rock a so:Genre ;
+    so:name "polish post-rock"^^xsd:string .
+
+so:polish-rock a so:Genre ;
+    so:name "polish rock"^^xsd:string .
+
+so:polish-synthpop a so:Genre ;
+    so:name "polish synthpop"^^xsd:string .
+
+so:polish-trap a so:Genre ;
+    so:name "polish trap"^^xsd:string .
+
+so:political-hip-hop a so:Genre ;
+    so:name "political hip hop"^^xsd:string .
+
+so:pony a so:Genre ;
+    so:name "pony"^^xsd:string .
+
+so:pop a so:Genre ;
+    so:name "pop"^^xsd:string .
+
+so:pop-argentino a so:Genre ;
+    so:name "pop argentino"^^xsd:string .
+
+so:pop-chileno a so:Genre ;
+    so:name "pop chileno"^^xsd:string .
+
+so:pop-costarricense a so:Genre ;
+    so:name "pop costarricense"^^xsd:string .
+
+so:pop-dance a so:Genre ;
+    so:name "pop dance"^^xsd:string .
+
+so:pop-edm a so:Genre ;
+    so:name "pop edm"^^xsd:string .
+
+so:pop-electronico a so:Genre ;
+    so:name "pop electronico"^^xsd:string .
+
+so:pop-emo a so:Genre ;
+    so:name "pop emo"^^xsd:string .
+
+so:pop-flamenco a so:Genre ;
+    so:name "pop flamenco"^^xsd:string .
+
+so:pop-folk a so:Genre ;
+    so:name "pop folk"^^xsd:string .
+
+so:pop-house a so:Genre ;
+    so:name "pop house"^^xsd:string .
+
+so:pop-lgbtq--brasileira a so:Genre ;
+    so:name "pop lgbtq+ brasileira"^^xsd:string .
+
+so:pop-nacional a so:Genre ;
+    so:name "pop nacional"^^xsd:string .
+
+so:pop-peruano a so:Genre ;
+    so:name "pop peruano"^^xsd:string .
+
+so:pop-punk a so:Genre ;
+    so:name "pop punk"^^xsd:string .
+
+so:pop-quebecois a so:Genre ;
+    so:name "pop quebecois"^^xsd:string .
+
+so:pop-r-b a so:Genre ;
+    so:name "pop r&b"^^xsd:string .
+
+so:pop-rap a so:Genre ;
+    so:name "pop rap"^^xsd:string .
+
+so:pop-rap-brasileiro a so:Genre ;
+    so:name "pop rap brasileiro"^^xsd:string .
+
+so:pop-reggaeton a so:Genre ;
+    so:name "pop reggaeton"^^xsd:string .
+
+so:pop-rock a so:Genre ;
+    so:name "pop rock"^^xsd:string .
+
+so:pop-rock-brasileiro a so:Genre ;
+    so:name "pop rock brasileiro"^^xsd:string .
+
+so:pop-romantico a so:Genre ;
+    so:name "pop romantico"^^xsd:string .
+
+so:pop-soul a so:Genre ;
+    so:name "pop soul"^^xsd:string .
+
+so:pop-teen-brasileiro a so:Genre ;
+    so:name "pop teen brasileiro"^^xsd:string .
+
+so:pop-urbaine a so:Genre ;
+    so:name "pop urbaine"^^xsd:string .
+
+so:pop-venezolano a so:Genre ;
+    so:name "pop venezolano"^^xsd:string .
+
+so:pop-virale-italiano a so:Genre ;
+    so:name "pop virale italiano"^^xsd:string .
+
+so:popping a so:Genre ;
+    so:name "popping"^^xsd:string .
+
+so:porro a so:Genre ;
+    so:name "porro"^^xsd:string .
+
+so:portland-hip-hop a so:Genre ;
+    so:name "portland hip hop"^^xsd:string .
+
+so:portuguese-indie a so:Genre ;
+    so:name "portuguese indie"^^xsd:string .
+
+so:portuguese-indie-rock a so:Genre ;
+    so:name "portuguese indie rock"^^xsd:string .
+
+so:portuguese-pop a so:Genre ;
+    so:name "portuguese pop"^^xsd:string .
+
+so:portuguese-rock a so:Genre ;
+    so:name "portuguese rock"^^xsd:string .
+
+so:post-grunge a so:Genre ;
+    so:name "post-grunge"^^xsd:string .
+
+so:post-punk a so:Genre ;
+    so:name "post-punk"^^xsd:string .
+
+so:post-punk-argentina a so:Genre ;
+    so:name "post-punk argentina"^^xsd:string .
+
+so:post-romantic-era a so:Genre ;
+    so:name "post-romantic era"^^xsd:string .
+
+so:post-teen-pop a so:Genre ;
+    so:name "post-teen pop"^^xsd:string .
+
+so:power-metal a so:Genre ;
+    so:name "power metal"^^xsd:string .
+
+so:progressive-electro-house a so:Genre ;
+    so:name "progressive electro house"^^xsd:string .
+
+so:progressive-house a so:Genre ;
+    so:name "progressive house"^^xsd:string .
+
+so:progressive-metal a so:Genre ;
+    so:name "progressive metal"^^xsd:string .
+
+so:progressive-rock a so:Genre ;
+    so:name "progressive rock"^^xsd:string .
+
+so:progressive-thrash a so:Genre ;
+    so:name "progressive thrash"^^xsd:string .
+
+so:progressive-trance a so:Genre ;
+    so:name "progressive trance"^^xsd:string .
+
+so:psychedelic-hip-hop a so:Genre ;
+    so:name "psychedelic hip hop"^^xsd:string .
+
+so:psychedelic-rock a so:Genre ;
+    so:name "psychedelic rock"^^xsd:string .
+
+so:psychedelic-soul a so:Genre ;
+    so:name "psychedelic soul"^^xsd:string .
+
+so:puerto-rican-pop a so:Genre ;
+    so:name "puerto rican pop"^^xsd:string .
+
+so:puerto-rican-rock a so:Genre ;
+    so:name "puerto rican rock"^^xsd:string .
+
+so:punjabi-hip-hop a so:Genre ;
+    so:name "punjabi hip hop"^^xsd:string .
+
+so:punjabi-pop a so:Genre ;
+    so:name "punjabi pop"^^xsd:string .
+
+so:punk a so:Genre ;
+    so:name "punk"^^xsd:string .
+
+so:punk-blues a so:Genre ;
+    so:name "punk blues"^^xsd:string .
+
+so:punk-tuga a so:Genre ;
+    so:name "punk tuga"^^xsd:string .
+
+so:qanun a so:Genre ;
+    so:name "qanun"^^xsd:string .
+
+so:quebec-indie a so:Genre ;
+    so:name "quebec indie"^^xsd:string .
+
+so:queens-hip-hop a so:Genre ;
+    so:name "queens hip hop"^^xsd:string .
+
+so:quiet-storm a so:Genre ;
+    so:name "quiet storm"^^xsd:string .
+
+so:r-b a so:Genre ;
+    so:name "r&b"^^xsd:string .
+
+so:r-b-argentino a so:Genre ;
+    so:name "r&b argentino"^^xsd:string .
+
+so:r-b-brasileiro a so:Genre ;
+    so:name "r&b brasileiro"^^xsd:string .
+
+so:r-b-en-espanol a so:Genre ;
+    so:name "r&b en espanol"^^xsd:string .
+
+so:r-b-italiano a so:Genre ;
+    so:name "r&b italiano"^^xsd:string .
+
+so:radio-symphony a so:Genre ;
+    so:name "radio symphony"^^xsd:string .
+
+so:ragga-jungle a so:Genre ;
+    so:name "ragga jungle"^^xsd:string .
+
+so:rai a so:Genre ;
+    so:name "rai"^^xsd:string .
+
+so:ranchera a so:Genre ;
+    so:name "ranchera"^^xsd:string .
+
+so:rap a so:Genre ;
+    so:name "rap"^^xsd:string .
+
+so:rap-algerien a so:Genre ;
+    so:name "rap algerien"^^xsd:string .
+
+so:rap-angolano a so:Genre ;
+    so:name "rap angolano"^^xsd:string .
+
+so:rap-anime a so:Genre ;
+    so:name "rap anime"^^xsd:string .
+
+so:rap-antillais a so:Genre ;
+    so:name "rap antillais"^^xsd:string .
+
+so:rap-baiano a so:Genre ;
+    so:name "rap baiano"^^xsd:string .
+
+so:rap-baixada-fluminense a so:Genre ;
+    so:name "rap baixada fluminense"^^xsd:string .
+
+so:rap-belge a so:Genre ;
+    so:name "rap belge"^^xsd:string .
+
+so:rap-boricua a so:Genre ;
+    so:name "rap boricua"^^xsd:string .
+
+so:rap-calme a so:Genre ;
+    so:name "rap calme"^^xsd:string .
+
+so:rap-canario a so:Genre ;
+    so:name "rap canario"^^xsd:string .
+
+so:rap-capixaba a so:Genre ;
+    so:name "rap capixaba"^^xsd:string .
+
+so:rap-catala a so:Genre ;
+    so:name "rap catala"^^xsd:string .
+
+so:rap-cearense a so:Genre ;
+    so:name "rap cearense"^^xsd:string .
+
+so:rap-chileno a so:Genre ;
+    so:name "rap chileno"^^xsd:string .
+
+so:rap-conciencia a so:Genre ;
+    so:name "rap conciencia"^^xsd:string .
+
+so:rap-conscient a so:Genre ;
+    so:name "rap conscient"^^xsd:string .
+
+so:rap-criolo a so:Genre ;
+    so:name "rap criolo"^^xsd:string .
+
+so:rap-df a so:Genre ;
+    so:name "rap df"^^xsd:string .
+
+so:rap-dominicano a so:Genre ;
+    so:name "rap dominicano"^^xsd:string .
+
+so:rap-espanol a so:Genre ;
+    so:name "rap espanol"^^xsd:string .
+
+so:rap-feminino-nacional a so:Genre ;
+    so:name "rap feminino nacional"^^xsd:string .
+
+so:rap-francais a so:Genre ;
+    so:name "rap francais"^^xsd:string .
+
+so:rap-genovese a so:Genre ;
+    so:name "rap genovese"^^xsd:string .
+
+so:rap-inde a so:Genre ;
+    so:name "rap inde"^^xsd:string .
+
+so:rap-italiano-old-school a so:Genre ;
+    so:name "rap italiano old school"^^xsd:string .
+
+so:rap-ivoire a so:Genre ;
+    so:name "rap ivoire"^^xsd:string .
+
+so:rap-kreyol a so:Genre ;
+    so:name "rap kreyol"^^xsd:string .
+
+so:rap-latina a so:Genre ;
+    so:name "rap latina"^^xsd:string .
+
+so:rap-lyonnais a so:Genre ;
+    so:name "rap lyonnais"^^xsd:string .
+
+so:rap-maroc a so:Genre ;
+    so:name "rap maroc"^^xsd:string .
+
+so:rap-marseille a so:Genre ;
+    so:name "rap marseille"^^xsd:string .
+
+so:rap-metal a so:Genre ;
+    so:name "rap metal"^^xsd:string .
+
+so:rap-mineiro a so:Genre ;
+    so:name "rap mineiro"^^xsd:string .
+
+so:rap-montrealais a so:Genre ;
+    so:name "rap montrealais"^^xsd:string .
+
+so:rap-nacional-antigo a so:Genre ;
+    so:name "rap nacional antigo"^^xsd:string .
+
+so:rap-napoletano a so:Genre ;
+    so:name "rap napoletano"^^xsd:string .
+
+so:rap-portuense a so:Genre ;
+    so:name "rap portuense"^^xsd:string .
+
+so:rap-rock a so:Genre ;
+    so:name "rap rock"^^xsd:string .
+
+so:rap-romantico a so:Genre ;
+    so:name "rap romantico"^^xsd:string .
+
+so:rap-sardegna a so:Genre ;
+    so:name "rap sardegna"^^xsd:string .
+
+so:rap-siciliano a so:Genre ;
+    so:name "rap siciliano"^^xsd:string .
+
+so:rap-tuga-underground a so:Genre ;
+    so:name "rap tuga underground"^^xsd:string .
+
+so:rap-tunisien a so:Genre ;
+    so:name "rap tunisien"^^xsd:string .
+
+so:rap-underground-argentino a so:Genre ;
+    so:name "rap underground argentino"^^xsd:string .
+
+so:rap-underground-espanol a so:Genre ;
+    so:name "rap underground espanol"^^xsd:string .
+
+so:rap-underground-mexicano a so:Genre ;
+    so:name "rap underground mexicano"^^xsd:string .
+
+so:rap-uruguayo a so:Genre ;
+    so:name "rap uruguayo"^^xsd:string .
+
+so:rautalanka a so:Genre ;
+    so:name "rautalanka"^^xsd:string .
+
+so:rave-funk a so:Genre ;
+    so:name "rave funk"^^xsd:string .
+
+so:rebel-blues a so:Genre ;
+    so:name "rebel blues"^^xsd:string .
+
+so:reggae a so:Genre ;
+    so:name "reggae"^^xsd:string .
+
+so:reggae-catala a so:Genre ;
+    so:name "reggae catala"^^xsd:string .
+
+so:reggae-en-espanol a so:Genre ;
+    so:name "reggae en espanol"^^xsd:string .
+
+so:reggae-fusion a so:Genre ;
+    so:name "reggae fusion"^^xsd:string .
+
+so:reggae-maghreb a so:Genre ;
+    so:name "reggae maghreb"^^xsd:string .
+
+so:reggae-peruano a so:Genre ;
+    so:name "reggae peruano"^^xsd:string .
+
+so:reggae-tuga a so:Genre ;
+    so:name "reggae tuga"^^xsd:string .
+
+so:reggaeton a so:Genre ;
+    so:name "reggaeton"^^xsd:string .
+
+so:reggaeton-chileno a so:Genre ;
+    so:name "reggaeton chileno"^^xsd:string .
+
+so:reggaeton-colombiano a so:Genre ;
+    so:name "reggaeton colombiano"^^xsd:string .
+
+so:reggaeton-flow a so:Genre ;
+    so:name "reggaeton flow"^^xsd:string .
+
+so:reggaeton-mexicano a so:Genre ;
+    so:name "reggaeton mexicano"^^xsd:string .
+
+so:regional-mexican a so:Genre ;
+    so:name "regional mexican"^^xsd:string .
+
+so:relaxative a so:Genre ;
+    so:name "relaxative"^^xsd:string .
+
+so:reunion-pop a so:Genre ;
+    so:name "reunion pop"^^xsd:string .
+
+so:rhode-island-rap a so:Genre ;
+    so:name "rhode island rap"^^xsd:string .
+
+so:rhythm-and-blues a so:Genre ;
+    so:name "rhythm and blues"^^xsd:string .
+
+so:riddim a so:Genre ;
+    so:name "riddim"^^xsd:string .
+
+so:rif a so:Genre ;
+    so:name "rif"^^xsd:string .
+
+so:ritmo-kombina a so:Genre ;
+    so:name "ritmo kombina"^^xsd:string .
+
+so:rkt a so:Genre ;
+    so:name "rkt"^^xsd:string .
+
+so:rock a so:Genre ;
+    so:name "rock"^^xsd:string .
+
+so:rock-alternativo-espanol a so:Genre ;
+    so:name "rock alternativo espanol"^^xsd:string .
+
+so:rock-and-roll a so:Genre ;
+    so:name "rock-and-roll"^^xsd:string .
+
+so:rock-andaluz a so:Genre ;
+    so:name "rock andaluz"^^xsd:string .
+
+so:rock-en-espanol a so:Genre ;
+    so:name "rock en espanol"^^xsd:string .
+
+so:rock-kapak a so:Genre ;
+    so:name "rock kapak"^^xsd:string .
+
+so:rock-keyboard a so:Genre ;
+    so:name "rock keyboard"^^xsd:string .
+
+so:rock-mineiro a so:Genre ;
+    so:name "rock mineiro"^^xsd:string .
+
+so:rock-nacional a so:Genre ;
+    so:name "rock nacional"^^xsd:string .
+
+so:rock-nacional-brasileiro a so:Genre ;
+    so:name "rock nacional brasileiro"^^xsd:string .
+
+so:rockabilly a so:Genre ;
+    so:name "rockabilly"^^xsd:string .
+
+so:roda-de-samba a so:Genre ;
+    so:name "roda de samba"^^xsd:string .
+
+so:rogaland-musikk a so:Genre ;
+    so:name "rogaland musikk"^^xsd:string .
+
+so:romanian-house a so:Genre ;
+    so:name "romanian house"^^xsd:string .
+
+so:romanian-pop a so:Genre ;
+    so:name "romanian pop"^^xsd:string .
+
+so:romanian-rock a so:Genre ;
+    so:name "romanian rock"^^xsd:string .
+
+so:rome-indie a so:Genre ;
+    so:name "rome indie"^^xsd:string .
+
+so:roots-reggae a so:Genre ;
+    so:name "roots reggae"^^xsd:string .
+
+so:roots-rock a so:Genre ;
+    so:name "roots rock"^^xsd:string .
+
+so:rumba a so:Genre ;
+    so:name "rumba"^^xsd:string .
+
+so:rumba-congolaise a so:Genre ;
+    so:name "rumba congolaise"^^xsd:string .
+
+so:russelater a so:Genre ;
+    so:name "russelater"^^xsd:string .
+
+so:russian-alt-pop a so:Genre ;
+    so:name "russian alt pop"^^xsd:string .
+
+so:russian-dance a so:Genre ;
+    so:name "russian dance"^^xsd:string .
+
+so:russian-dance-pop a so:Genre ;
+    so:name "russian dance pop"^^xsd:string .
+
+so:russian-edm a so:Genre ;
+    so:name "russian edm"^^xsd:string .
+
+so:russian-gangster-rap a so:Genre ;
+    so:name "russian gangster rap"^^xsd:string .
+
+so:russian-hip-hop a so:Genre ;
+    so:name "russian hip hop"^^xsd:string .
+
+so:russian-pop a so:Genre ;
+    so:name "russian pop"^^xsd:string .
+
+so:russian-rave a so:Genre ;
+    so:name "russian rave"^^xsd:string .
+
+so:russian-trap a so:Genre ;
+    so:name "russian trap"^^xsd:string .
+
+so:sacramento-hip-hop a so:Genre ;
+    so:name "sacramento hip hop"^^xsd:string .
+
+so:sad-lo-fi a so:Genre ;
+    so:name "sad lo-fi"^^xsd:string .
+
+so:sad-rap a so:Genre ;
+    so:name "sad rap"^^xsd:string .
+
+so:salsa a so:Genre ;
+    so:name "salsa"^^xsd:string .
+
+so:salsa-choke a so:Genre ;
+    so:name "salsa choke"^^xsd:string .
+
+so:salsa-colombiana a so:Genre ;
+    so:name "salsa colombiana"^^xsd:string .
+
+so:salsa-international a so:Genre ;
+    so:name "salsa international"^^xsd:string .
+
+so:salsa-peruana a so:Genre ;
+    so:name "salsa peruana"^^xsd:string .
+
+so:salsa-puertorriquena a so:Genre ;
+    so:name "salsa puertorriquena"^^xsd:string .
+
+so:salsa-urbana a so:Genre ;
+    so:name "salsa urbana"^^xsd:string .
+
+so:salsa-venezolana a so:Genre ;
+    so:name "salsa venezolana"^^xsd:string .
+
+so:samba a so:Genre ;
+    so:name "samba"^^xsd:string .
+
+so:samba-de-roda a so:Genre ;
+    so:name "samba de roda"^^xsd:string .
+
+so:samba-moderno a so:Genre ;
+    so:name "samba moderno"^^xsd:string .
+
+so:samba-reggae a so:Genre ;
+    so:name "samba reggae"^^xsd:string .
+
+so:sami a so:Genre ;
+    so:name "sami"^^xsd:string .
+
+so:san-diego-rap a so:Genre ;
+    so:name "san diego rap"^^xsd:string .
+
+so:saskatchewan-indie a so:Genre ;
+    so:name "saskatchewan indie"^^xsd:string .
+
+so:scam-rap a so:Genre ;
+    so:name "scam rap"^^xsd:string .
+
+so:scandinavian-r-b a so:Genre ;
+    so:name "scandinavian r&b"^^xsd:string .
+
+so:scandipop a so:Genre ;
+    so:name "scandipop"^^xsd:string .
+
+so:schlager a so:Genre ;
+    so:name "schlager"^^xsd:string .
+
+so:schweizer-rap a so:Genre ;
+    so:name "schweizer rap"^^xsd:string .
+
+so:scorecore a so:Genre ;
+    so:name "scorecore"^^xsd:string .
+
+so:scottish-indie-rock a so:Genre ;
+    so:name "scottish indie rock"^^xsd:string .
+
+so:scottish-rock a so:Genre ;
+    so:name "scottish rock"^^xsd:string .
+
+so:scottish-singer-songwriter a so:Genre ;
+    so:name "scottish singer-songwriter"^^xsd:string .
+
+so:screamocore a so:Genre ;
+    so:name "screamocore"^^xsd:string .
+
+so:seattle-hip-hop a so:Genre ;
+    so:name "seattle hip hop"^^xsd:string .
+
+so:semba a so:Genre ;
+    so:name "semba"^^xsd:string .
+
+so:sertanejo a so:Genre ;
+    so:name "sertanejo"^^xsd:string .
+
+so:sertanejo-pop a so:Genre ;
+    so:name "sertanejo pop"^^xsd:string .
+
+so:sertanejo-universitario a so:Genre ;
+    so:name "sertanejo universitario"^^xsd:string .
+
+so:shatta a so:Genre ;
+    so:name "shatta"^^xsd:string .
+
+so:sheffield-indie a so:Genre ;
+    so:name "sheffield indie"^^xsd:string .
+
+so:shimmer-pop a so:Genre ;
+    so:name "shimmer pop"^^xsd:string .
+
+so:shiver-pop a so:Genre ;
+    so:name "shiver pop"^^xsd:string .
+
+so:sholawat a so:Genre ;
+    so:name "sholawat"^^xsd:string .
+
+so:show-tunes a so:Genre ;
+    so:name "show tunes"^^xsd:string .
+
+so:sierreno a so:Genre ;
+    so:name "sierreno"^^xsd:string .
+
+so:singaporean-hip-hop a so:Genre ;
+    so:name "singaporean hip hop"^^xsd:string .
+
+so:singaporean-mandopop a so:Genre ;
+    so:name "singaporean mandopop"^^xsd:string .
+
+so:singaporean-pop a so:Genre ;
+    so:name "singaporean pop"^^xsd:string .
+
+so:singaporean-singer-songwriter a so:Genre ;
+    so:name "singaporean singer-songwriter"^^xsd:string .
+
+so:singer-songwriter a so:Genre ;
+    so:name "singer-songwriter"^^xsd:string .
+
+so:ska-argentino a so:Genre ;
+    so:name "ska argentino"^^xsd:string .
+
+so:ska-chileno a so:Genre ;
+    so:name "ska chileno"^^xsd:string .
+
+so:ska-mexicano a so:Genre ;
+    so:name "ska mexicano"^^xsd:string .
+
+so:skansk-musik a so:Genre ;
+    so:name "skansk musik"^^xsd:string .
+
+so:skate-punk a so:Genre ;
+    so:name "skate punk"^^xsd:string .
+
+so:sky-room a so:Genre ;
+    so:name "sky room"^^xsd:string .
+
+so:slap-house a so:Genre ;
+    so:name "slap house"^^xsd:string .
+
+so:sleep a so:Genre ;
+    so:name "sleep"^^xsd:string .
+
+so:slovak-pop a so:Genre ;
+    so:name "slovak pop"^^xsd:string .
+
+so:slovenian-pop a so:Genre ;
+    so:name "slovenian pop"^^xsd:string .
+
+so:slowed-and-reverb a so:Genre ;
+    so:name "slowed and reverb"^^xsd:string .
+
+so:smooth-jazz a so:Genre ;
+    so:name "smooth jazz"^^xsd:string .
+
+so:smooth-saxophone a so:Genre ;
+    so:name "smooth saxophone"^^xsd:string .
+
+so:smooth-soul a so:Genre ;
+    so:name "smooth soul"^^xsd:string .
+
+so:soca a so:Genre ;
+    so:name "soca"^^xsd:string .
+
+so:social-media-pop a so:Genre ;
+    so:name "social media pop"^^xsd:string .
+
+so:soft-rock a so:Genre ;
+    so:name "soft rock"^^xsd:string .
+
+so:solo-wave a so:Genre ;
+    so:name "solo wave"^^xsd:string .
+
+so:sophisti-pop a so:Genre ;
+    so:name "sophisti-pop"^^xsd:string .
+
+so:soul a so:Genre ;
+    so:name "soul"^^xsd:string .
+
+so:soul-blues a so:Genre ;
+    so:name "soul blues"^^xsd:string .
+
+so:soul-flow a so:Genre ;
+    so:name "soul flow"^^xsd:string .
+
+so:soul-jazz a so:Genre ;
+    so:name "soul jazz"^^xsd:string .
+
+so:soulful-house a so:Genre ;
+    so:name "soulful house"^^xsd:string .
+
+so:soundtrack a so:Genre ;
+    so:name "soundtrack"^^xsd:string .
+
+so:south-african-alternative a so:Genre ;
+    so:name "south african alternative"^^xsd:string .
+
+so:south-african-hip-hop a so:Genre ;
+    so:name "south african hip hop"^^xsd:string .
+
+so:south-african-house a so:Genre ;
+    so:name "south african house"^^xsd:string .
+
+so:south-african-pop a so:Genre ;
+    so:name "south african pop"^^xsd:string .
+
+so:south-african-pop-dance a so:Genre ;
+    so:name "south african pop dance"^^xsd:string .
+
+so:south-african-trap a so:Genre ;
+    so:name "south african trap"^^xsd:string .
+
+so:south-carolina-hip-hop a so:Genre ;
+    so:name "south carolina hip hop"^^xsd:string .
+
+so:southern-hip-hop a so:Genre ;
+    so:name "southern hip hop"^^xsd:string .
+
+so:southern-rock a so:Genre ;
+    so:name "southern rock"^^xsd:string .
+
+so:southern-soul a so:Genre ;
+    so:name "southern soul"^^xsd:string .
+
+so:spanish-hip-hop a so:Genre ;
+    so:name "spanish hip hop"^^xsd:string .
+
+so:spanish-indie-folk a so:Genre ;
+    so:name "spanish indie folk"^^xsd:string .
+
+so:spanish-indie-pop a so:Genre ;
+    so:name "spanish indie pop"^^xsd:string .
+
+so:spanish-modern-rock a so:Genre ;
+    so:name "spanish modern rock"^^xsd:string .
+
+so:spanish-noise-pop a so:Genre ;
+    so:name "spanish noise pop"^^xsd:string .
+
+so:spanish-pop a so:Genre ;
+    so:name "spanish pop"^^xsd:string .
+
+so:spanish-pop-rock a so:Genre ;
+    so:name "spanish pop rock"^^xsd:string .
+
+so:spanish-reggae a so:Genre ;
+    so:name "spanish reggae"^^xsd:string .
+
+so:spanish-rock a so:Genre ;
+    so:name "spanish rock"^^xsd:string .
+
+so:speedrun a so:Genre ;
+    so:name "speedrun"^^xsd:string .
+
+so:spiritual-hip-hop a so:Genre ;
+    so:name "spiritual hip hop"^^xsd:string .
+
+so:spirituals a so:Genre ;
+    so:name "spirituals"^^xsd:string .
+
+so:st-louis-rap a so:Genre ;
+    so:name "st louis rap"^^xsd:string .
+
+so:stomp-and-holler a so:Genre ;
+    so:name "stomp and holler"^^xsd:string .
+
+so:stomp-pop a so:Genre ;
+    so:name "stomp pop"^^xsd:string .
+
+so:stoner-metal a so:Genre ;
+    so:name "stoner metal"^^xsd:string .
+
+so:stride a so:Genre ;
+    so:name "stride"^^xsd:string .
+
+so:strut a so:Genre ;
+    so:name "strut"^^xsd:string .
+
+so:sudanese-pop a so:Genre ;
+    so:name "sudanese pop"^^xsd:string .
+
+so:sung-poetry a so:Genre ;
+    so:name "sung poetry"^^xsd:string .
+
+so:sunnlensk-tonlist a so:Genre ;
+    so:name "sunnlensk tonlist"^^xsd:string .
+
+so:sunshine-pop a so:Genre ;
+    so:name "sunshine pop"^^xsd:string .
+
+so:suomi-rock a so:Genre ;
+    so:name "suomi rock"^^xsd:string .
+
+so:suomirap a so:Genre ;
+    so:name "suomirap"^^xsd:string .
+
+so:supergroup a so:Genre ;
+    so:name "supergroup"^^xsd:string .
+
+so:surinamese-pop a so:Genre ;
+    so:name "surinamese pop"^^xsd:string .
+
+so:swamp-rock a so:Genre ;
+    so:name "swamp rock"^^xsd:string .
+
+so:swedish-alternative-rock a so:Genre ;
+    so:name "swedish alternative rock"^^xsd:string .
+
+so:swedish-americana a so:Genre ;
+    so:name "swedish americana"^^xsd:string .
+
+so:swedish-classical a so:Genre ;
+    so:name "swedish classical"^^xsd:string .
+
+so:swedish-country a so:Genre ;
+    so:name "swedish country"^^xsd:string .
+
+so:swedish-dancehall a so:Genre ;
+    so:name "swedish dancehall"^^xsd:string .
+
+so:swedish-drill a so:Genre ;
+    so:name "swedish drill"^^xsd:string .
+
+so:swedish-electropop a so:Genre ;
+    so:name "swedish electropop"^^xsd:string .
+
+so:swedish-eurodance a so:Genre ;
+    so:name "swedish eurodance"^^xsd:string .
+
+so:swedish-folk-pop a so:Genre ;
+    so:name "swedish folk pop"^^xsd:string .
+
+so:swedish-gangsta-rap a so:Genre ;
+    so:name "swedish gangsta rap"^^xsd:string .
+
+so:swedish-garage-rock a so:Genre ;
+    so:name "swedish garage rock"^^xsd:string .
+
+so:swedish-hip-hop a so:Genre ;
+    so:name "swedish hip hop"^^xsd:string .
+
+so:swedish-idol-pop a so:Genre ;
+    so:name "swedish idol pop"^^xsd:string .
+
+so:swedish-indie-folk a so:Genre ;
+    so:name "swedish indie folk"^^xsd:string .
+
+so:swedish-indie-pop a so:Genre ;
+    so:name "swedish indie pop"^^xsd:string .
+
+so:swedish-indie-rock a so:Genre ;
+    so:name "swedish indie rock"^^xsd:string .
+
+so:swedish-jazz a so:Genre ;
+    so:name "swedish jazz"^^xsd:string .
+
+so:swedish-pop a so:Genre ;
+    so:name "swedish pop"^^xsd:string .
+
+so:swedish-pop-rap a so:Genre ;
+    so:name "swedish pop rap"^^xsd:string .
+
+so:swedish-reggae a so:Genre ;
+    so:name "swedish reggae"^^xsd:string .
+
+so:swedish-rock-and-roll a so:Genre ;
+    so:name "swedish rock-and-roll"^^xsd:string .
+
+so:swedish-singer-songwriter a so:Genre ;
+    so:name "swedish singer-songwriter"^^xsd:string .
+
+so:swedish-soul a so:Genre ;
+    so:name "swedish soul"^^xsd:string .
+
+so:swedish-synthpop a so:Genre ;
+    so:name "swedish synthpop"^^xsd:string .
+
+so:swedish-trap a so:Genre ;
+    so:name "swedish trap"^^xsd:string .
+
+so:swedish-trap-pop a so:Genre ;
+    so:name "swedish trap pop"^^xsd:string .
+
+so:swedish-tropical-house a so:Genre ;
+    so:name "swedish tropical house"^^xsd:string .
+
+so:swedish-underground-rap a so:Genre ;
+    so:name "swedish underground rap"^^xsd:string .
+
+so:swing a so:Genre ;
+    so:name "swing"^^xsd:string .
+
+so:swiss-hip-hop a so:Genre ;
+    so:name "swiss hip hop"^^xsd:string .
+
+so:swiss-indie a so:Genre ;
+    so:name "swiss indie"^^xsd:string .
+
+so:swiss-pop a so:Genre ;
+    so:name "swiss pop"^^xsd:string .
+
+so:swiss-reggae a so:Genre ;
+    so:name "swiss reggae"^^xsd:string .
+
+so:swiss-rock a so:Genre ;
+    so:name "swiss rock"^^xsd:string .
+
+so:swiss-trap a so:Genre ;
+    so:name "swiss trap"^^xsd:string .
+
+so:symphonic-metal a so:Genre ;
+    so:name "symphonic metal"^^xsd:string .
+
+so:symphonic-rock a so:Genre ;
+    so:name "symphonic rock"^^xsd:string .
+
+so:synthpop a so:Genre ;
+    so:name "synthpop"^^xsd:string .
+
+so:tagalog-rap a so:Genre ;
+    so:name "tagalog rap"^^xsd:string .
+
+so:tagalog-worship a so:Genre ;
+    so:name "tagalog worship"^^xsd:string .
+
+so:taiwan-classical-performance a so:Genre ;
+    so:name "taiwan classical performance"^^xsd:string .
+
+so:taiwan-electronic a so:Genre ;
+    so:name "taiwan electronic"^^xsd:string .
+
+so:taiwan-graduation-song a so:Genre ;
+    so:name "taiwan graduation song"^^xsd:string .
+
+so:taiwan-hip-hop a so:Genre ;
+    so:name "taiwan hip hop"^^xsd:string .
+
+so:taiwan-idol-pop a so:Genre ;
+    so:name "taiwan idol pop"^^xsd:string .
+
+so:taiwan-indie a so:Genre ;
+    so:name "taiwan indie"^^xsd:string .
+
+so:taiwan-pop a so:Genre ;
+    so:name "taiwan pop"^^xsd:string .
+
+so:taiwan-punk a so:Genre ;
+    so:name "taiwan punk"^^xsd:string .
+
+so:taiwan-rock a so:Genre ;
+    so:name "taiwan rock"^^xsd:string .
+
+so:taiwan-singer-songwriter a so:Genre ;
+    so:name "taiwan singer-songwriter"^^xsd:string .
+
+so:taiwanese-indie a so:Genre ;
+    so:name "taiwanese indie"^^xsd:string .
+
+so:taiwanese-indigenous a so:Genre ;
+    so:name "taiwanese indigenous"^^xsd:string .
+
+so:talent-show a so:Genre ;
+    so:name "talent show"^^xsd:string .
+
+so:talentkonkurranse a so:Genre ;
+    so:name "talentkonkurranse"^^xsd:string .
+
+so:tallava a so:Genre ;
+    so:name "tallava"^^xsd:string .
+
+so:tamil-pop a so:Genre ;
+    so:name "tamil pop"^^xsd:string .
+
+so:tech-house a so:Genre ;
+    so:name "tech house"^^xsd:string .
+
+so:tecnobanda a so:Genre ;
+    so:name "tecnobanda"^^xsd:string .
+
+so:tecnobrega a so:Genre ;
+    so:name "tecnobrega"^^xsd:string .
+
+so:teen-pop a so:Genre ;
+    so:name "teen pop"^^xsd:string .
+
+so:tejano a so:Genre ;
+    so:name "tejano"^^xsd:string .
+
+so:tekk a so:Genre ;
+    so:name "tekk"^^xsd:string .
+
+so:tennessee-hip-hop a so:Genre ;
+    so:name "tennessee hip hop"^^xsd:string .
+
+so:terrorcore a so:Genre ;
+    so:name "terrorcore"^^xsd:string .
+
+so:texas-country a so:Genre ;
+    so:name "texas country"^^xsd:string .
+
+so:thai-idol a so:Genre ;
+    so:name "thai idol"^^xsd:string .
+
+so:tin-pan-alley a so:Genre ;
+    so:name "tin pan alley"^^xsd:string .
+
+so:torch-song a so:Genre ;
+    so:name "torch song"^^xsd:string .
+
+so:toronto-rap a so:Genre ;
+    so:name "toronto rap"^^xsd:string .
+
+so:traditional-country a so:Genre ;
+    so:name "traditional country"^^xsd:string .
+
+so:trance a so:Genre ;
+    so:name "trance"^^xsd:string .
+
+so:trance-brasileiro a so:Genre ;
+    so:name "trance brasileiro"^^xsd:string .
+
+so:transpop a so:Genre ;
+    so:name "transpop"^^xsd:string .
+
+so:trap a so:Genre ;
+    so:name "trap"^^xsd:string .
+
+so:trap-antillais a so:Genre ;
+    so:name "trap antillais"^^xsd:string .
+
+so:trap-argentino a so:Genre ;
+    so:name "trap argentino"^^xsd:string .
+
+so:trap-baiano a so:Genre ;
+    so:name "trap baiano"^^xsd:string .
+
+so:trap-boricua a so:Genre ;
+    so:name "trap boricua"^^xsd:string .
+
+so:trap-brasileiro a so:Genre ;
+    so:name "trap brasileiro"^^xsd:string .
+
+so:trap-carioca a so:Genre ;
+    so:name "trap carioca"^^xsd:string .
+
+so:trap-catala a so:Genre ;
+    so:name "trap catala"^^xsd:string .
+
+so:trap-chileno a so:Genre ;
+    so:name "trap chileno"^^xsd:string .
+
+so:trap-dominicano a so:Genre ;
+    so:name "trap dominicano"^^xsd:string .
+
+so:trap-funk a so:Genre ;
+    so:name "trap funk"^^xsd:string .
+
+so:trap-italiana a so:Genre ;
+    so:name "trap italiana"^^xsd:string .
+
+so:trap-latino a so:Genre ;
+    so:name "trap latino"^^xsd:string .
+
+so:trap-metal-italiana a so:Genre ;
+    so:name "trap metal italiana"^^xsd:string .
+
+so:trap-mexicano a so:Genre ;
+    so:name "trap mexicano"^^xsd:string .
+
+so:trap-pesado a so:Genre ;
+    so:name "trap pesado"^^xsd:string .
+
+so:trap-queen a so:Genre ;
+    so:name "trap queen"^^xsd:string .
+
+so:trap-soul a so:Genre ;
+    so:name "trap soul"^^xsd:string .
+
+so:trap-triste a so:Genre ;
+    so:name "trap triste"^^xsd:string .
+
+so:trap-tuga a so:Genre ;
+    so:name "trap tuga"^^xsd:string .
+
+so:trap-venezolano a so:Genre ;
+    so:name "trap venezolano"^^xsd:string .
+
+so:traprun a so:Genre ;
+    so:name "traprun"^^xsd:string .
+
+so:trip-hop a so:Genre ;
+    so:name "trip hop"^^xsd:string .
+
+so:trondersk-musikk a so:Genre ;
+    so:name "trondersk musikk"^^xsd:string .
+
+so:tropical a so:Genre ;
+    so:name "tropical"^^xsd:string .
+
+so:tropical-alternativo a so:Genre ;
+    so:name "tropical alternativo"^^xsd:string .
+
+so:tropical-house a so:Genre ;
+    so:name "tropical house"^^xsd:string .
+
+so:tropicalia a so:Genre ;
+    so:name "tropicalia"^^xsd:string .
+
+so:trova a so:Genre ;
+    so:name "trova"^^xsd:string .
+
+so:tunisian-pop a so:Genre ;
+    so:name "tunisian pop"^^xsd:string .
+
+so:turbo-folk a so:Genre ;
+    so:name "turbo folk"^^xsd:string .
+
+so:turin-indie a so:Genre ;
+    so:name "turin indie"^^xsd:string .
+
+so:turkce-drill a so:Genre ;
+    so:name "turkce drill"^^xsd:string .
+
+so:turkce-kadin-rap a so:Genre ;
+    so:name "turkce kadin rap"^^xsd:string .
+
+so:turkce-remix a so:Genre ;
+    so:name "turkce remix"^^xsd:string .
+
+so:turkce-slow-sarkilar a so:Genre ;
+    so:name "turkce slow sarkilar"^^xsd:string .
+
+so:turkce-trap-metal a so:Genre ;
+    so:name "turkce trap metal"^^xsd:string .
+
+so:turkish-alt-pop a so:Genre ;
+    so:name "turkish alt pop"^^xsd:string .
+
+so:turkish-alternative a so:Genre ;
+    so:name "turkish alternative"^^xsd:string .
+
+so:turkish-alternative-rock a so:Genre ;
+    so:name "turkish alternative rock"^^xsd:string .
+
+so:turkish-classical-performance a so:Genre ;
+    so:name "turkish classical performance"^^xsd:string .
+
+so:turkish-deep-house a so:Genre ;
+    so:name "turkish deep house"^^xsd:string .
+
+so:turkish-edm a so:Genre ;
+    so:name "turkish edm"^^xsd:string .
+
+so:turkish-folk a so:Genre ;
+    so:name "turkish folk"^^xsd:string .
+
+so:turkish-hip-hop a so:Genre ;
+    so:name "turkish hip hop"^^xsd:string .
+
+so:turkish-instrumental a so:Genre ;
+    so:name "turkish instrumental"^^xsd:string .
+
+so:turkish-jazz a so:Genre ;
+    so:name "turkish jazz"^^xsd:string .
+
+so:turkish-modern-jazz a so:Genre ;
+    so:name "turkish modern jazz"^^xsd:string .
+
+so:turkish-pop a so:Genre ;
+    so:name "turkish pop"^^xsd:string .
+
+so:turkish-psych a so:Genre ;
+    so:name "turkish psych"^^xsd:string .
+
+so:turkish-punk a so:Genre ;
+    so:name "turkish punk"^^xsd:string .
+
+so:turkish-reggae a so:Genre ;
+    so:name "turkish reggae"^^xsd:string .
+
+so:turkish-rock a so:Genre ;
+    so:name "turkish rock"^^xsd:string .
+
+so:turkish-singer-songwriter a so:Genre ;
+    so:name "turkish singer-songwriter"^^xsd:string .
+
+so:turkish-trap a so:Genre ;
+    so:name "turkish trap"^^xsd:string .
+
+so:turkish-trap-pop a so:Genre ;
+    so:name "turkish trap pop"^^xsd:string .
+
+so:turntablism a so:Genre ;
+    so:name "turntablism"^^xsd:string .
+
+so:uae-indie a so:Genre ;
+    so:name "uae indie"^^xsd:string .
+
+so:uk-alternative-hip-hop a so:Genre ;
+    so:name "uk alternative hip hop"^^xsd:string .
+
+so:uk-alternative-pop a so:Genre ;
+    so:name "uk alternative pop"^^xsd:string .
+
+so:uk-americana a so:Genre ;
+    so:name "uk americana"^^xsd:string .
+
+so:uk-contemporary-r-b a so:Genre ;
+    so:name "uk contemporary r&b"^^xsd:string .
+
+so:uk-dance a so:Genre ;
+    so:name "uk dance"^^xsd:string .
+
+so:uk-dancehall a so:Genre ;
+    so:name "uk dancehall"^^xsd:string .
+
+so:uk-diy-punk a so:Genre ;
+    so:name "uk diy punk"^^xsd:string .
+
+so:uk-drill a so:Genre ;
+    so:name "uk drill"^^xsd:string .
+
+so:uk-dub a so:Genre ;
+    so:name "uk dub"^^xsd:string .
+
+so:uk-funky a so:Genre ;
+    so:name "uk funky"^^xsd:string .
+
+so:uk-hip-hop a so:Genre ;
+    so:name "uk hip hop"^^xsd:string .
+
+so:uk-house a so:Genre ;
+    so:name "uk house"^^xsd:string .
+
+so:uk-metalcore a so:Genre ;
+    so:name "uk metalcore"^^xsd:string .
+
+so:uk-pop a so:Genre ;
+    so:name "uk pop"^^xsd:string .
+
+so:uk-post-punk a so:Genre ;
+    so:name "uk post-punk"^^xsd:string .
+
+so:uk-reggae a so:Genre ;
+    so:name "uk reggae"^^xsd:string .
+
+so:uk-tech-house a so:Genre ;
+    so:name "uk tech house"^^xsd:string .
+
+so:ukg-revival a so:Genre ;
+    so:name "ukg revival"^^xsd:string .
+
+so:ukrainian-classical a so:Genre ;
+    so:name "ukrainian classical"^^xsd:string .
+
+so:ukrainian-pop a so:Genre ;
+    so:name "ukrainian pop"^^xsd:string .
+
+so:ulkucu-sarkilar a so:Genre ;
+    so:name "ulkucu sarkilar"^^xsd:string .
+
+so:underground-hip-hop a so:Genre ;
+    so:name "underground hip hop"^^xsd:string .
+
+so:uplifting-trance a so:Genre ;
+    so:name "uplifting trance"^^xsd:string .
+
+so:uppsala-indie a so:Genre ;
+    so:name "uppsala indie"^^xsd:string .
+
+so:urban-contemporary a so:Genre ;
+    so:name "urban contemporary"^^xsd:string .
+
+so:urbano-espanol a so:Genre ;
+    so:name "urbano espanol"^^xsd:string .
+
+so:uwielbienie a so:Genre ;
+    so:name "uwielbienie"^^xsd:string .
+
+so:v-pop a so:Genre ;
+    so:name "v-pop"^^xsd:string .
+
+so:vallenato a so:Genre ;
+    so:name "vallenato"^^xsd:string .
+
+so:vallenato-moderno a so:Genre ;
+    so:name "vallenato moderno"^^xsd:string .
+
+so:vapor-pop a so:Genre ;
+    so:name "vapor pop"^^xsd:string .
+
+so:vapor-soul a so:Genre ;
+    so:name "vapor soul"^^xsd:string .
+
+so:vapor-trap a so:Genre ;
+    so:name "vapor trap"^^xsd:string .
+
+so:vapor-twitch a so:Genre ;
+    so:name "vapor twitch"^^xsd:string .
+
+so:variete-francaise a so:Genre ;
+    so:name "variete francaise"^^xsd:string .
+
+so:venezuelan-hip-hop a so:Genre ;
+    so:name "venezuelan hip hop"^^xsd:string .
+
+so:veracruz-indie a so:Genre ;
+    so:name "veracruz indie"^^xsd:string .
+
+so:video-game-music a so:Genre ;
+    so:name "video game music"^^xsd:string .
+
+so:vienna-indie a so:Genre ;
+    so:name "vienna indie"^^xsd:string .
+
+so:villancicos a so:Genre ;
+    so:name "villancicos"^^xsd:string .
+
+so:vintage-chanson a so:Genre ;
+    so:name "vintage chanson"^^xsd:string .
+
+so:vintage-chinese-pop a so:Genre ;
+    so:name "vintage chinese pop"^^xsd:string .
+
+so:vintage-french-electronic a so:Genre ;
+    so:name "vintage french electronic"^^xsd:string .
+
+so:vintage-norwegian-pop a so:Genre ;
+    so:name "vintage norwegian pop"^^xsd:string .
+
+so:vintage-swedish-pop a so:Genre ;
+    so:name "vintage swedish pop"^^xsd:string .
+
+so:violao a so:Genre ;
+    so:name "violao"^^xsd:string .
+
+so:violin a so:Genre ;
+    so:name "violin"^^xsd:string .
+
+so:viral-pop a so:Genre ;
+    so:name "viral pop"^^xsd:string .
+
+so:viral-pop-brasileiro a so:Genre ;
+    so:name "viral pop brasileiro"^^xsd:string .
+
+so:viral-rap a so:Genre ;
+    so:name "viral rap"^^xsd:string .
+
+so:viral-trap a so:Genre ;
+    so:name "viral trap"^^xsd:string .
+
+so:virgin-islands-reggae a so:Genre ;
+    so:name "virgin islands reggae"^^xsd:string .
+
+so:virginia-hip-hop a so:Genre ;
+    so:name "virginia hip hop"^^xsd:string .
+
+so:visual-kei a so:Genre ;
+    so:name "visual kei"^^xsd:string .
+
+so:vlaamse-kinderliedje a so:Genre ;
+    so:name "vlaamse kinderliedje"^^xsd:string .
+
+so:vlaamse-rap a so:Genre ;
+    so:name "vlaamse rap"^^xsd:string .
+
+so:vocal-harmony-group a so:Genre ;
+    so:name "vocal harmony group"^^xsd:string .
+
+so:vocal-house a so:Genre ;
+    so:name "vocal house"^^xsd:string .
+
+so:vocal-jazz a so:Genre ;
+    so:name "vocal jazz"^^xsd:string .
+
+so:voetbal a so:Genre ;
+    so:name "voetbal"^^xsd:string .
+
+so:vogue a so:Genre ;
+    so:name "vogue"^^xsd:string .
+
+so:volkspop a so:Genre ;
+    so:name "volkspop"^^xsd:string .
+
+so:washington-indie a so:Genre ;
+    so:name "washington indie"^^xsd:string .
+
+so:wassoulou a so:Genre ;
+    so:name "wassoulou"^^xsd:string .
+
+so:wave a so:Genre ;
+    so:name "wave"^^xsd:string .
+
+so:welsh-rock a so:Genre ;
+    so:name "welsh rock"^^xsd:string .
+
+so:west-coast-rap a so:Genre ;
+    so:name "west coast rap"^^xsd:string .
+
+so:west-coast-trap a so:Genre ;
+    so:name "west coast trap"^^xsd:string .
+
+so:women-s-music a so:Genre ;
+    so:name "women's music"^^xsd:string .
+
+so:world a so:Genre ;
+    so:name "world"^^xsd:string .
+
+so:world-worship a so:Genre ;
+    so:name "world worship"^^xsd:string .
+
+so:worship a so:Genre ;
+    so:name "worship"^^xsd:string .
+
+so:xinyao a so:Genre ;
+    so:name "xinyao"^^xsd:string .
+
+so:yacht-rock a so:Genre ;
+    so:name "yacht rock"^^xsd:string .
+
+so:ye-ye a so:Genre ;
+    so:name "ye ye"^^xsd:string .
+
+so:yodeling a so:Genre ;
+    so:name "yodeling"^^xsd:string .
+
+so:york-indie a so:Genre ;
+    so:name "york indie"^^xsd:string .
+
+so:zhongguo-feng a so:Genre ;
+    so:name "zhongguo feng"^^xsd:string .
+
+so:zimdancehall a so:Genre ;
+    so:name "zimdancehall"^^xsd:string .
+
+so:zouglou a so:Genre ;
+    so:name "zouglou"^^xsd:string .
+
+so:zouk-riddim a so:Genre ;
+    so:name "zouk riddim"^^xsd:string .
+
